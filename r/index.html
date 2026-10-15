@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<title>레시피 — 해담</title>
+<meta name="description" content="해담 레시피를 확인하고 앱에서 열어보세요.">
+<meta name="theme-color" content="#0E0E0F">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="hm"><rect x="20" y="18" width="80" height="43"/></clipPath></defs><path d="M14 38V22a8 8 0 0 1 8-8h16M82 14h16a8 8 0 0 1 8 8v16M106 82v16a8 8 0 0 1-8 8H82M38 106H22a8 8 0 0 1-8-8V82" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="57" r="17" fill="var(--accent)" clip-path="url(#hm)"/><defs><mask id="hm-refl" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><image href="../assets/reflection-mask.png" x="0" y="0" width="120" height="120"/></mask></defs><rect width="120" height="120" fill="var(--accent)" mask="url(#hm-refl)"/></svg>해담</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="../#looks">룩</a>
+      <a href="../community/">커뮤니티</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <span class="eyebrow">레시피</span>
+  </div>
+
+  <div id="view" hidden>
+    <div class="card recipe-hero">
+      <div class="swatch" id="swatch" role="img" aria-label="레시피 색감 미리보기"></div>
+      <div>
+        <h1 id="name"></h1>
+        <p class="meta" id="meta"></p>
+        <div class="btn-row">
+          <a class="btn btn-accent" id="open-app" href="#">앱에서 열기</a>
+          <button class="btn" type="button" id="copy">링크 복사</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="groups" id="groups"></div>
+
+    <div class="card note">
+      <strong>Apple 사진 앱 근사값</strong> — 여기 나온 수치는 해담 렌더러 기준이에요. 사진 앱에 같은 이름의 항목이 있어도 계산 방식이 달라서 결과가 조금 다를 수 있어요. 따라 할 땐 참고용으로만 봐주세요.
+    </div>
+  </div>
+
+  <div id="error" class="card empty" hidden>
+    <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg></div>
+    <h2 id="error-title">레시피를 열 수 없어요</h2>
+    <p id="error-msg">링크가 잘렸거나 잘못된 것 같아요. 보내준 사람에게 링크를 다시 받아보세요.</p>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="../community/">커뮤니티 레시피 보기</a>
+      <a class="btn" href="../">홈으로</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 해담</span>
+    <a href="../community/">커뮤니티 레시피</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../assets/recipe.js"></script>
+<script>
+(function () {
+  "use strict";
+  var R = window.HaedamRecipe;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fmt(row) {
+    if (row.hue) return row.value + "°";
+    return (row.value > 0 ? "+" : "") + row.value;
+  }
+
+  function showError(msg) {
+    $("view").hidden = true;
+    $("error").hidden = false;
+    if (msg) $("error-msg").textContent = msg + ". 보내준 사람에게 링크를 다시 받아보세요.";
+    document.title = "레시피를 열 수 없어요 — 해담";
+  }
+
+  function render() {
+    var payload = location.hash.replace(/^#/, "");
+    if (!payload) {
+      $("error-title").textContent = "레시피 링크가 비어 있어요";
+      showError("주소 뒤에 레시피 정보가 없어요");
+      return;
+    }
+    var recipe;
+    try { recipe = R.decode(payload); } catch (e) { showError(e.message); return; }
+
+    $("error").hidden = true;
+    $("view").hidden = false;
+    $("name").textContent = recipe.name;
+    document.title = recipe.name + " — 해담 레시피";
+
+    var count = Object.keys(recipe.params).length;
+    $("meta").textContent = "조정한 항목 " + count + "개 · 원래 색 유지 " + Math.round(recipe.keepCast * 100) + "%";
+    $("swatch").style.background = R.swatch(recipe.params);
+    $("open-app").href = "haedam://recipe#" + payload;
+
+    var box = $("groups");
+    box.textContent = "";
+    var groups = R.grouped(recipe.params);
+    if (!groups.length) {
+      var empty = document.createElement("div");
+      empty.className = "card note";
+      empty.textContent = "조정한 값이 없는 레시피예요. 원본 그대로 보여줘요.";
+      box.appendChild(empty);
+    }
+    groups.forEach(function (g) {
+      var card = document.createElement("section");
+      card.className = "card group";
+      var h = document.createElement("h2");
+      h.textContent = g.label;
+      card.appendChild(h);
+      var table = document.createElement("table");
+      g.rows.forEach(function (row) {
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        if (row.hue) {
+          var dot = document.createElement("span");
+          dot.className = "hue-dot";
+          dot.style.background = "hsl(" + row.value + " 60% 60%)";
+          td1.appendChild(dot);
+        }
+        td1.appendChild(document.createTextNode(row.label));
+        var td2 = document.createElement("td");
+        td2.className = "v " + (row.value > 0 ? "pos" : "neg");
+        td2.textContent = fmt(row);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        table.appendChild(tr);
+      });
+      card.appendChild(table);
+      box.appendChild(card);
+    });
+  }
+
+  var toastTimer;
+  function toast(msg) {
+    var t = $("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 1800);
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  $("copy").addEventListener("click", function () {
+    var url = location.href;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(
+        function () { toast("링크를 복사했어요"); },
+        function () { toast(fallbackCopy(url) ? "링크를 복사했어요" : "복사하지 못했어요"); }
+      );
+    } else {
+      toast(fallbackCopy(url) ? "링크를 복사했어요" : "복사하지 못했어요");
+    }
+  });
+
+  window.addEventListener("hashchange", render);
+  render();
+})();
+</script>
+</body>
+</html>

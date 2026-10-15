@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<title>커뮤니티 레시피 — 해담</title>
+<meta name="description" content="해담 커뮤니티 레시피를 둘러보고 앱으로 바로 받아보세요.">
+<meta name="theme-color" content="#0E0E0F">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="hm"><rect x="20" y="18" width="80" height="43"/></clipPath></defs><path d="M14 38V22a8 8 0 0 1 8-8h16M82 14h16a8 8 0 0 1 8 8v16M106 82v16a8 8 0 0 1-8 8H82M38 106H22a8 8 0 0 1-8-8V82" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="57" r="17" fill="var(--accent)" clip-path="url(#hm)"/><defs><mask id="hm-refl" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><image href="../assets/reflection-mask.png" x="0" y="0" width="120" height="120"/></mask></defs><rect width="120" height="120" fill="var(--accent)" mask="url(#hm-refl)"/></svg>해담</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="../#looks">룩</a>
+      <a href="../#features">기능</a>
+      <a href="./" aria-current="page">커뮤니티</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <span class="eyebrow">커뮤니티 레시피</span>
+    <h1>마음에 드는 톤을 골라보세요</h1>
+    <p>해담 기본 룩과 직접 고른 레시피를 모았어요. 앱으로 받으면 바로 내 사진에 써볼 수 있어요.</p>
+  </div>
+
+  <div class="toolbar">
+    <input class="search" id="q" type="search" aria-label="레시피 검색" placeholder="이름, 설명, 태그로 찾기" autocomplete="off">
+    <div class="chips" id="chips" role="group" aria-label="태그로 거르기"></div>
+  </div>
+
+  <div class="feed" id="feed" aria-live="polite"></div>
+  <p class="status" id="status">레시피를 불러오고 있어요…</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span id="updated">© 2026 해담</span>
+    <a href="../privacy/">개인정보 처리방침</a>
+    <a href="../">홈으로</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var all = [];
+  var activeTag = "";
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function validHex(c) { return /^#[0-9a-fA-F]{6}$/.test(c) ? c : "#F0B88A"; }
+  function validPayload(p) { return typeof p === "string" && /^[A-Za-z0-9_-]+$/.test(p); }
+
+  function accentGradient(hex) {
+    return "radial-gradient(120% 90% at 20% 15%, " + hex + " 0%, transparent 60%)," +
+      "linear-gradient(150deg, " + hex + "cc 0%, " + hex + "55 45%, #1A1A1C 100%)";
+  }
+
+  function card(r) {
+    var a = el("article", "card r-card");
+    var sw = el("div", "swatch");
+    sw.style.background = accentGradient(validHex(r.accent));
+    sw.setAttribute("aria-hidden", "true");
+    a.appendChild(sw);
+
+    var b = el("div", "body");
+    b.appendChild(el("h3", null, r.name));
+    b.appendChild(el("span", "author", r.author));
+    b.appendChild(el("p", "summary", r.summary));
+    var tags = el("div", "tags");
+    (r.tags || []).forEach(function (t) { tags.appendChild(el("span", null, "#" + t)); });
+    b.appendChild(tags);
+
+    var row = el("div", "btn-row");
+    var get = el("a", "btn btn-accent btn-sm", "앱으로 받기");
+    get.href = "haedam://recipe#" + r.payload;
+    var more = el("a", "btn btn-sm", "자세히");
+    more.href = "../r/#" + r.payload;
+    row.appendChild(get);
+    row.appendChild(more);
+    b.appendChild(row);
+    a.appendChild(b);
+    return a;
+  }
+
+  function matches(r, q) {
+    if (activeTag && (r.tags || []).indexOf(activeTag) < 0) return false;
+    if (!q) return true;
+    var hay = [r.name, r.author, r.summary].concat(r.tags || []).join(" ").toLowerCase();
+    return q.split(/\s+/).every(function (w) { return hay.indexOf(w.replace(/^#/, "")) >= 0; });
+  }
+
+  function render() {
+    var q = $("q").value.trim().toLowerCase();
+    var list = all.filter(function (r) { return matches(r, q); });
+    var feed = $("feed");
+    feed.textContent = "";
+    list.forEach(function (r) { feed.appendChild(card(r)); });
+    var st = $("status");
+    st.hidden = list.length > 0;
+    st.textContent = "찾는 레시피가 없어요. 다른 단어로 찾아보세요.";
+  }
+
+  function renderChips() {
+    var counts = {};
+    all.forEach(function (r) { (r.tags || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); });
+    var tags = Object.keys(counts).sort(function (x, y) { return counts[y] - counts[x] || x.localeCompare(y, "ko"); });
+    var box = $("chips");
+    box.textContent = "";
+    [""].concat(tags).forEach(function (t) {
+      var c = el("button", "chip", t ? "#" + t : "전체");
+      c.type = "button";
+      c.setAttribute("aria-pressed", String(t === activeTag));
+      c.addEventListener("click", function () {
+        activeTag = t;
+        Array.prototype.forEach.call(box.children, function (n) { n.setAttribute("aria-pressed", "false"); });
+        c.setAttribute("aria-pressed", "true");
+        render();
+      });
+      box.appendChild(c);
+    });
+  }
+
+  $("q").addEventListener("input", render);
+
+  fetch("./feed.json", { cache: "no-cache" })
+    .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(function (data) {
+      if (!data || data.version !== 1 || !Array.isArray(data.recipes)) throw new Error("bad feed");
+      all = data.recipes.filter(function (r) { return r && typeof r.name === "string" && validPayload(r.payload); });
+      if (data.updated) $("updated").textContent = "© 2026 해담 · " + data.updated + " 업데이트";
+      renderChips();
+      render();
+    })
+    .catch(function () {
+      $("status").textContent = "레시피를 불러오지 못했어요. 잠시 후 다시 열어주세요.";
+    });
+})();
+</script>
+</body>
+</html>
