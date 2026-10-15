@@ -13,7 +13,10 @@
         "밝은"
       ],
       "accent": "#F3D29A",
-      "payload": "eyJ2IjoxLCJuIjoi7JWE7LmoIO2Wh-yCtCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6OCwiaGlnaGxpZ2h0cyI6LTYsImNvbnRyYXN0IjotNiwiYnJpZ2h0bmVzcyI6MTQsInZpYnJhbmNlIjoxNCwid2FybXRoIjo4LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6Niwic2hhZG93SHVlIjoyMTUsInNoYWRvd1NhdCI6OCwiaGlnaGxpZ2h0SHVlIjo0NSwiaGlnaGxpZ2h0U2F0IjoxOH19"
+      "payload": "eyJ2IjoxLCJuIjoi7JWE7LmoIO2Wh-yCtCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6OCwiaGlnaGxpZ2h0cyI6LTYsImNvbnRyYXN0IjotNiwiYnJpZ2h0bmVzcyI6MTQsInZpYnJhbmNlIjoxNCwid2FybXRoIjo4LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6Niwic2hhZG93SHVlIjoyMTUsInNoYWRvd1NhdCI6OCwiaGlnaGxpZ2h0SHVlIjo0NSwiaGlnaGxpZ2h0U2F0IjoxOH19",
+      "image": "assets/photos/r/morning.jpg",
+      "imageBefore": "assets/photos/r/morning-before.jpg",
+      "photoCredit": "Dohyuk You"
     },
     {
       "id": "cafe",
@@ -27,7 +30,10 @@
         "필름"
       ],
       "accent": "#C89A72",
-      "payload": "eyJ2IjoxLCJuIjoi7Jik7ZuEIOy5tO2OmCIsImsiOjAuNCwicCI6eyJzaGFkb3dzIjo4LCJjb250cmFzdCI6LTgsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6Niwid2FybXRoIjoxNCwiaHNsLm9yYW5nZS5zYXQiOi02LCJoc2wub3JhbmdlLmx1bSI6MTAsImhzbC55ZWxsb3cuaHVlIjotNiwiaHNsLnllbGxvdy5zYXQiOi0xMCwiaHNsLmdyZWVuLmh1ZSI6MTAsImhzbC5ncmVlbi5zYXQiOi0yNSwic2hhZG93SHVlIjoyOCwic2hhZG93U2F0IjoyMCwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjMwLCJmYWRlIjoxNH19"
+      "payload": "eyJ2IjoxLCJuIjoi7Jik7ZuEIOy5tO2OmCIsImsiOjAuNCwicCI6eyJzaGFkb3dzIjo4LCJjb250cmFzdCI6LTgsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6Niwid2FybXRoIjoxNCwiaHNsLm9yYW5nZS5zYXQiOi02LCJoc2wub3JhbmdlLmx1bSI6MTAsImhzbC55ZWxsb3cuaHVlIjotNiwiaHNsLnllbGxvdy5zYXQiOi0xMCwiaHNsLmdyZWVuLmh1ZSI6MTAsImhzbC5ncmVlbi5zYXQiOi0yNSwic2hhZG93SHVlIjoyOCwic2hhZG93U2F0IjoyMCwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjMwLCJmYWRlIjoxNH19",
+      "image": "assets/photos/r/cafe.jpg",
+      "imageBefore": "assets/photos/r/cafe-before.jpg",
+      "photoCredit": "Jei Lee"
     },
     {
       "id": "walk",
@@ -40,7 +46,10 @@
         "필름"
       ],
       "accent": "#9DB38A",
-      "payload": "eyJ2IjoxLCJuIjoi64-Z64SkIOyCsOyxhSIsImsiOjAuMywicCI6eyJjb250cmFzdCI6OCwic2F0dXJhdGlvbiI6LTQsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjQsImhzbC5vcmFuZ2Uuc2F0IjotNCwiaHNsLm9yYW5nZS5sdW0iOjYsImhzbC5ncmVlbi5odWUiOjIyLCJoc2wuZ3JlZW4uc2F0IjotMzAsImhzbC5ncmVlbi5sdW0iOi00LCJoc2wuYXF1YS5zYXQiOi0xNSwiaHNsLmJsdWUuaHVlIjotMTAsImhzbC5ibHVlLnNhdCI6LTE4LCJzaGFkb3dIdWUiOjE5MCwic2hhZG93U2F0IjoxNiwiaGlnaGxpZ2h0SHVlIjo0MCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjE2LCJncmFpblNpemUiOjQwLCJmYWRlIjoxMH19"
+      "payload": "eyJ2IjoxLCJuIjoi64-Z64SkIOyCsOyxhSIsImsiOjAuMywicCI6eyJjb250cmFzdCI6OCwic2F0dXJhdGlvbiI6LTQsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjQsImhzbC5vcmFuZ2Uuc2F0IjotNCwiaHNsLm9yYW5nZS5sdW0iOjYsImhzbC5ncmVlbi5odWUiOjIyLCJoc2wuZ3JlZW4uc2F0IjotMzAsImhzbC5ncmVlbi5sdW0iOi00LCJoc2wuYXF1YS5zYXQiOi0xNSwiaHNsLmJsdWUuaHVlIjotMTAsImhzbC5ibHVlLnNhdCI6LTE4LCJzaGFkb3dIdWUiOjE5MCwic2hhZG93U2F0IjoxNiwiaGlnaGxpZ2h0SHVlIjo0MCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjE2LCJncmFpblNpemUiOjQwLCJmYWRlIjoxMH19",
+      "image": "assets/photos/r/walk.jpg",
+      "imageBefore": "assets/photos/r/walk-before.jpg",
+      "photoCredit": "rawkkim"
     },
     {
       "id": "dinner",
@@ -54,7 +63,10 @@
         "따뜻한"
       ],
       "accent": "#E39A6E",
-      "payload": "eyJ2IjoxLCJuIjoi7KCA64WBIOyLne2DgSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjgsInZpYnJhbmNlIjoxNiwiaHNsLnJlZC5zYXQiOjgsImhzbC5vcmFuZ2UuaHVlIjotNCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC55ZWxsb3cuc2F0IjotNiwic2hhZG93SHVlIjoxNSwic2hhZG93U2F0Ijo4fX0"
+      "payload": "eyJ2IjoxLCJuIjoi7KCA64WBIOyLne2DgSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjgsInZpYnJhbmNlIjoxNiwiaHNsLnJlZC5zYXQiOjgsImhzbC5vcmFuZ2UuaHVlIjotNCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC55ZWxsb3cuc2F0IjotNiwic2hhZG93SHVlIjoxNSwic2hhZG93U2F0Ijo4fX0",
+      "image": "assets/photos/r/dinner.jpg",
+      "imageBefore": "assets/photos/r/dinner-before.jpg",
+      "photoCredit": "Markus Winkler"
     },
     {
       "id": "rainy",
@@ -68,7 +80,10 @@
         "필름"
       ],
       "accent": "#8E9EB0",
-      "payload": "eyJ2IjoxLCJuIjoi67mEIOyYpOuKlCDrgqAiLCJrIjowLjYsInAiOnsiY29udHJhc3QiOi00LCJzYXR1cmF0aW9uIjotMjQsIndhcm10aCI6LTEyLCJoc2wuZ3JlZW4uaHVlIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6LTQsInNoYWRvd0h1ZSI6MjE1LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjIwMCwiaGlnaGxpZ2h0U2F0Ijo0LCJncmFpbiI6MTIsImdyYWluU2l6ZSI6MzAsImZhZGUiOjE2fX0"
+      "payload": "eyJ2IjoxLCJuIjoi67mEIOyYpOuKlCDrgqAiLCJrIjowLjYsInAiOnsiY29udHJhc3QiOi00LCJzYXR1cmF0aW9uIjotMjQsIndhcm10aCI6LTEyLCJoc2wuZ3JlZW4uaHVlIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6LTQsInNoYWRvd0h1ZSI6MjE1LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjIwMCwiaGlnaGxpZ2h0U2F0Ijo0LCJncmFpbiI6MTIsImdyYWluU2l6ZSI6MzAsImZhZGUiOjE2fX0",
+      "image": "assets/photos/r/rainy.jpg",
+      "imageBefore": "assets/photos/r/rainy-before.jpg",
+      "photoCredit": "Anandu Vinod"
     },
     {
       "id": "film-afternoon",
@@ -81,7 +96,10 @@
         "따뜻한"
       ],
       "accent": "#D9A86C",
-      "payload": "eyJ2IjoxLCJuIjoi7ZWE66aEIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTEyLCJzaGFkb3dzIjo2LCJjb250cmFzdCI6Niwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wuZ3JlZW4uaHVlIjoxNCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJjdXJ2ZS5tYXN0ZXIuMCI6OCwiY3VydmUubWFzdGVyLjQiOi02LCJzaGFkb3dIdWUiOjE2NSwic2hhZG93U2F0IjoxNCwiaGlnaGxpZ2h0SHVlIjo0MiwiaGlnaGxpZ2h0U2F0IjoyMCwiZ3JhaW4iOjIyLCJncmFpblNpemUiOjQ1LCJmYWRlIjoxOH19"
+      "payload": "eyJ2IjoxLCJuIjoi7ZWE66aEIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTEyLCJzaGFkb3dzIjo2LCJjb250cmFzdCI6Niwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wuZ3JlZW4uaHVlIjoxNCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJjdXJ2ZS5tYXN0ZXIuMCI6OCwiY3VydmUubWFzdGVyLjQiOi02LCJzaGFkb3dIdWUiOjE2NSwic2hhZG93U2F0IjoxNCwiaGlnaGxpZ2h0SHVlIjo0MiwiaGlnaGxpZ2h0U2F0IjoyMCwiZ3JhaW4iOjIyLCJncmFpblNpemUiOjQ1LCJmYWRlIjoxOH19",
+      "image": "assets/photos/r/film-afternoon.jpg",
+      "imageBefore": "assets/photos/r/film-afternoon-before.jpg",
+      "photoCredit": "Tammy Taabassum"
     },
     {
       "id": "clear-sky",
@@ -94,7 +112,10 @@
         "밝은"
       ],
       "accent": "#8CC4E8",
-      "payload": "eyJ2IjoxLCJuIjoi7LKt65-J7ZWcIO2VmOuKmCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NCwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6MTAsInZpYnJhbmNlIjoxOCwid2FybXRoIjotNiwidGludCI6LTIsInNoYXJwbmVzcyI6OCwiaHNsLmdyZWVuLnNhdCI6LTYsImhzbC5hcXVhLmh1ZSI6LTYsImhzbC5hcXVhLnNhdCI6MTIsImhzbC5ibHVlLnNhdCI6MTYsImhzbC5ibHVlLmx1bSI6LTgsImN1cnZlLmJsdWUuMyI6NCwiaGlnaGxpZ2h0SHVlIjoxOTUsImhpZ2hsaWdodFNhdCI6OH19"
+      "payload": "eyJ2IjoxLCJuIjoi7LKt65-J7ZWcIO2VmOuKmCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NCwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6MTAsInZpYnJhbmNlIjoxOCwid2FybXRoIjotNiwidGludCI6LTIsInNoYXJwbmVzcyI6OCwiaHNsLmdyZWVuLnNhdCI6LTYsImhzbC5hcXVhLmh1ZSI6LTYsImhzbC5hcXVhLnNhdCI6MTIsImhzbC5ibHVlLnNhdCI6MTYsImhzbC5ibHVlLmx1bSI6LTgsImN1cnZlLmJsdWUuMyI6NCwiaGlnaGxpZ2h0SHVlIjoxOTUsImhpZ2hsaWdodFNhdCI6OH19",
+      "image": "assets/photos/r/clear-sky.jpg",
+      "imageBefore": "assets/photos/r/clear-sky-before.jpg",
+      "photoCredit": "GWANGJIN GO"
     },
     {
       "id": "night-walk",
@@ -108,7 +129,10 @@
         "필름"
       ],
       "accent": "#7A86C8",
-      "payload": "eyJ2IjoxLCJuIjoi67CkIOyCsOyxhSIsImsiOjAuNSwicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxNCwiY29udHJhc3QiOjEwLCJibGFja1BvaW50Ijo2LCJzYXR1cmF0aW9uIjotMTAsIndhcm10aCI6LTQsInZpZ25ldHRlIjotMTQsImhzbC5vcmFuZ2Uuc2F0IjoxMCwiaHNsLnllbGxvdy5zYXQiOi04LCJoc2wuYmx1ZS5sdW0iOi0xMCwic2hhZG93SHVlIjoyMjUsInNoYWRvd1NhdCI6MjQsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MjIsImJhbGFuY2UiOi0xMCwiZ3JhaW4iOjE4LCJncmFpblNpemUiOjM1fX0"
+      "payload": "eyJ2IjoxLCJuIjoi67CkIOyCsOyxhSIsImsiOjAuNSwicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxNCwiY29udHJhc3QiOjEwLCJibGFja1BvaW50Ijo2LCJzYXR1cmF0aW9uIjotMTAsIndhcm10aCI6LTQsInZpZ25ldHRlIjotMTQsImhzbC5vcmFuZ2Uuc2F0IjoxMCwiaHNsLnllbGxvdy5zYXQiOi04LCJoc2wuYmx1ZS5sdW0iOi0xMCwic2hhZG93SHVlIjoyMjUsInNoYWRvd1NhdCI6MjQsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MjIsImJhbGFuY2UiOi0xMCwiZ3JhaW4iOjE4LCJncmFpblNpemUiOjM1fX0",
+      "image": "assets/photos/r/night-walk.jpg",
+      "imageBefore": "assets/photos/r/night-walk-before.jpg",
+      "photoCredit": "Evgeny Matveev"
     },
     {
       "id": "cherry-blossom",
@@ -121,7 +145,10 @@
         "밝은"
       ],
       "accent": "#F2B8C6",
-      "payload": "eyJ2IjoxLCJuIjoi67Ka6r2D6ri4IiwiayI6MC4zLCJwIjp7ImV4cG9zdXJlIjoxMiwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6LTE0LCJicmlnaHRuZXNzIjoxNCwidmlicmFuY2UiOjgsInRpbnQiOjYsImhzbC5yZWQuaHVlIjoxNCwiaHNsLnJlZC5zYXQiOi0xMCwiaHNsLnJlZC5sdW0iOjE2LCJoc2wuZ3JlZW4uaHVlIjoxNiwiaHNsLmdyZWVuLnNhdCI6LTM4LCJoc2wuZ3JlZW4ubHVtIjoxNCwiaHNsLmJsdWUuc2F0IjotMTYsImhzbC5ibHVlLmx1bSI6MTAsImhzbC5wdXJwbGUuaHVlIjoxMCwiaHNsLm1hZ2VudGEuaHVlIjotMTYsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTgsInNoYWRvd0h1ZSI6MjI1LCJzaGFkb3dTYXQiOjEyLCJoaWdobGlnaHRIdWUiOjM0MCwiaGlnaGxpZ2h0U2F0IjoxOCwiZmFkZSI6Nn19"
+      "payload": "eyJ2IjoxLCJuIjoi67Ka6r2D6ri4IiwiayI6MC4zLCJwIjp7ImV4cG9zdXJlIjoxMiwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6LTE0LCJicmlnaHRuZXNzIjoxNCwidmlicmFuY2UiOjgsInRpbnQiOjYsImhzbC5yZWQuaHVlIjoxNCwiaHNsLnJlZC5zYXQiOi0xMCwiaHNsLnJlZC5sdW0iOjE2LCJoc2wuZ3JlZW4uaHVlIjoxNiwiaHNsLmdyZWVuLnNhdCI6LTM4LCJoc2wuZ3JlZW4ubHVtIjoxNCwiaHNsLmJsdWUuc2F0IjotMTYsImhzbC5ibHVlLmx1bSI6MTAsImhzbC5wdXJwbGUuaHVlIjoxMCwiaHNsLm1hZ2VudGEuaHVlIjotMTYsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTgsInNoYWRvd0h1ZSI6MjI1LCJzaGFkb3dTYXQiOjEyLCJoaWdobGlnaHRIdWUiOjM0MCwiaGlnaGxpZ2h0U2F0IjoxOCwiZmFkZSI6Nn19",
+      "image": "assets/photos/r/cherry-blossom.jpg",
+      "imageBefore": "assets/photos/r/cherry-blossom-before.jpg",
+      "photoCredit": "Cecelia Chang"
     },
     {
       "id": "river-sunset",
@@ -134,7 +161,10 @@
         "따뜻한"
       ],
       "accent": "#E8956A",
-      "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuODUsInAiOnsiaGlnaGxpZ2h0cyI6LTIwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjEwLCJ2aWJyYW5jZSI6MTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2Uuc2F0IjoxOCwiaHNsLm9yYW5nZS5sdW0iOjQsImhzbC55ZWxsb3cuaHVlIjotMTIsImhzbC55ZWxsb3cuc2F0Ijo2LCJoc2wuYmx1ZS5odWUiOjE2LCJoc2wuYmx1ZS5zYXQiOi0xMiwiaHNsLnB1cnBsZS5zYXQiOjE2LCJzaGFkb3dIdWUiOjI1NSwic2hhZG93U2F0IjozNCwiaGlnaGxpZ2h0SHVlIjoyOCwiaGlnaGxpZ2h0U2F0IjozMCwiYmFsYW5jZSI6LTEyfX0"
+      "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuODUsInAiOnsiaGlnaGxpZ2h0cyI6LTIwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjEwLCJ2aWJyYW5jZSI6MTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2Uuc2F0IjoxOCwiaHNsLm9yYW5nZS5sdW0iOjQsImhzbC55ZWxsb3cuaHVlIjotMTIsImhzbC55ZWxsb3cuc2F0Ijo2LCJoc2wuYmx1ZS5odWUiOjE2LCJoc2wuYmx1ZS5zYXQiOi0xMiwiaHNsLnB1cnBsZS5zYXQiOjE2LCJzaGFkb3dIdWUiOjI1NSwic2hhZG93U2F0IjozNCwiaGlnaGxpZ2h0SHVlIjoyOCwiaGlnaGxpZ2h0U2F0IjozMCwiYmFsYW5jZSI6LTEyfX0",
+      "image": "assets/photos/r/river-sunset.jpg",
+      "imageBefore": "assets/photos/r/river-sunset-before.jpg",
+      "photoCredit": "Dylan LEE"
     },
     {
       "id": "first-snow",
@@ -148,7 +178,10 @@
         "차분한"
       ],
       "accent": "#C9D6E3",
-      "payload": "eyJ2IjoxLCJuIjoi7LKr64iIIOyVhOy5qCIsImsiOjAuMTUsInAiOnsiZXhwb3N1cmUiOjE2LCJoaWdobGlnaHRzIjotMjAsImNvbnRyYXN0IjotMTAsImJyaWdodG5lc3MiOjEwLCJibGFja1BvaW50IjotNiwic2F0dXJhdGlvbiI6LTI0LCJ3YXJtdGgiOi02LCJoc2wub3JhbmdlLnNhdCI6NiwiaHNsLm9yYW5nZS5sdW0iOjgsImhzbC5ncmVlbi5zYXQiOi0zMCwiaHNsLmJsdWUuc2F0IjotMTgsInNoYWRvd0h1ZSI6MjEwLCJzaGFkb3dTYXQiOjE4LCJoaWdobGlnaHRIdWUiOjUwLCJoaWdobGlnaHRTYXQiOjYsImZhZGUiOjE0fX0"
+      "payload": "eyJ2IjoxLCJuIjoi7LKr64iIIOyVhOy5qCIsImsiOjAuMTUsInAiOnsiZXhwb3N1cmUiOjE2LCJoaWdobGlnaHRzIjotMjAsImNvbnRyYXN0IjotMTAsImJyaWdodG5lc3MiOjEwLCJibGFja1BvaW50IjotNiwic2F0dXJhdGlvbiI6LTI0LCJ3YXJtdGgiOi02LCJoc2wub3JhbmdlLnNhdCI6NiwiaHNsLm9yYW5nZS5sdW0iOjgsImhzbC5ncmVlbi5zYXQiOi0zMCwiaHNsLmJsdWUuc2F0IjotMTgsInNoYWRvd0h1ZSI6MjEwLCJzaGFkb3dTYXQiOjE4LCJoaWdobGlnaHRIdWUiOjUwLCJoaWdobGlnaHRTYXQiOjYsImZhZGUiOjE0fX0",
+      "image": "assets/photos/r/first-snow.jpg",
+      "imageBefore": "assets/photos/r/first-snow-before.jpg",
+      "photoCredit": "insung yoon"
     },
     {
       "id": "bw-diary",
@@ -161,7 +194,10 @@
         "차분한"
       ],
       "accent": "#9A9A9A",
-      "payload": "eyJ2IjoxLCJuIjoi7Z2R67CxIOydvOq4sCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMTIsInNoYWRvd3MiOjEwLCJjb250cmFzdCI6MTIsImJsYWNrUG9pbnQiOjQsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjotMTAsImhzbC5yZWQubHVtIjo0LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmdyZWVuLmx1bSI6LTYsImhzbC5ibHVlLmx1bSI6LTE0LCJjdXJ2ZS5tYXN0ZXIuMSI6LTQsImN1cnZlLm1hc3Rlci4zIjo0LCJncmFpbiI6MjQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjEwfX0"
+      "payload": "eyJ2IjoxLCJuIjoi7Z2R67CxIOydvOq4sCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMTIsInNoYWRvd3MiOjEwLCJjb250cmFzdCI6MTIsImJsYWNrUG9pbnQiOjQsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjotMTAsImhzbC5yZWQubHVtIjo0LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmdyZWVuLmx1bSI6LTYsImhzbC5ibHVlLmx1bSI6LTE0LCJjdXJ2ZS5tYXN0ZXIuMSI6LTQsImN1cnZlLm1hc3Rlci4zIjo0LCJncmFpbiI6MjQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjEwfX0",
+      "image": "assets/photos/r/bw-diary.jpg",
+      "imageBefore": "assets/photos/r/bw-diary-before.jpg",
+      "photoCredit": "H&CO"
     },
     {
       "id": "autumn-alley",
@@ -175,7 +211,10 @@
         "필름"
       ],
       "accent": "#C8803E",
-      "payload": "eyJ2IjoxLCJuIjoi6rCA7J2EIOqzqOuqqSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJjb250cmFzdCI6MTAsInNhdHVyYXRpb24iOi00LCJ2aWJyYW5jZSI6MTQsIndhcm10aCI6MjAsImhzbC5yZWQuc2F0IjoxNiwiaHNsLm9yYW5nZS5zYXQiOjI2LCJoc2wub3JhbmdlLmx1bSI6LTYsImhzbC55ZWxsb3cuaHVlIjotMTgsImhzbC55ZWxsb3cuc2F0IjoxNiwiaHNsLmdyZWVuLmh1ZSI6LTI0LCJoc2wuZ3JlZW4uc2F0IjotNDgsImhzbC5ncmVlbi5sdW0iOi0xMCwiaHNsLmFxdWEuc2F0IjotMjAsImhzbC5ibHVlLnNhdCI6LTIyLCJzaGFkb3dIdWUiOjI4LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjQwLCJoaWdobGlnaHRTYXQiOjI2LCJncmFpbiI6MTQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjh9fQ"
+      "payload": "eyJ2IjoxLCJuIjoi6rCA7J2EIOqzqOuqqSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJjb250cmFzdCI6MTAsInNhdHVyYXRpb24iOi00LCJ2aWJyYW5jZSI6MTQsIndhcm10aCI6MjAsImhzbC5yZWQuc2F0IjoxNiwiaHNsLm9yYW5nZS5zYXQiOjI2LCJoc2wub3JhbmdlLmx1bSI6LTYsImhzbC55ZWxsb3cuaHVlIjotMTgsImhzbC55ZWxsb3cuc2F0IjoxNiwiaHNsLmdyZWVuLmh1ZSI6LTI0LCJoc2wuZ3JlZW4uc2F0IjotNDgsImhzbC5ncmVlbi5sdW0iOi0xMCwiaHNsLmFxdWEuc2F0IjotMjAsImhzbC5ibHVlLnNhdCI6LTIyLCJzaGFkb3dIdWUiOjI4LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjQwLCJoaWdobGlnaHRTYXQiOjI2LCJncmFpbiI6MTQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjh9fQ",
+      "image": "assets/photos/r/autumn-alley.jpg",
+      "imageBefore": "assets/photos/r/autumn-alley-before.jpg",
+      "photoCredit": "insung yoon"
     },
     {
       "id": "old-album",
@@ -187,7 +226,10 @@
         "따뜻한"
       ],
       "accent": "#C9A27A",
-      "payload": "eyJ2IjoxLCJuIjoi7Jik656Y65CcIOyVqOuylCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMTQsImNvbnRyYXN0IjotNiwic2F0dXJhdGlvbiI6LTIwLCJ3YXJtdGgiOjE0LCJ0aW50Ijo4LCJ2aWduZXR0ZSI6LTEyLCJoc2wucmVkLnNhdCI6LTEwLCJoc2wuZ3JlZW4uaHVlIjotOCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuYmx1ZS5odWUiOi0xNCwiaHNsLmJsdWUuc2F0IjotMzAsImN1cnZlLm1hc3Rlci4wIjoxNCwiY3VydmUubWFzdGVyLjQiOi0xMCwic2hhZG93SHVlIjoxNTAsInNoYWRvd1NhdCI6MjgsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MzAsImdyYWluIjozNiwiZ3JhaW5TaXplIjo2MCwiZmFkZSI6MzZ9fQ"
+      "payload": "eyJ2IjoxLCJuIjoi7Jik656Y65CcIOyVqOuylCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMTQsImNvbnRyYXN0IjotNiwic2F0dXJhdGlvbiI6LTIwLCJ3YXJtdGgiOjE0LCJ0aW50Ijo4LCJ2aWduZXR0ZSI6LTEyLCJoc2wucmVkLnNhdCI6LTEwLCJoc2wuZ3JlZW4uaHVlIjotOCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuYmx1ZS5odWUiOi0xNCwiaHNsLmJsdWUuc2F0IjotMzAsImN1cnZlLm1hc3Rlci4wIjoxNCwiY3VydmUubWFzdGVyLjQiOi0xMCwic2hhZG93SHVlIjoxNTAsInNoYWRvd1NhdCI6MjgsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MzAsImdyYWluIjozNiwiZ3JhaW5TaXplIjo2MCwiZmFkZSI6MzZ9fQ",
+      "image": "assets/photos/r/old-album.jpg",
+      "imageBefore": "assets/photos/r/old-album-before.jpg",
+      "photoCredit": "Jean Carlo Emer"
     },
     {
       "id": "green-forest",
@@ -200,7 +242,10 @@
         "차분한"
       ],
       "accent": "#6F9A6A",
-      "payload": "eyJ2IjoxLCJuIjoi7Iiy7IaNIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTE0LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6MTIsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6OCwid2FybXRoIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTgsImhzbC55ZWxsb3cuc2F0IjotOCwiaHNsLmdyZWVuLmh1ZSI6OCwiaHNsLmdyZWVuLnNhdCI6LTE2LCJoc2wuZ3JlZW4ubHVtIjotMTgsImhzbC5hcXVhLnNhdCI6LTIwLCJoc2wuYmx1ZS5zYXQiOi0xNCwiaHNsLmJsdWUubHVtIjotNiwic2hhZG93SHVlIjoxNzUsInNoYWRvd1NhdCI6MjIsImhpZ2hsaWdodEh1ZSI6NDgsImhpZ2hsaWdodFNhdCI6MjJ9fQ"
+      "payload": "eyJ2IjoxLCJuIjoi7Iiy7IaNIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTE0LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6MTIsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6OCwid2FybXRoIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTgsImhzbC55ZWxsb3cuc2F0IjotOCwiaHNsLmdyZWVuLmh1ZSI6OCwiaHNsLmdyZWVuLnNhdCI6LTE2LCJoc2wuZ3JlZW4ubHVtIjotMTgsImhzbC5hcXVhLnNhdCI6LTIwLCJoc2wuYmx1ZS5zYXQiOi0xNCwiaHNsLmJsdWUubHVtIjotNiwic2hhZG93SHVlIjoxNzUsInNoYWRvd1NhdCI6MjIsImhpZ2hsaWdodEh1ZSI6NDgsImhpZ2hsaWdodFNhdCI6MjJ9fQ",
+      "image": "assets/photos/r/green-forest.jpg",
+      "imageBefore": "assets/photos/r/green-forest-before.jpg",
+      "photoCredit": "Jaeyoung Geoffrey Kang"
     }
   ]
 }

@@ -438,3 +438,20 @@ section { padding-block: 72px 0; }
 @media (prefers-reduced-motion: reduce) { .shot img, .tshot img { transition: none; } }
 .teaser { grid-template-columns: 1fr; }
 .teaser-shots { margin-top: 0; }
+.r-card .shot { aspect-ratio: 4 / 5; }
+.shot .credit {
+  position: absolute; right: 8px; bottom: 8px; font-size: 11px; padding: 2px 7px; border-radius: 999px;
+  background: rgba(14, 14, 15, .5); color: rgba(244, 244, 245, .8); pointer-events: none;
+}
+.recipe-hero .swatch.shot { aspect-ratio: 4 / 5; }
+/* Recipe page with an example photo: give the photo room. */
+.recipe-hero:has(.swatch.shot) { grid-template-columns: minmax(220px, 300px) 1fr; }
+.recipe-hero .swatch.shot { aspect-ratio: 4 / 5; overflow: hidden; }
+@media (max-width: 760px) {
+  .recipe-hero:has(.swatch.shot) { grid-template-columns: 1fr; }
+  .recipe-hero .swatch.shot { aspect-ratio: 4 / 5; }
+  /* Tags scroll sideways instead of stacking five rows above the photos. */
+  .toolbar .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); }
+  .toolbar .chips::-webkit-scrollbar { display: none; }
+  .toolbar .chips > * { flex: none; }
+}

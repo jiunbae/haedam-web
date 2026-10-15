@@ -76,6 +76,10 @@ def build():
             "accent": r["accent"],
             "payload": encode(r["name"], r["keepCast"], r["params"]),
         })
+        # Example photo (paths relative to the site root; the app prefixes its web base).
+        if "photo" in r:
+            recipes[-1].update({"image": r["photo"]["image"], "imageBefore": r["photo"]["before"],
+                                "photoCredit": r["photo"]["credit"]})
     feed = {"version": 1, "updated": src["updated"], "recipes": recipes}
     return json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
 

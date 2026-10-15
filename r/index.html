@@ -103,7 +103,30 @@
 
     var count = Object.keys(recipe.params).length;
     $("meta").textContent = "조정한 항목 " + count + "개 · 원래 색 유지 " + Math.round(recipe.keepCast * 100) + "%";
-    $("swatch").style.background = R.swatch(recipe.params);
+    var sw = $("swatch");
+    sw.style.background = R.swatch(recipe.params);
+    sw.textContent = "";
+    // Community recipes come with an example photo; show it when this link is one of them.
+    fetch("../community/feed.json", { cache: "no-cache" }).then(function (res) { return res.json(); }).then(function (feed) {
+      var hit = (feed.recipes || []).filter(function (r) { return r.payload === payload; })[0];
+      var ok = function (p) { return typeof p === "string" && /^assets\/photos\/[a-z0-9\/-]+\.jpg$/.test(p); };
+      if (!hit || !ok(hit.image) || location.hash.replace(/^#/, "") !== payload) return;
+      sw.classList.add("shot");
+      sw.tabIndex = 0;
+      sw.setAttribute("aria-label", recipe.name + " 보정 예시, 누르고 있으면 원본");
+      var img = document.createElement("img"); img.src = "../" + hit.image; img.alt = recipe.name + " 레시피를 입힌 사진";
+      sw.appendChild(img);
+      if (ok(hit.imageBefore)) {
+        var before = document.createElement("img"); before.className = "before"; before.src = "../" + hit.imageBefore; before.alt = "";
+        sw.appendChild(before);
+        var hint = document.createElement("span"); hint.className = "hint"; hint.textContent = "누르고 있으면 원본";
+        sw.appendChild(hint);
+        var on = function () { sw.classList.add("show-before"); }, off = function () { sw.classList.remove("show-before"); };
+        sw.addEventListener("pointerdown", on);
+        ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { sw.addEventListener(t, off); });
+        sw.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+      }
+    }).catch(function () {});
     $("open-app").href = "haedam://recipe#" + payload;
 
     var box = $("groups");

@@ -12,3 +12,17 @@
 | river-sunset-* | https://unsplash.com/photos/UGFgK7OQT6I | Dylan LEE |
 | night-walk-* | https://unsplash.com/photos/gSxdqdGFeos | Evgeny Matveev |
 | bw-diary-* | https://unsplash.com/photos/-qJWAGJ5Zvs | H&CO |
+
+## 커뮤니티 레시피 예시 (`r/<레시피 id>.jpg`, 원본은 `-before.jpg`)
+
+위 사진에 더해 아래 사진을 썼어요.
+
+| 레시피 | 사진 | 작가 |
+|---|---|---|
+| film-afternoon | https://unsplash.com/photos/fwbHcgSBqx4 | Tammy Taabassum |
+| clear-sky | https://unsplash.com/photos/wRw8h6kd1Ms | GWANGJIN GO |
+| cherry-blossom | https://unsplash.com/photos/RYzm7LppBII | Cecelia Chang |
+| first-snow | https://unsplash.com/photos/irHeGL0qmCo | insung yoon |
+| autumn-alley | https://unsplash.com/photos/V-5rjLD3LEc | insung yoon |
+| old-album | https://unsplash.com/photos/Bl4UcgDG3fE | Jean Carlo Emer |
+| green-forest | https://unsplash.com/photos/N4ETYndHg_A | Jaeyoung Geoffrey Kang |

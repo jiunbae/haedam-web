@@ -29,6 +29,11 @@
         "hsl.blue.hue": -6,
         "hsl.blue.sat": -10,
         "hsl.blue.lum": 6
+      },
+      "photo": {
+        "image": "assets/photos/r/morning.jpg",
+        "before": "assets/photos/r/morning-before.jpg",
+        "credit": "Dohyuk You"
       }
     },
     {
@@ -63,6 +68,11 @@
         "hsl.yellow.sat": -10,
         "hsl.green.hue": 10,
         "hsl.green.sat": -25
+      },
+      "photo": {
+        "image": "assets/photos/r/cafe.jpg",
+        "before": "assets/photos/r/cafe-before.jpg",
+        "credit": "Jei Lee"
       }
     },
     {
@@ -97,6 +107,11 @@
         "hsl.blue.sat": -18,
         "hsl.orange.sat": -4,
         "hsl.orange.lum": 6
+      },
+      "photo": {
+        "image": "assets/photos/r/walk.jpg",
+        "before": "assets/photos/r/walk-before.jpg",
+        "credit": "rawkkim"
       }
     },
     {
@@ -125,6 +140,11 @@
         "hsl.orange.lum": 6,
         "hsl.yellow.hue": -6,
         "hsl.yellow.sat": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/dinner.jpg",
+        "before": "assets/photos/r/dinner-before.jpg",
+        "credit": "Markus Winkler"
       }
     },
     {
@@ -157,6 +177,11 @@
         "hsl.green.hue": 10,
         "hsl.green.sat": -20,
         "hsl.green.lum": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/rainy.jpg",
+        "before": "assets/photos/r/rainy-before.jpg",
+        "credit": "Anandu Vinod"
       }
     },
     {
@@ -189,6 +214,11 @@
         "hsl.green.hue": 14,
         "hsl.green.sat": -18,
         "hsl.orange.lum": 6
+      },
+      "photo": {
+        "image": "assets/photos/r/film-afternoon.jpg",
+        "before": "assets/photos/r/film-afternoon-before.jpg",
+        "credit": "Tammy Taabassum"
       }
     },
     {
@@ -219,6 +249,11 @@
         "hsl.aqua.hue": -6,
         "hsl.aqua.sat": 12,
         "hsl.green.sat": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/clear-sky.jpg",
+        "before": "assets/photos/r/clear-sky-before.jpg",
+        "credit": "GWANGJIN GO"
       }
     },
     {
@@ -253,6 +288,11 @@
         "hsl.orange.sat": 10,
         "hsl.yellow.sat": -8,
         "hsl.blue.lum": -10
+      },
+      "photo": {
+        "image": "assets/photos/r/night-walk.jpg",
+        "before": "assets/photos/r/night-walk-before.jpg",
+        "credit": "Evgeny Matveev"
       }
     },
     {
@@ -291,6 +331,11 @@
         "hsl.green.lum": 14,
         "hsl.blue.sat": -16,
         "hsl.blue.lum": 10
+      },
+      "photo": {
+        "image": "assets/photos/r/cherry-blossom.jpg",
+        "before": "assets/photos/r/cherry-blossom-before.jpg",
+        "credit": "Cecelia Chang"
       }
     },
     {
@@ -323,6 +368,11 @@
         "hsl.blue.hue": 16,
         "hsl.blue.sat": -12,
         "hsl.purple.sat": 16
+      },
+      "photo": {
+        "image": "assets/photos/r/river-sunset.jpg",
+        "before": "assets/photos/r/river-sunset-before.jpg",
+        "credit": "Dylan LEE"
       }
     },
     {
@@ -355,6 +405,11 @@
         "hsl.orange.lum": 8,
         "hsl.blue.sat": -18,
         "hsl.green.sat": -30
+      },
+      "photo": {
+        "image": "assets/photos/r/first-snow.jpg",
+        "before": "assets/photos/r/first-snow-before.jpg",
+        "credit": "insung yoon"
       }
     },
     {
@@ -385,6 +440,11 @@
         "hsl.red.lum": 4,
         "hsl.blue.lum": -14,
         "hsl.green.lum": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/bw-diary.jpg",
+        "before": "assets/photos/r/bw-diary-before.jpg",
+        "credit": "H&CO"
       }
     },
     {
@@ -423,6 +483,11 @@
         "hsl.green.lum": -10,
         "hsl.aqua.sat": -20,
         "hsl.blue.sat": -22
+      },
+      "photo": {
+        "image": "assets/photos/r/autumn-alley.jpg",
+        "before": "assets/photos/r/autumn-alley-before.jpg",
+        "credit": "insung yoon"
       }
     },
     {
@@ -457,6 +522,11 @@
         "hsl.blue.sat": -30,
         "hsl.green.hue": -8,
         "hsl.green.sat": -20
+      },
+      "photo": {
+        "image": "assets/photos/r/old-album.jpg",
+        "before": "assets/photos/r/old-album-before.jpg",
+        "credit": "Jean Carlo Emer"
       }
     },
     {
@@ -490,6 +560,11 @@
         "hsl.aqua.sat": -20,
         "hsl.blue.sat": -14,
         "hsl.blue.lum": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/green-forest.jpg",
+        "before": "assets/photos/r/green-forest-before.jpg",
+        "credit": "Jaeyoung Geoffrey Kang"
       }
     }
   ]

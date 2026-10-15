@@ -41,6 +41,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span id="updated">© 2026 해담</span>
+    <span>예시 사진: Unsplash</span>
     <a href="../privacy/">개인정보 처리방침</a>
     <a href="../">홈으로</a>
   </div>
@@ -68,12 +69,40 @@
       "linear-gradient(150deg, " + hex + "cc 0%, " + hex + "55 45%, #1A1A1C 100%)";
   }
 
+  function validImage(p) { return typeof p === "string" && /^assets\/photos\/[a-z0-9\/-]+\.jpg$/.test(p); }
+
+  function holdToCompare(node) {
+    function on() { node.classList.add("show-before"); }
+    function off() { node.classList.remove("show-before"); }
+    node.addEventListener("pointerdown", on);
+    ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { node.addEventListener(t, off); });
+    node.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); on(); } });
+    node.addEventListener("keyup", off);
+    node.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+  }
+
   function card(r) {
     var a = el("article", "card r-card");
-    var sw = el("div", "swatch");
-    sw.style.background = accentGradient(validHex(r.accent));
-    sw.setAttribute("aria-hidden", "true");
-    a.appendChild(sw);
+    if (validImage(r.image)) {
+      var shot = el("div", "shot");
+      shot.tabIndex = 0;
+      shot.setAttribute("aria-label", r.name + " 보정 예시, 누르고 있으면 원본");
+      var img = el("img"); img.src = "../" + r.image; img.alt = r.name + " 레시피를 입힌 사진"; img.loading = "lazy";
+      shot.appendChild(img);
+      if (validImage(r.imageBefore)) {
+        var before = el("img", "before"); before.src = "../" + r.imageBefore; before.alt = ""; before.loading = "lazy";
+        shot.appendChild(before);
+        shot.appendChild(el("span", "hint", "누르고 있으면 원본"));
+        holdToCompare(shot);
+      }
+      if (r.photoCredit) shot.appendChild(el("span", "credit", "사진 " + r.photoCredit));
+      a.appendChild(shot);
+    } else {
+      var sw = el("div", "swatch");
+      sw.style.background = accentGradient(validHex(r.accent));
+      sw.setAttribute("aria-hidden", "true");
+      a.appendChild(sw);
+    }
 
     var b = el("div", "body");
     b.appendChild(el("h3", null, r.name));
