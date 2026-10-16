@@ -200,6 +200,7 @@
     }
     after.hidden = true; canvas.hidden = false; base.hidden = false; $("pv-busy").hidden = false;
     $("pv-busy-text").textContent = "레시피 입히는 중"; $("pv-busy").classList.remove("done");
+    if ($("pv-timing")) $("pv-timing").textContent = "";
     shot.classList.add("loading");
     canvas.classList.remove("reveal"); canvas.style.clipPath = "inset(0 100% 0 0)";
     started = performance.now();
