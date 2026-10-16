@@ -31,11 +31,13 @@
     <div class="card recipe-hero">
       <div class="preview">
         <div class="shot" id="shot" tabindex="0" aria-label="레시피 미리보기, 누르고 있으면 원본">
+          <canvas id="pv-base" width="540" height="675" aria-hidden="true"></canvas>
           <canvas id="pv-canvas" width="540" height="675" aria-hidden="true"></canvas>
+          <span class="sweep" aria-hidden="true"></span>
           <img class="after" id="pv-after" alt="" hidden>
           <img class="before" id="pv-before" alt="">
           <span class="hint">누르고 있으면 원본</span>
-          <span class="busy" id="pv-busy" hidden>그리는 중…</span>
+          <span class="busy" id="pv-busy" hidden><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="pv-busy-text">레시피 입히는 중</span></span>
         </div>
         <div class="chips samples" id="samples" role="group" aria-label="예시 사진 고르기"></div>
       </div>
@@ -121,32 +123,43 @@
     before.src = "../assets/photos/r/" + sample.id + "-before.jpg";
     if (sample.prerendered) {
       after.src = "../" + sample.prerendered; after.alt = recipe.name + " 레시피를 입힌 사진"; after.hidden = false;
-      canvas.hidden = true; $("pv-busy").hidden = true;
+      canvas.hidden = true; $("pv-base").hidden = true; $("pv-busy").hidden = true; $("shot").classList.remove("loading");
       return;
     }
-    after.hidden = true; canvas.hidden = false; $("pv-busy").hidden = false; $("pv-busy").textContent = "그리는 중…";
+    var base = $("pv-base"), shot = $("shot");
+    after.hidden = true; canvas.hidden = false; base.hidden = false; $("pv-busy").hidden = false;
+    $("pv-busy-text").textContent = "레시피 입히는 중"; $("pv-busy").classList.remove("done");
+    shot.classList.add("loading");
+    canvas.classList.remove("reveal"); canvas.style.clipPath = "inset(0 100% 0 0)";
     var started = performance.now();
     loadImage(before.src).then(function (img) {
       if (id !== job) return;
-      canvas.getContext("2d").drawImage(img, 0, 0, 540, 675);  // the original until the recipe is drawn
+      base.getContext("2d").drawImage(img, 0, 0, 540, 675);  // the original until the recipe is drawn
       if (!worker) worker = new Worker("../assets/render-worker.js");
       worker.onmessage = function (e) {
         if (e.data.id !== job) return;
         canvas.getContext("2d").putImageData(new ImageData(e.data.rgba, e.data.w, e.data.h), 0, 0);
+        shot.classList.remove("loading");
+        // Wipe the recipe in from the left over the original.
+        void canvas.offsetWidth;
+        canvas.classList.add("reveal"); canvas.style.clipPath = "inset(0 0 0 0)";
         // ?timing=1 (device tests only) leaves the render time on screen.
         if (/[?&]timing=1/.test(location.search)) {
-          $("pv-busy").textContent = "완료 " + Math.round(performance.now() - started) + "ms";
+          $("pv-busy").classList.add("done");
+          $("pv-busy-text").textContent = "완료 " + Math.round(performance.now() - started) + "ms";
         } else {
           $("pv-busy").hidden = true;
         }
       };
       worker.postMessage({ id: id, px: pixels(img, 540, 675), w: 540, h: 675, small: pixels(img, 205, 256), sw: 205, sh: 256,
         params: recipe.params, keepCast: recipe.keepCast });
-    }).catch(function () { $("pv-busy").textContent = "사진을 불러오지 못했어요"; });
+    }).catch(function () { $("shot").classList.remove("loading"); $("pv-busy-text").textContent = "사진을 불러오지 못했어요"; });
   }
 
   function preview(recipe, payload) {
     current = recipe;
+    // Start the worker (and its render.js download) now, before the first photo arrives.
+    if (!worker && window.Worker) worker = new Worker("../assets/render-worker.js");
     var box = $("samples"), list = SAMPLES.map(function (s) { return { key: s.id, id: s.id, label: s.label }; });
     function draw() {
       box.textContent = "";
