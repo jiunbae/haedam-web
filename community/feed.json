@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-17",
   "recipes": [
     {
       "id": "morning",
@@ -187,14 +187,14 @@
       "id": "bw-diary",
       "name": "흑백 일기",
       "author": "해담 에디터",
-      "summary": "색을 덜어내고 빛만 남겨요. 부드러운 대비에 고운 입자로 오래된 일기장처럼.",
+      "summary": "색을 덜어낸 빛과 그림자. 또렷한 대비와 거친 입자로 흑백 일기처럼 담아요.",
       "tags": [
         "흑백",
         "필름",
         "차분한"
       ],
       "accent": "#9A9A9A",
-      "payload": "eyJ2IjoxLCJuIjoi7Z2R67CxIOydvOq4sCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMTIsInNoYWRvd3MiOjEwLCJjb250cmFzdCI6MTIsImJsYWNrUG9pbnQiOjQsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjotMTAsImhzbC5yZWQubHVtIjo0LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmdyZWVuLmx1bSI6LTYsImhzbC5ibHVlLmx1bSI6LTE0LCJjdXJ2ZS5tYXN0ZXIuMSI6LTQsImN1cnZlLm1hc3Rlci4zIjo0LCJncmFpbiI6MjQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjEwfX0",
+      "payload": "eyJ2IjoxLCJuIjoi7Z2R67CxIOydvOq4sCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMTIsInNoYWRvd3MiOjEwLCJjb250cmFzdCI6MjIsImJsYWNrUG9pbnQiOjQsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjoxMiwiaHNsLnJlZC5sdW0iOjQsImhzbC5vcmFuZ2UubHVtIjo4LCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUubHVtIjotMTQsImN1cnZlLm1hc3Rlci4xIjotNCwiY3VydmUubWFzdGVyLjMiOjQsImdyYWluIjozMiwiZ3JhaW5TaXplIjo0NSwiZmFkZSI6OH19",
       "image": "assets/photos/r/bw-diary.jpg",
       "imageBefore": "assets/photos/r/bw-diary-before.jpg",
       "photoCredit": "H&CO"
@@ -226,7 +226,7 @@
         "따뜻한"
       ],
       "accent": "#C9A27A",
-      "payload": "eyJ2IjoxLCJuIjoi7Jik656Y65CcIOyVqOuylCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMTQsImNvbnRyYXN0IjotNiwic2F0dXJhdGlvbiI6LTIwLCJ3YXJtdGgiOjE0LCJ0aW50Ijo4LCJ2aWduZXR0ZSI6LTEyLCJoc2wucmVkLnNhdCI6LTEwLCJoc2wuZ3JlZW4uaHVlIjotOCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuYmx1ZS5odWUiOi0xNCwiaHNsLmJsdWUuc2F0IjotMzAsImN1cnZlLm1hc3Rlci4wIjoxNCwiY3VydmUubWFzdGVyLjQiOi0xMCwic2hhZG93SHVlIjoxNTAsInNoYWRvd1NhdCI6MjgsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MzAsImdyYWluIjozNiwiZ3JhaW5TaXplIjo2MCwiZmFkZSI6MzZ9fQ",
+      "payload": "eyJ2IjoxLCJuIjoi7Jik656Y65CcIOyVqOuylCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMTQsImNvbnRyYXN0IjotNiwic2F0dXJhdGlvbiI6LTIwLCJ3YXJtdGgiOjE0LCJ0aW50Ijo4LCJ2aWduZXR0ZSI6MTIsImhzbC5yZWQuc2F0IjotMTAsImhzbC5ncmVlbi5odWUiOi04LCJoc2wuZ3JlZW4uc2F0IjotMjAsImhzbC5ibHVlLmh1ZSI6LTE0LCJoc2wuYmx1ZS5zYXQiOi0zMCwiY3VydmUubWFzdGVyLjAiOjE0LCJjdXJ2ZS5tYXN0ZXIuNCI6LTEwLCJzaGFkb3dIdWUiOjE1MCwic2hhZG93U2F0IjoyOCwiaGlnaGxpZ2h0SHVlIjozNSwiaGlnaGxpZ2h0U2F0IjozMCwiZ3JhaW4iOjM2LCJncmFpblNpemUiOjYwLCJmYWRlIjozNn19",
       "image": "assets/photos/r/old-album.jpg",
       "imageBefore": "assets/photos/r/old-album-before.jpg",
       "photoCredit": "Jean Carlo Emer"
@@ -246,6 +246,22 @@
       "image": "assets/photos/r/green-forest.jpg",
       "imageBefore": "assets/photos/r/green-forest-before.jpg",
       "photoCredit": "Jaeyoung Geoffrey Kang"
+    },
+    {
+      "id": "soft-pastel",
+      "name": "연한 봄빛",
+      "author": "해담 에디터",
+      "summary": "가벼운 대비, 연한 초록, 맑은 분홍빛. 밝은 일상과 봄날의 인물을 부드럽게 담아요.",
+      "tags": [
+        "파스텔",
+        "밝은",
+        "차분한"
+      ],
+      "accent": "#E9BECE",
+      "payload": "eyJ2IjoxLCJuIjoi7Jew7ZWcIOu0hOu5myIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTEyLCJjb250cmFzdCI6LTIwLCJicmlnaHRuZXNzIjoxMiwic2F0dXJhdGlvbiI6LTEyLCJ0aW50Ijo0LCJoc2wub3JhbmdlLnNhdCI6LTQsImhzbC5vcmFuZ2UubHVtIjo4LCJoc2wuZ3JlZW4uaHVlIjoxMiwiaHNsLmdyZWVuLnNhdCI6LTMyLCJoc2wuZ3JlZW4ubHVtIjoxNiwiaHNsLmJsdWUuc2F0IjotMjQsImhzbC5ibHVlLmx1bSI6MTQsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTIsInNoYWRvd0h1ZSI6MjIwLCJzaGFkb3dTYXQiOjgsImhpZ2hsaWdodEh1ZSI6MzM1LCJoaWdobGlnaHRTYXQiOjEwLCJmYWRlIjo0fX0",
+      "image": "assets/photos/r/soft-pastel.jpg",
+      "imageBefore": "assets/photos/r/cherry-blossom-before.jpg",
+      "photoCredit": "Cecelia Chang"
     }
   ]
 }

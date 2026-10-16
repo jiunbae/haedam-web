@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-17",
   "recipes": [
     {
       "id": "morning",
@@ -416,7 +416,7 @@
       "id": "bw-diary",
       "name": "흑백 일기",
       "author": "해담 에디터",
-      "summary": "색을 덜어내고 빛만 남겨요. 부드러운 대비에 고운 입자로 오래된 일기장처럼.",
+      "summary": "색을 덜어낸 빛과 그림자. 또렷한 대비와 거친 입자로 흑백 일기처럼 담아요.",
       "tags": [
         "흑백",
         "필름",
@@ -426,14 +426,14 @@
       "keepCast": 0.5,
       "params": {
         "saturation": -100,
-        "contrast": 12,
+        "contrast": 22,
         "highlights": -12,
         "shadows": 10,
-        "fade": 10,
+        "fade": 8,
         "blackPoint": 4,
-        "grain": 24,
-        "grainSize": 35,
-        "vignette": -10,
+        "grain": 32,
+        "grainSize": 45,
+        "vignette": 12,
         "curve.master.1": -4,
         "curve.master.3": 4,
         "hsl.orange.lum": 8,
@@ -514,7 +514,7 @@
         "highlightSat": 30,
         "grain": 36,
         "grainSize": 60,
-        "vignette": -12,
+        "vignette": 12,
         "curve.master.0": 14,
         "curve.master.4": -10,
         "hsl.red.sat": -10,
@@ -565,6 +565,46 @@
         "image": "assets/photos/r/green-forest.jpg",
         "before": "assets/photos/r/green-forest-before.jpg",
         "credit": "Jaeyoung Geoffrey Kang"
+      }
+    },
+    {
+      "id": "soft-pastel",
+      "name": "연한 봄빛",
+      "author": "해담 에디터",
+      "summary": "가벼운 대비, 연한 초록, 맑은 분홍빛. 밝은 일상과 봄날의 인물을 부드럽게 담아요.",
+      "tags": [
+        "파스텔",
+        "밝은",
+        "차분한"
+      ],
+      "accent": "#E9BECE",
+      "keepCast": 0.3,
+      "params": {
+        "exposure": 6,
+        "brightness": 12,
+        "contrast": -20,
+        "highlights": -12,
+        "saturation": -12,
+        "tint": 4,
+        "fade": 4,
+        "highlightHue": 335,
+        "highlightSat": 10,
+        "shadowHue": 220,
+        "shadowSat": 8,
+        "hsl.orange.sat": -4,
+        "hsl.orange.lum": 8,
+        "hsl.green.hue": 12,
+        "hsl.green.sat": -32,
+        "hsl.green.lum": 16,
+        "hsl.blue.sat": -24,
+        "hsl.blue.lum": 14,
+        "hsl.magenta.sat": -8,
+        "hsl.magenta.lum": 12
+      },
+      "photo": {
+        "image": "assets/photos/r/soft-pastel.jpg",
+        "before": "assets/photos/r/cherry-blossom-before.jpg",
+        "credit": "Cecelia Chang"
       }
     }
   ]

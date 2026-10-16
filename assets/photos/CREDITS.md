@@ -26,3 +26,5 @@
 | autumn-alley | https://unsplash.com/photos/V-5rjLD3LEc | insung yoon |
 | old-album | https://unsplash.com/photos/Bl4UcgDG3fE | Jean Carlo Emer |
 | green-forest | https://unsplash.com/photos/N4ETYndHg_A | Jaeyoung Geoffrey Kang |
+
+`r/soft-pastel.*`은 `cherry-blossom`과 같은 Cecelia Chang의 원본 사진을 사용해 연한 봄빛 룩으로 보정했어요.

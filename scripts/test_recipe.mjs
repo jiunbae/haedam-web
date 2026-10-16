@@ -35,7 +35,8 @@ const feed = JSON.parse(read("community/feed.json"));
 console.log("feed.json (" + feed.recipes.length + "개)");
 test("feed 형식", () => {
   assert.equal(feed.version, 1);
-  assert.equal(feed.updated, "2026-10-15");
+  assert.match(feed.updated, /^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(feed.updated, src.updated);
   assert.equal(feed.recipes.length, src.recipes.length);
   for (const r of feed.recipes) {
     for (const k of ["id", "name", "author", "summary", "tags", "accent", "payload"]) assert.ok(k in r, r.id + " 에 " + k + " 없음");

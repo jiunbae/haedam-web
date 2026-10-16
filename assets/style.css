@@ -186,7 +186,7 @@ section { padding-block: 72px 0; }
 /* ---------- 룩 카드 ---------- */
 .looks {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 .look { overflow: hidden; }
