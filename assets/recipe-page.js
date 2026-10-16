@@ -31,6 +31,21 @@
     return out;
   }
 
+  // After the first preview, fetch the other example photos quietly so switching skips
+  // the network round trip (~250 ms to GitHub Pages from a phone). Skipped with Save-Data.
+  var prefetched = false;
+  function prefetchSamples() {
+    if (prefetched) return;
+    prefetched = true;
+    if (navigator.connection && navigator.connection.saveData) return;
+    SAMPLES.forEach(function (s) {
+      var im = new Image();
+      im.decoding = "async";
+      if ("fetchPriority" in im) im.fetchPriority = "low";
+      im.src = "../assets/photos/r/" + s.id + "-before.jpg";
+    });
+  }
+
   function loadImage(src) {
     return new Promise(function (ok, fail) {
       var im = new Image(), timer = setTimeout(function () { im.src = ""; fail(new Error("image timeout")); }, 15000);
@@ -89,6 +104,7 @@
           shot.classList.remove("loading");
           void canvas.offsetWidth;
           canvas.classList.add("reveal"); canvas.style.clipPath = "inset(0 0 0 0)";
+          prefetchSamples();
           if (/[?&]timing=1/.test(location.search)) {
             $("pv-busy").classList.add("done");
             $("pv-busy-text").textContent = "완료 " + Math.round(performance.now() - started) + "ms";
