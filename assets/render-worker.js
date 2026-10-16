@@ -14,6 +14,11 @@ function pixels(canvas, image, w, h) {
 }
 self.onmessage = function (e) {
   var d = e.data;
+  if (d.key === "warm" && self.OffscreenCanvas) {
+    // Also warm the canvas path the first real photo takes (context creation is slow once).
+    try { var c = new OffscreenCanvas(8, 8), x = c.getContext("2d", { willReadFrequently: true }); x.fillRect(0, 0, 8, 8); x.getImageData(0, 0, 8, 8); }
+    catch (error) {}
+  }
   try {
     if (d.bitmap) {
       var canvas = new OffscreenCanvas(d.w, d.h);

@@ -492,3 +492,4 @@ section { padding-block: 72px 0; }
   .shot.loading .sweep, .dots i { animation: none; }
   .preview canvas#pv-canvas.reveal { transition: none; }
 }
+.timing { font-size: 12px; color: var(--muted); padding: 8px var(--gutter); }
