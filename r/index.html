@@ -124,7 +124,8 @@
       canvas.hidden = true; $("pv-busy").hidden = true;
       return;
     }
-    after.hidden = true; canvas.hidden = false; $("pv-busy").hidden = false;
+    after.hidden = true; canvas.hidden = false; $("pv-busy").hidden = false; $("pv-busy").textContent = "그리는 중…";
+    var started = performance.now();
     loadImage(before.src).then(function (img) {
       if (id !== job) return;
       canvas.getContext("2d").drawImage(img, 0, 0, 540, 675);  // the original until the recipe is drawn
@@ -132,7 +133,12 @@
       worker.onmessage = function (e) {
         if (e.data.id !== job) return;
         canvas.getContext("2d").putImageData(new ImageData(e.data.rgba, e.data.w, e.data.h), 0, 0);
-        $("pv-busy").hidden = true;
+        // ?timing=1 (device tests only) leaves the render time on screen.
+        if (/[?&]timing=1/.test(location.search)) {
+          $("pv-busy").textContent = "완료 " + Math.round(performance.now() - started) + "ms";
+        } else {
+          $("pv-busy").hidden = true;
+        }
       };
       worker.postMessage({ id: id, px: pixels(img, 540, 675), w: 540, h: 675, small: pixels(img, 205, 256), sw: 205, sh: 256,
         params: recipe.params, keepCast: recipe.keepCast });
