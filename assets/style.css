@@ -455,3 +455,17 @@ section { padding-block: 72px 0; }
   .toolbar .chips::-webkit-scrollbar { display: none; }
   .toolbar .chips > * { flex: none; }
 }
+/* Recipe page live preview */
+.recipe-hero { grid-template-columns: minmax(220px, 320px) 1fr; }
+.preview { display: grid; gap: 10px; }
+.preview .shot { aspect-ratio: 4 / 5; border-radius: var(--r); border: 1px solid var(--line); background: var(--raised); }
+.preview canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.preview .after { z-index: 1; }
+.preview .before { z-index: 2; }
+.preview .busy {
+  position: absolute; top: 10px; left: 10px; z-index: 3; font-size: 12px; padding: 3px 9px; border-radius: 999px;
+  background: rgba(14, 14, 15, .6);
+}
+.samples button { font-size: 13px; padding: 5px 12px; }
+@media (max-width: 760px) { .recipe-hero { grid-template-columns: 1fr; } }
+.preview .hint { z-index: 3; }

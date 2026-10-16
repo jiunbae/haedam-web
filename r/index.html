@@ -29,7 +29,16 @@
 
   <div id="view" hidden>
     <div class="card recipe-hero">
-      <div class="swatch" id="swatch" role="img" aria-label="레시피 색감 미리보기"></div>
+      <div class="preview">
+        <div class="shot" id="shot" tabindex="0" aria-label="레시피 미리보기, 누르고 있으면 원본">
+          <canvas id="pv-canvas" width="540" height="675" aria-hidden="true"></canvas>
+          <img class="after" id="pv-after" alt="" hidden>
+          <img class="before" id="pv-before" alt="">
+          <span class="hint">누르고 있으면 원본</span>
+          <span class="busy" id="pv-busy" hidden>그리는 중…</span>
+        </div>
+        <div class="chips samples" id="samples" role="group" aria-label="예시 사진 고르기"></div>
+      </div>
       <div>
         <h1 id="name"></h1>
         <p class="meta" id="meta"></p>
@@ -86,6 +95,84 @@
     document.title = "레시피를 열 수 없어요 — 해담";
   }
 
+  // --- live preview: the recipe on example photos, drawn by render.js in a worker ---
+  var SAMPLES = [
+    { id: "walk", label: "골목" }, { id: "cafe", label: "커피" }, { id: "dinner", label: "식탁" },
+    { id: "river-sunset", label: "노을" }, { id: "green-forest", label: "숲" }, { id: "night-walk", label: "밤거리" }
+  ];
+  var worker = null, job = 0, current = null;
+
+  function pixels(img, w, h) {
+    var c = document.createElement("canvas"); c.width = w; c.height = h;
+    var ctx = c.getContext("2d"); ctx.drawImage(img, 0, 0, w, h);
+    var d = ctx.getImageData(0, 0, w, h).data, out = new Float32Array(w * h * 3);
+    for (var i = 0, j = 0; i < d.length; i += 4, j += 3) { out[j] = d[i] / 255; out[j + 1] = d[i + 1] / 255; out[j + 2] = d[i + 2] / 255; }
+    return out;
+  }
+
+  function loadImage(src) {
+    return new Promise(function (ok, fail) { var im = new Image(); im.onload = function () { ok(im); }; im.onerror = fail; im.src = src; });
+  }
+
+  function showSample(sample, recipe) {
+    var id = ++job;
+    document.querySelectorAll("#samples button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.id === sample.key ? "true" : "false"); });
+    var before = $("pv-before"), after = $("pv-after"), canvas = $("pv-canvas");
+    before.src = "../assets/photos/r/" + sample.id + "-before.jpg";
+    if (sample.prerendered) {
+      after.src = "../" + sample.prerendered; after.alt = recipe.name + " 레시피를 입힌 사진"; after.hidden = false;
+      canvas.hidden = true; $("pv-busy").hidden = true;
+      return;
+    }
+    after.hidden = true; canvas.hidden = false; $("pv-busy").hidden = false;
+    loadImage(before.src).then(function (img) {
+      if (id !== job) return;
+      canvas.getContext("2d").drawImage(img, 0, 0, 540, 675);  // the original until the recipe is drawn
+      if (!worker) worker = new Worker("../assets/render-worker.js");
+      worker.onmessage = function (e) {
+        if (e.data.id !== job) return;
+        canvas.getContext("2d").putImageData(new ImageData(e.data.rgba, e.data.w, e.data.h), 0, 0);
+        $("pv-busy").hidden = true;
+      };
+      worker.postMessage({ id: id, px: pixels(img, 540, 675), w: 540, h: 675, small: pixels(img, 205, 256), sw: 205, sh: 256,
+        params: recipe.params, keepCast: recipe.keepCast });
+    }).catch(function () { $("pv-busy").textContent = "사진을 불러오지 못했어요"; });
+  }
+
+  function preview(recipe, payload) {
+    current = recipe;
+    var box = $("samples"), list = SAMPLES.map(function (s) { return { key: s.id, id: s.id, label: s.label }; });
+    function draw() {
+      box.textContent = "";
+      list.forEach(function (s) {
+        var b = document.createElement("button"); b.type = "button"; b.textContent = s.label; b.dataset.id = s.key;
+        b.addEventListener("click", function () { showSample(s, current); });
+        box.appendChild(b);
+      });
+      showSample(list[0], recipe);
+    }
+    // A community recipe starts on its own example photo (already rendered).
+    fetch("../community/feed.json", { cache: "no-cache" }).then(function (res) { return res.json(); }).then(function (feed) {
+      var hit = (feed.recipes || []).filter(function (r) { return r.payload === payload; })[0];
+      var ok = function (p) { return typeof p === "string" && /^assets\/photos\/r\/[a-z0-9-]+\.jpg$/.test(p); };
+      if (hit && ok(hit.image) && hit.id) {
+        list = list.filter(function (s) { return s.id !== hit.id; });
+        list.unshift({ key: "own", id: hit.id, label: "예시", prerendered: hit.image });
+      }
+    }).catch(function () {}).then(draw);
+  }
+
+  function holdToCompare(node) {
+    function on() { node.classList.add("show-before"); }
+    function off() { node.classList.remove("show-before"); }
+    node.addEventListener("pointerdown", on);
+    ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { node.addEventListener(t, off); });
+    node.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); on(); } });
+    node.addEventListener("keyup", off);
+    node.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+  }
+  holdToCompare($("shot"));
+
   function render() {
     var payload = location.hash.replace(/^#/, "");
     if (!payload) {
@@ -103,30 +190,7 @@
 
     var count = Object.keys(recipe.params).length;
     $("meta").textContent = "조정한 항목 " + count + "개 · 원래 색 유지 " + Math.round(recipe.keepCast * 100) + "%";
-    var sw = $("swatch");
-    sw.style.background = R.swatch(recipe.params);
-    sw.textContent = "";
-    // Community recipes come with an example photo; show it when this link is one of them.
-    fetch("../community/feed.json", { cache: "no-cache" }).then(function (res) { return res.json(); }).then(function (feed) {
-      var hit = (feed.recipes || []).filter(function (r) { return r.payload === payload; })[0];
-      var ok = function (p) { return typeof p === "string" && /^assets\/photos\/[a-z0-9\/-]+\.jpg$/.test(p); };
-      if (!hit || !ok(hit.image) || location.hash.replace(/^#/, "") !== payload) return;
-      sw.classList.add("shot");
-      sw.tabIndex = 0;
-      sw.setAttribute("aria-label", recipe.name + " 보정 예시, 누르고 있으면 원본");
-      var img = document.createElement("img"); img.src = "../" + hit.image; img.alt = recipe.name + " 레시피를 입힌 사진";
-      sw.appendChild(img);
-      if (ok(hit.imageBefore)) {
-        var before = document.createElement("img"); before.className = "before"; before.src = "../" + hit.imageBefore; before.alt = "";
-        sw.appendChild(before);
-        var hint = document.createElement("span"); hint.className = "hint"; hint.textContent = "누르고 있으면 원본";
-        sw.appendChild(hint);
-        var on = function () { sw.classList.add("show-before"); }, off = function () { sw.classList.remove("show-before"); };
-        sw.addEventListener("pointerdown", on);
-        ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { sw.addEventListener(t, off); });
-        sw.addEventListener("contextmenu", function (e) { e.preventDefault(); });
-      }
-    }).catch(function () {});
+    preview(recipe, payload);
     $("open-app").href = "haedam://recipe#" + payload;
 
     var box = $("groups");

@@ -24,7 +24,10 @@ web/
 │   └── feed.json              생성 파일 — 직접 고치지 마세요
 ├── assets/
 │   ├── style.css              공통 스타일
-│   └── recipe.js              링크 인코딩/디코딩, 한국어 라벨
+│   ├── recipe.js              링크 인코딩/디코딩, 한국어 라벨
+│   ├── render.js              해담 렌더러 v2 (앱·Python과 같은 계산), 레시피 페이지 미리보기
+│   ├── render-worker.js       미리보기를 화면 밖에서 그리는 Worker
+│   └── photos/                예시 사진 (Unsplash, CREDITS.md). ml/render_landing.py로 만들어요
 └── scripts/
     ├── build_feed.py          recipes.src.json → feed.json (표준 라이브러리만)
     └── test_recipe.mjs        인코딩/디코딩 왕복 테스트 (Node, 의존성 없음)
@@ -36,6 +39,7 @@ web/
 python3 scripts/build_feed.py          # feed.json 다시 만들기
 python3 scripts/build_feed.py --check  # feed.json이 최신인지만 확인
 node scripts/test_recipe.mjs           # 왕복 테스트
+node scripts/test_render.mjs           # 웹 렌더러가 Python 기준 구현과 픽셀 단위로 같은지
 ```
 
 `build_feed.py`는 알 수 없는 키나 범위를 벗어난 값이 있으면 멈춰요.
