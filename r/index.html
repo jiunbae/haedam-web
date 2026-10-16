@@ -159,7 +159,13 @@
   function preview(recipe, payload) {
     current = recipe;
     // Start the worker (and its render.js download) now, before the first photo arrives.
-    if (!worker && window.Worker) worker = new Worker("../assets/render-worker.js");
+    if (!worker && window.Worker) {
+      worker = new Worker("../assets/render-worker.js");
+      // A tiny throwaway render compiles the renderer before the real photo arrives.
+      var warm = new Float32Array(64 * 80 * 3).fill(0.5);
+      worker.postMessage({ id: -1, px: warm, w: 64, h: 80, small: warm, sw: 64, sh: 80,
+        params: recipe.params, keepCast: recipe.keepCast });
+    }
     var box = $("samples"), list = SAMPLES.map(function (s) { return { key: s.id, id: s.id, label: s.label }; });
     function draw() {
       box.textContent = "";
