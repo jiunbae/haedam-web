@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; connect-src 'self'; img-src 'self' data: blob:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -40,9 +41,9 @@
       </div>
       <figure class="compare" id="compare">
         <div class="compare-frame">
-          <img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 룩을 입힌 서울 골목 사진" width="960" height="1200">
+          <picture><source type="image/webp" srcset="assets/photos/hero-walk.webp"><img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 룩을 입힌 서울 골목 사진" width="960" height="1200"></picture>
           <div class="compare-before" id="compare-before">
-            <img src="assets/photos/hero-original.jpg" alt="보정 전 원본" width="960" height="1200">
+            <picture><source type="image/webp" srcset="assets/photos/hero-original.webp"><img src="assets/photos/hero-original.jpg" alt="보정 전 원본" width="960" height="1200"></picture>
           </div>
           <span class="compare-label left">원본</span>
           <span class="compare-label right" id="compare-name">동네 산책</span>
@@ -72,7 +73,7 @@
       </div>
       <div class="looks">
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><img src="assets/photos/morning-after.jpg" alt="햇살이 드는 서울 골목, 아침 햇살 룩" loading="lazy" decoding="async"><img class="before" src="assets/photos/morning-before.jpg" alt="" loading="lazy" decoding="async"><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/morning-after.webp"><img src="assets/photos/morning-after.jpg" alt="햇살이 드는 서울 골목, 아침 햇살 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/morning-before.webp"><img class="before" data-src="assets/photos/morning-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">아침</span>
             <h3>아침 햇살</h3>
@@ -80,7 +81,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 룩" loading="lazy" decoding="async"><img class="before" src="assets/photos/cafe-before.jpg" alt="" loading="lazy" decoding="async"><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/cafe-after.webp"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/cafe-before.webp"><img class="before" data-src="assets/photos/cafe-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">오후</span>
             <h3>오후 카페</h3>
@@ -88,7 +89,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><img src="assets/photos/walk-after.jpg" alt="한낮의 동네 골목, 동네 산책 룩" loading="lazy" decoding="async"><img class="before" src="assets/photos/walk-before.jpg" alt="" loading="lazy" decoding="async"><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/walk-after.webp"><img src="assets/photos/walk-after.jpg" alt="한낮의 동네 골목, 동네 산책 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/walk-before.webp"><img class="before" data-src="assets/photos/walk-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">야외</span>
             <h3>동네 산책</h3>
@@ -96,7 +97,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 룩" loading="lazy" decoding="async"><img class="before" src="assets/photos/dinner-before.jpg" alt="" loading="lazy" decoding="async"><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/dinner-after.webp"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/dinner-before.webp"><img class="before" data-src="assets/photos/dinner-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">저녁</span>
             <h3>저녁 식탁</h3>
@@ -104,7 +105,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><img src="assets/photos/rainy-after.jpg" alt="비 오는 골목을 걷는 사람, 비 오는 날 룩" loading="lazy" decoding="async"><img class="before" src="assets/photos/rainy-before.jpg" alt="" loading="lazy" decoding="async"><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/rainy-after.webp"><img src="assets/photos/rainy-after.jpg" alt="비 오는 골목을 걷는 사람, 비 오는 날 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/rainy-before.webp"><img class="before" data-src="assets/photos/rainy-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">흐린 날</span>
             <h3>비 오는 날</h3>
@@ -165,9 +166,9 @@
           <p>링크 하나로 레시피를 나눌 수 있어요. 마음에 드는 걸 골라 앱으로 바로 열면 돼요.</p>
         </div>
         <div class="teaser-shots">
-          <a href="community/" class="tshot"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 레시피" loading="lazy" decoding="async"><span>한강 노을</span></a>
-          <a href="community/" class="tshot"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 레시피" loading="lazy" decoding="async"><span>밤 산책</span></a>
-          <a href="community/" class="tshot"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 레시피" loading="lazy" decoding="async"><span>흑백 일기</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/river-sunset-after.webp"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 레시피" loading="lazy" decoding="async"></picture><span>한강 노을</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/night-walk-after.webp"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 레시피" loading="lazy" decoding="async"></picture><span>밤 산책</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/bw-diary-after.webp"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 레시피" loading="lazy" decoding="async"></picture><span>흑백 일기</span></a>
         </div>
         <div><a class="btn btn-accent" href="community/">레시피 15개 둘러보기</a></div>
       </div>
@@ -195,49 +196,6 @@
   </div>
   <p class="wrap credits">사진: Dohyuk You, Jei Lee, rawkkim, Markus Winkler, Anandu Vinod, Dylan LEE, Evgeny Matveev, H&amp;CO (Unsplash). 보정은 모두 해담 렌더러로 했어요.</p>
 </footer>
-<script>
-(function () {
-  var range = document.getElementById("compare-range");
-  var before = document.getElementById("compare-before");
-  var handle = document.getElementById("compare-handle");
-  var after = document.getElementById("compare-after");
-  var name = document.getElementById("compare-name");
-  function setPos() {
-    var v = range.value + "%";
-    before.style.clipPath = "inset(0 calc(100% - " + v + ") 0 0)";
-    handle.style.left = v;
-  }
-  range.addEventListener("input", setPos);
-  setPos();
-  var cache = {};
-  document.querySelectorAll(".chips button").forEach(function (b) {
-    var src = "assets/photos/hero-" + b.dataset.look + ".jpg";
-    function preload() {
-      if (!cache[b.dataset.look]) { cache[b.dataset.look] = new Image(); cache[b.dataset.look].src = src; }
-    }
-    b.addEventListener("pointerenter", preload);
-    b.addEventListener("focus", preload);
-    b.addEventListener("click", function () {
-      document.querySelectorAll(".chips button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-      after.src = src;
-      after.alt = b.textContent + " 룩을 입힌 서울 골목 사진";
-      name.textContent = b.textContent;
-    });
-  });
-  // Look cards: show the original while pressed (touch) or hovered (mouse).
-  document.querySelectorAll(".shot").forEach(function (el) {
-    el.setAttribute("role", "button"); el.setAttribute("aria-pressed", "false");
-    function on() { el.classList.add("show-before"); el.setAttribute("aria-pressed", "true"); }
-    function off() { el.classList.remove("show-before"); el.setAttribute("aria-pressed", "false"); }
-    el.addEventListener("pointerdown", on);
-    ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { el.addEventListener(t, off); });
-    el.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); on(); } });
-    el.addEventListener("keyup", off);
-    el.addEventListener("blur", off);
-    el.addEventListener("click", function (e) { if (e.detail === 0) { if (el.classList.contains("show-before")) off(); else on(); } });
-    el.addEventListener("contextmenu", function (e) { e.preventDefault(); });
-  });
-})();
-</script>
+<script src="assets/landing.js"></script>
 </body>
 </html>
