@@ -154,14 +154,14 @@
       "id": "river-sunset",
       "name": "한강 노을",
       "author": "해담 에디터",
-      "summary": "노을빛은 그대로 두고 그림자엔 보랏빛을 얹어요. 해 질 녘 강변과 도시에 어울려요.",
+      "summary": "노을의 온기는 그대로 두고 밝은 하늘과 그림자는 부드럽게. 해 질 녘 강변과 도시에 어울려요.",
       "tags": [
         "저녁",
         "야외",
         "따뜻한"
       ],
       "accent": "#E8956A",
-      "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuODUsInAiOnsiaGlnaGxpZ2h0cyI6LTIwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjEwLCJ2aWJyYW5jZSI6MTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2Uuc2F0IjoxOCwiaHNsLm9yYW5nZS5sdW0iOjQsImhzbC55ZWxsb3cuaHVlIjotMTIsImhzbC55ZWxsb3cuc2F0Ijo2LCJoc2wuYmx1ZS5odWUiOjE2LCJoc2wuYmx1ZS5zYXQiOi0xMiwiaHNsLnB1cnBsZS5zYXQiOjE2LCJzaGFkb3dIdWUiOjI1NSwic2hhZG93U2F0IjozNCwiaGlnaGxpZ2h0SHVlIjoyOCwiaGlnaGxpZ2h0U2F0IjozMCwiYmFsYW5jZSI6LTEyfX0",
+      "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuOTUsInAiOnsiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6NiwidmlicmFuY2UiOjgsIndhcm10aCI6NCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC5ibHVlLmh1ZSI6NiwiaHNsLmJsdWUuc2F0IjotNiwiaHNsLnB1cnBsZS5zYXQiOjQsInNoYWRvd0h1ZSI6MjU1LCJzaGFkb3dTYXQiOjE0LCJoaWdobGlnaHRIdWUiOjI4LCJoaWdobGlnaHRTYXQiOjEyLCJiYWxhbmNlIjotOH19",
       "image": "assets/photos/r/river-sunset.jpg",
       "imageBefore": "assets/photos/r/river-sunset-before.jpg",
       "photoCredit": "Dylan LEE"
