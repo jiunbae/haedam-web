@@ -17,8 +17,8 @@
 
   // --- live preview: the recipe on example photos, drawn by render.js in a worker ---
   var SAMPLES = [
-    { id: "walk", label: "골목" }, { id: "cafe", label: "커피" }, { id: "dinner", label: "식탁" },
-    { id: "river-sunset", label: "노을" }, { id: "green-forest", label: "숲" }, { id: "night-walk", label: "밤거리" }
+    { id: "walk", label: "가로수길" }, { id: "cafe", label: "커피" }, { id: "dinner", label: "식탁" },
+    { id: "river-sunset", label: "노을" }, { id: "green-forest", label: "숲" }, { id: "night-walk", label: "밤벚꽃" }
   ];
   var worker = null, job = 0, current = null, previewGeneration = 0;
   var working = false, pending = null, watchdog = null, started = 0;

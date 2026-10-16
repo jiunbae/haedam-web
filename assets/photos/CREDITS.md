@@ -1,30 +1,35 @@
 # 사진 출처
 
-모두 [Unsplash License](https://unsplash.com/license)로 받은 사진이에요. 보정은 해담 렌더러(`ml/render_landing.py`)로 했어요.
+대부분 해담이 직접 촬영한 사진입니다. 원본은 비공개 로컬 폴더에만 보관하며, 이 폴더에는 크기를 줄이고 EXIF·GPS·XMP·IPTC를 제거한 예시 이미지만 둡니다. 보정에는 해담 렌더러(`ml/render_landing.py`)를 사용합니다.
 
-| 파일 | 사진 | 작가 |
+## 해담 직접 촬영
+
+아래 ID는 로컬 원본과의 관리용 대응이며 위치정보를 뜻하지 않습니다. `r/`의 전후 JPEG·WebP·480px 변형에도 같은 출처가 적용됩니다.
+
+| 예시 | 원본 ID | 크레딧 |
 |---|---|---|
-| hero-*, walk-* | https://unsplash.com/photos/jQteagM9KEo | rawkkim |
-| morning-* | https://unsplash.com/photos/UIjhw_p6NKY | Dohyuk You |
-| cafe-* | https://unsplash.com/photos/549A9E15i2w | Jei Lee |
-| dinner-* | https://unsplash.com/photos/1gkvpUCQkmA | Markus Winkler |
-| rainy-* | https://unsplash.com/photos/y5iUA9C0x_Y | Anandu Vinod |
-| river-sunset-* | https://unsplash.com/photos/UGFgK7OQT6I | Dylan LEE |
-| night-walk-* | https://unsplash.com/photos/gSxdqdGFeos | Evgeny Matveev |
-| bw-diary-* | https://unsplash.com/photos/-qJWAGJ5Zvs | H&CO |
+| hero-* (한 사진에 모든 룩 적용), r/soft-pastel* | IMG_6895 | 해담 |
+| morning-*, r/morning* | IMG_2954 | 해담 |
+| walk-*, r/walk* | IMG_2055 | 해담 |
+| rainy-*, r/rainy* | IMG_1875 | 해담 |
+| night-walk-*, r/night-walk* | IMG_6912 | 해담 |
+| bw-diary-*, r/bw-diary* | IMG_6533 | 해담 |
+| r/film-afternoon* | IMG_0952 | 해담 |
+| r/clear-sky* | IMG_8550 | 해담 |
+| r/cherry-blossom* | IMG_2953 | 해담 |
+| r/first-snow* (눈처럼 흰 벚꽃) | IMG_2870 | 해담 |
+| r/autumn-alley* | IMG_8227 | 해담 |
+| r/old-album* | IMG_8165 | 해담 |
+| r/green-forest* | IMG_9003 | 해담 |
 
-## 커뮤니티 레시피 예시 (`r/<레시피 id>.jpg`, 원본은 `-before.jpg`)
+## Unsplash 예시
 
-위 사진에 더해 아래 사진을 썼어요.
+직접 찍은 사진 중 맞는 장면이 없는 커피·식탁·노을은 [Unsplash License](https://unsplash.com/license)로 받은 사진을 유지합니다.
 
-| 레시피 | 사진 | 작가 |
+| 파일 (전후 이미지와 변형 포함) | 원본 | 작가 |
 |---|---|---|
-| film-afternoon | https://unsplash.com/photos/fwbHcgSBqx4 | Tammy Taabassum |
-| clear-sky | https://unsplash.com/photos/wRw8h6kd1Ms | GWANGJIN GO |
-| cherry-blossom | https://unsplash.com/photos/RYzm7LppBII | Cecelia Chang |
-| first-snow | https://unsplash.com/photos/irHeGL0qmCo | insung yoon |
-| autumn-alley | https://unsplash.com/photos/V-5rjLD3LEc | insung yoon |
-| old-album | https://unsplash.com/photos/Bl4UcgDG3fE | Jean Carlo Emer |
-| green-forest | https://unsplash.com/photos/N4ETYndHg_A | Jaeyoung Geoffrey Kang |
+| cafe-*, r/cafe* | [사진](https://unsplash.com/photos/549A9E15i2w) | Jei Lee |
+| dinner-*, r/dinner* | [사진](https://unsplash.com/photos/1gkvpUCQkmA) | Markus Winkler |
+| river-sunset-*, r/river-sunset* | [사진](https://unsplash.com/photos/UGFgK7OQT6I) | Dylan LEE |
 
-`r/soft-pastel.*`은 `cherry-blossom`과 같은 Cecelia Chang의 원본 사진을 사용해 연한 봄빛 룩으로 보정했어요.
+앱은 별도의 비 오는 거리 샘플(Anandu Vinod)을 비 룩 체험용으로 유지합니다. 앱 샘플 출처는 앱 설정에 표시합니다. 촬영 시각·시간대만 남기며 위치정보·기기 메타데이터는 포함하지 않습니다.

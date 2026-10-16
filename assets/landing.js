@@ -24,7 +24,7 @@
       after.src = src;
       var webp = after.parentNode.querySelector("source");  // <picture>: the WebP source wins over img.src
       if (webp) webp.srcset = src.replace(/\.jpg$/, ".webp");
-      after.alt = b.textContent + " 룩을 입힌 서울 골목 사진";
+      after.alt = b.textContent + " 룩을 입힌 벚꽃 사진";
       name.textContent = b.textContent;
     });
   });
