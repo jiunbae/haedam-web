@@ -72,12 +72,15 @@
   function validImage(p) { return typeof p === "string" && /^assets\/photos\/[a-z0-9\/-]+\.jpg$/.test(p); }
 
   function holdToCompare(node) {
-    function on() { node.classList.add("show-before"); }
-    function off() { node.classList.remove("show-before"); }
+    node.setAttribute("role", "button"); node.setAttribute("aria-pressed", "false");
+    function on() { node.classList.add("show-before"); node.setAttribute("aria-pressed", "true"); }
+    function off() { node.classList.remove("show-before"); node.setAttribute("aria-pressed", "false"); }
     node.addEventListener("pointerdown", on);
     ["pointerup", "pointerleave", "pointercancel"].forEach(function (t) { node.addEventListener(t, off); });
     node.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); on(); } });
     node.addEventListener("keyup", off);
+    node.addEventListener("blur", off);
+    node.addEventListener("click", function (e) { if (e.detail === 0) { if (node.classList.contains("show-before")) off(); else on(); } });
     node.addEventListener("contextmenu", function (e) { e.preventDefault(); });
   }
 
@@ -85,12 +88,13 @@
     var a = el("article", "card r-card");
     if (validImage(r.image)) {
       var shot = el("div", "shot");
-      shot.tabIndex = 0;
-      shot.setAttribute("aria-label", r.name + " 보정 예시, 누르고 있으면 원본");
-      var img = el("img"); img.src = "../" + r.image; img.alt = r.name + " 레시피를 입힌 사진"; img.loading = "lazy";
+      shot.tabIndex = -1;
+      shot.setAttribute("aria-label", r.name + " 보정 예시" + (validImage(r.imageBefore) ? ", 누르고 있으면 원본" : ""));
+      var img = el("img"); img.src = "../" + r.image; img.alt = r.name + " 레시피를 입힌 사진"; img.loading = "lazy"; img.decoding = "async";
       shot.appendChild(img);
       if (validImage(r.imageBefore)) {
-        var before = el("img", "before"); before.src = "../" + r.imageBefore; before.alt = ""; before.loading = "lazy";
+        shot.tabIndex = 0;
+        var before = el("img", "before"); before.src = "../" + r.imageBefore; before.alt = ""; before.loading = "lazy"; before.decoding = "async";
         shot.appendChild(before);
         shot.appendChild(el("span", "hint", "누르고 있으면 원본"));
         holdToCompare(shot);
@@ -168,7 +172,8 @@
     .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
     .then(function (data) {
       if (!data || data.version !== 1 || !Array.isArray(data.recipes)) throw new Error("bad feed");
-      all = data.recipes.filter(function (r) { return r && typeof r.name === "string" && validPayload(r.payload); });
+      all = data.recipes.filter(function (r) { return r && typeof r.name === "string" && validPayload(r.payload) && r.payload.length <= 16384; })
+        .map(function (r) { return Object.assign({}, r, { tags: Array.isArray(r.tags) ? r.tags.filter(function (t) { return typeof t === "string"; }) : [] }); });
       if (data.updated) $("updated").textContent = "© 2026 해담 · " + data.updated + " 업데이트";
       renderChips();
       render();

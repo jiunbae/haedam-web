@@ -1,3 +1,6 @@
+/* Author display rules must not reveal hidden canvases, images or status text. */
+[hidden] { display: none !important; }
+
 :root {
   --bg: #0E0E0F;
   --card: #1A1A1C;

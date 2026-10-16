@@ -112,6 +112,7 @@
     if (typeof payload !== "string") throw new Error("링크가 비어 있어요");
     payload = payload.trim().replace(/^#/, "");
     if (!payload) throw new Error("링크가 비어 있어요");
+    if (payload.length > 16384) throw new Error("레시피 링크가 너무 길어요");
     var text;
     try {
       text = new TextDecoder("utf-8", { fatal: true }).decode(b64urlToBytes(payload));

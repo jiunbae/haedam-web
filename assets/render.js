@@ -29,6 +29,17 @@
   function clamp01(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
   function smooth(e0, e1, x) { var t = clamp01((x - e0) / (e1 - e0)); return t * t * (3 - 2 * t); }
   function toLin(c) { c = Math.max(c, 0); return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }
+  // Exact table hits only for the Float32 byte inputs used by canvas. Arbitrary
+  // float/HDR callers retain the analytic formula; no interpolation/quantization.
+  var encodedBytes = new Float32Array(256), linearBytes = new Float64Array(256);
+  for (var byte = 0; byte < 256; byte++) {
+    encodedBytes[byte] = byte / 255;
+    linearBytes[byte] = toLin(encodedBytes[byte]);
+  }
+  function inputLinear(c) {
+    var byte = Math.round(c * 255);
+    return c === encodedBytes[byte] ? linearBytes[byte] : toLin(c);
+  }
   function toSrgb(c) { c = Math.max(c, 0); return c <= 0.0031308 ? c * 12.92 : 1.055 * Math.pow(c, 1 / 2.4) - 0.055; }
   function mod(a, n) { return ((a % n) + n) % n; }
 
@@ -41,10 +52,12 @@
     return p;
   }
 
+  var HSV_OFFSETS = [5, 3, 1];
+
   // HSV <-> RGB, written to a 3-slot array to avoid allocations per pixel.
   function hsv2rgb(h, s, v, out) {
-    for (var j = 0, ns = [5, 3, 1]; j < 3; j++) {
-      var k = mod(ns[j] + h * 6, 6);
+    for (var j = 0; j < 3; j++) {
+      var k = mod(HSV_OFFSETS[j] + h * 6, 6);
       out[j] = v - v * s * Math.max(0, Math.min(Math.min(k, 4 - k), 1));
     }
   }
@@ -58,8 +71,7 @@
 
   function catmull(y, x) {
     var t = clamp01(x) * 4, i = Math.min(Math.floor(t), 3), u = t - i;
-    var yp = [2 * y[0] - y[1], y[0], y[1], y[2], y[3], y[4], 2 * y[4] - y[3]];
-    var p0 = yp[i], p1 = yp[i + 1], p2 = yp[i + 2], p3 = yp[i + 3];
+    var p0 = y[i], p1 = y[i + 1], p2 = y[i + 2], p3 = y[i + 3];
     return 0.5 * (2 * p1 + (-p0 + p2) * u + (2 * p0 - 5 * p1 + 4 * p2 - p3) * u * u + (-p0 + 3 * p1 - 3 * p2 + p3) * u * u * u);
   }
 
@@ -79,7 +91,8 @@
     var ex = Math.pow(2, p.exposure * EV_RANGE);
     var wbR = Math.pow(2, p.warmth * WARMTH_K), wbG = Math.pow(2, -p.tint * TINT_K), wbB = Math.pow(2, -p.warmth * WARMTH_K);
     var curves = CURVES.map(function (c) {
-      var ys = []; for (var i = 0; i < 5; i++) ys.push(i / 4 + p["curve." + c + "." + i] * CURVE_K); return ys;
+      var ys = []; for (var i = 0; i < 5; i++) ys.push(i / 4 + p["curve." + c + "." + i] * CURVE_K);
+      return [2 * ys[0] - ys[1], ys[0], ys[1], ys[2], ys[3], ys[4], 2 * ys[4] - ys[3]];
     });
     var hasCurves = KEYS.some(function (k) { return k.indexOf("curve.") === 0 && p[k] !== 0; });
     var hsl = BANDS.map(function (b) { return [p["hsl." + b + ".hue"], p["hsl." + b + ".sat"], p["hsl." + b + ".lum"]]; });
@@ -88,13 +101,18 @@
     var hasGrade = p.shadowSat || p.midSat || p.highlightSat;
     var tS = hueTint(p.shadowHue), tM = hueTint(p.midHue), tH = hueTint(p.highlightHue);
     var bal = p.balance * 0.25, d = p.blackPoint * BP_K, f = p.fade;
-    var c = [0, 0, 0], q = [0, 0, 0];
+    var c = [0, 0, 0];
+    var brightnessExponent = Math.pow(2, -p.brightness * BRIGHT_K);
+    var fadeScale = 1 - f * FADE_K * 1.5, fadeOffset = f * FADE_K;
+    var vignetteX = p.vignette !== 0 ? new Float64Array(w) : null;
+    if (vignetteX) for (var vx = 0; vx < w; vx++) vignetteX[vx] = Math.pow(((vx + 0.5) / w - 0.5) * 2, 2);
 
     for (var py = 0; py < h; py++) {
+      var vignetteY = vignetteX ? Math.pow(((py + 0.5) / h - 0.5) * 2, 2) : 0;
       for (var px = 0; px < w; px++) {
         var o = (py * w + px) * 3, j;
         // 1. linear: exposure, white balance (luminance kept), soft shoulder
-        for (j = 0; j < 3; j++) c[j] = toLin(src[o + j]) * ex;
+        for (j = 0; j < 3; j++) c[j] = inputLinear(src[o + j]) * ex;
         var y0 = c[0] * LR + c[1] * LG + c[2] * LB;
         c[0] *= wbR; c[1] *= wbG; c[2] *= wbB;
         var y1 = c[0] * LR + c[1] * LG + c[2] * LB, k0 = y0 / Math.max(y1, 1e-6);
@@ -107,7 +125,7 @@
         var y = clamp01(c[0] * LR + c[1] * LG + c[2] * LB), L = y;
         var hb = 4 * smooth(0.3, 1, L) * (1 - L), sb = 4 * (1 - smooth(0, 0.7, L)) * L;
         L = clamp01(L + p.highlights * HL_K * hb + p.shadows * SH_K * sb + p.brilliance * BRILL_K * (sb - hb));
-        L = Math.pow(L, Math.pow(2, -p.brightness * BRIGHT_K));
+        if (brightnessExponent !== 1) L = Math.pow(L, brightnessExponent);
         L = L + p.contrast * CONTRAST_K * (L * L * (3 - 2 * L) - L);
         L = d >= 0 ? clamp01((L - d) / (1 - d)) : -d + L * (1 + d);
         applyLuma(c, y, L);
@@ -148,10 +166,12 @@
           }
         }
         // 7. fade, 8. vignette
-        var xx = (px + 0.5) / w, yy = (py + 0.5) / h;
-        var r = Math.sqrt(Math.pow((xx - 0.5) * 2, 2) + Math.pow((yy - 0.5) * 2, 2)) / Math.SQRT2;
-        var vg = 1 - p.vignette * VIGNETTE_K * smooth(0.3, 1, r);
-        for (j = 0; j < 3; j++) out[o + j] = clamp01((c[j] * (1 - f * FADE_K * 1.5) + f * FADE_K) * vg);
+        var vg = 1;
+        if (vignetteX) {
+          var r = Math.sqrt(vignetteX[px] + vignetteY) / Math.SQRT2;
+          vg = 1 - p.vignette * VIGNETTE_K * smooth(0.3, 1, r);
+        }
+        for (j = 0; j < 3; j++) out[o + j] = clamp01((c[j] * fadeScale + fadeOffset) * vg);
       }
     }
     return out;
@@ -227,7 +247,7 @@
       if (rel[i] < 0.3) neutral++;
       if (usable[i]) usableRel.push(rel[i]);
     }
-    var sorted = Array.prototype.slice.call(ys).sort(function (a, b) { return a - b; });
+    var sorted = ys.sort();
     var pct = [0.01, 0.05, 0.25, 0.5, 0.75, 0.95, 0.99].map(function (q) { return quantile(sorted, q); });
     var limit = 0.3;
     if (usableRel.length) {
