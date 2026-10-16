@@ -19,6 +19,7 @@ self.onmessage = function (e) {
     try { var c = new OffscreenCanvas(8, 8), x = c.getContext("2d", { willReadFrequently: true }); x.fillRect(0, 0, 8, 8); x.getImageData(0, 0, 8, 8); }
     catch (error) {}
   }
+  var t0 = performance.now(), tp = t0;
   try {
     if (d.bitmap) {
       var canvas = new OffscreenCanvas(d.w, d.h);
@@ -28,13 +29,15 @@ self.onmessage = function (e) {
       source = { key: d.key, px: d.px, small: d.small, w: d.w, h: d.h, sw: d.sw, sh: d.sh };
     }
     if (!source || source.key !== d.key) throw new Error("missing source");
+    tp = performance.now();
     var p = HaedamRender.lookParams(source.small, source.sw, source.sh, d.params, d.keepCast);
     var out = HaedamRender.render(source.px, source.w, source.h, p, 1);
     var rgba = new Uint8ClampedArray(source.w * source.h * 4);
     for (var i = 0, j = 0; i < out.length; i += 3, j += 4) {
       rgba[j] = Math.floor(out[i] * 255 + 0.5); rgba[j + 1] = Math.floor(out[i + 1] * 255 + 0.5); rgba[j + 2] = Math.floor(out[i + 2] * 255 + 0.5); rgba[j + 3] = 255;
     }
-    self.postMessage({ id: d.id, rgba: rgba, w: source.w, h: source.h }, [rgba.buffer]);
+    self.postMessage({ id: d.id, rgba: rgba, w: source.w, h: source.h,
+      timing: { pixels: Math.round(tp - t0), render: Math.round(performance.now() - tp) } }, [rgba.buffer]);
   } catch (error) {
     self.postMessage({ id: d.id, error: "미리보기를 만들지 못했어요. 예시 사진을 다시 골라주세요." });
   } finally {

@@ -176,7 +176,10 @@
             $("pv-busy-text").textContent = "완료 " + Math.round(performance.now() - started) + "ms";
             // Plain text too: Safari doesn't expose role=status contents to UI tests.
             var t = $("pv-timing") || document.body.appendChild(Object.assign(document.createElement("p"), { id: "pv-timing", className: "timing" }));
-            t.textContent = "완료 " + Math.round(performance.now() - started) + "ms";
+            var w = e.data.timing || {};
+            t.textContent = "완료 " + Math.round(performance.now() - started) + "ms (사진 " + Math.round(marks.img - started) +
+              " 비트맵 " + Math.round(marks.bitmap - marks.img) + " 대기 " + Math.round(performance.now() - marks.sent - (w.pixels || 0) - (w.render || 0)) +
+              " 픽셀 " + w.pixels + " 렌더 " + w.render + ")";
           } else $("pv-busy").hidden = true;
         }
       }
@@ -184,6 +187,7 @@
     };
   }
 
+  var marks = {};  // ?timing=1 breakdown
   function showSample(sample, recipe) {
     var id = ++job;
     discardPending();
@@ -206,10 +210,12 @@
     started = performance.now();
     loadImage(before.src).then(async function (img) {
       if (id !== job) return;
+      marks.img = performance.now();
       ensureWorker();
       var data = { id: id, key: sample.id, w: 540, h: 675, sw: 205, sh: 256, params: recipe.params, keepCast: recipe.keepCast };
       var bitmap = window.createImageBitmap ? await createImageBitmap(img) : null;
       if (id !== job) { if (bitmap) bitmap.close(); return; }
+      marks.bitmap = marks.sent = performance.now();
       if (window.OffscreenCanvas && bitmap) {
         data.bitmap = bitmap;
         send(data, [bitmap]);
