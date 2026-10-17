@@ -33,3 +33,7 @@
 | river-sunset-*, r/river-sunset* | [사진](https://unsplash.com/photos/UGFgK7OQT6I) | Dylan LEE |
 
 앱은 별도의 비 오는 거리 샘플(Anandu Vinod)을 비 룩 체험용으로 유지합니다. 앱 샘플 출처는 앱 설정에 표시합니다. 촬영 시각·시간대만 남기며 위치정보·기기 메타데이터는 포함하지 않습니다.
+
+## 추가 기본 스타일
+
+`r/film-400*`, `r/slide-film*`, `r/bw-grain*`, `r/faded-color*`, `r/ccd-flash*`, `r/instant-print*`, `r/summer-green*`, `r/autumn-leaves*`, `r/winter-blue*`, `r/neon-night*`, `r/clear-sea*`, `r/soft-portrait*`와 해당 `hero-*`는 해담이 직접 촬영한 사진의 보정 예시입니다. 원본은 공개하지 않고 위치·기기·촬영일 메타데이터를 제거한 픽셀 변형만 사용합니다.

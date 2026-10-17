@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "recipes": [
     {
       "id": "morning",
@@ -10,7 +10,8 @@
       "tags": [
         "기본 스타일",
         "아침",
-        "밝은"
+        "밝은",
+        "일상"
       ],
       "accent": "#F3D29A",
       "payload": "eyJ2IjoxLCJuIjoi7JWE7LmoIO2Wh-yCtCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6OCwiaGlnaGxpZ2h0cyI6LTYsImNvbnRyYXN0IjotNiwiYnJpZ2h0bmVzcyI6MTQsInZpYnJhbmNlIjoxNCwid2FybXRoIjo4LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6Niwic2hhZG93SHVlIjoyMTUsInNoYWRvd1NhdCI6OCwiaGlnaGxpZ2h0SHVlIjo0NSwiaGlnaGxpZ2h0U2F0IjoxOH19",
@@ -27,7 +28,8 @@
         "기본 스타일",
         "실내",
         "따뜻한",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#C89A72",
       "payload": "eyJ2IjoxLCJuIjoi7Jik7ZuEIOy5tO2OmCIsImsiOjAuNCwicCI6eyJzaGFkb3dzIjo4LCJjb250cmFzdCI6LTgsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6Niwid2FybXRoIjoxNCwiaHNsLm9yYW5nZS5zYXQiOi02LCJoc2wub3JhbmdlLmx1bSI6MTAsImhzbC55ZWxsb3cuaHVlIjotNiwiaHNsLnllbGxvdy5zYXQiOi0xMCwiaHNsLmdyZWVuLmh1ZSI6MTAsImhzbC5ncmVlbi5zYXQiOi0yNSwic2hhZG93SHVlIjoyOCwic2hhZG93U2F0IjoyMCwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjMwLCJmYWRlIjoxNH19",
@@ -43,7 +45,8 @@
       "tags": [
         "기본 스타일",
         "야외",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#9DB38A",
       "payload": "eyJ2IjoxLCJuIjoi64-Z64SkIOyCsOyxhSIsImsiOjAuMywicCI6eyJjb250cmFzdCI6OCwic2F0dXJhdGlvbiI6LTQsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjQsImhzbC5vcmFuZ2Uuc2F0IjotNCwiaHNsLm9yYW5nZS5sdW0iOjYsImhzbC5ncmVlbi5odWUiOjIyLCJoc2wuZ3JlZW4uc2F0IjotMzAsImhzbC5ncmVlbi5sdW0iOi00LCJoc2wuYXF1YS5zYXQiOi0xNSwiaHNsLmJsdWUuaHVlIjotMTAsImhzbC5ibHVlLnNhdCI6LTE4LCJzaGFkb3dIdWUiOjE5MCwic2hhZG93U2F0IjoxNiwiaGlnaGxpZ2h0SHVlIjo0MCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjE2LCJncmFpblNpemUiOjQwLCJmYWRlIjoxMH19",
@@ -60,7 +63,8 @@
         "기본 스타일",
         "음식",
         "저녁",
-        "따뜻한"
+        "따뜻한",
+        "일상"
       ],
       "accent": "#E39A6E",
       "payload": "eyJ2IjoxLCJuIjoi7KCA64WBIOyLne2DgSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjgsInZpYnJhbmNlIjoxNiwiaHNsLnJlZC5zYXQiOjgsImhzbC5vcmFuZ2UuaHVlIjotNCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC55ZWxsb3cuc2F0IjotNiwic2hhZG93SHVlIjoxNSwic2hhZG93U2F0Ijo4fX0",
@@ -77,7 +81,8 @@
         "기본 스타일",
         "흐린 날",
         "차분한",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#8E9EB0",
       "payload": "eyJ2IjoxLCJuIjoi67mEIOyYpOuKlCDrgqAiLCJrIjowLjYsInAiOnsiY29udHJhc3QiOi00LCJzYXR1cmF0aW9uIjotMjQsIndhcm10aCI6LTEyLCJoc2wuZ3JlZW4uaHVlIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6LTQsInNoYWRvd0h1ZSI6MjE1LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjIwMCwiaGlnaGxpZ2h0U2F0Ijo0LCJncmFpbiI6MTIsImdyYWluU2l6ZSI6MzAsImZhZGUiOjE2fX0",
@@ -222,7 +227,8 @@
       "tags": [
         "저녁",
         "야외",
-        "따뜻한"
+        "따뜻한",
+        "장면"
       ],
       "accent": "#E8956A",
       "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuOTUsInAiOnsiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6NiwidmlicmFuY2UiOjgsIndhcm10aCI6NCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC5ibHVlLmh1ZSI6NiwiaHNsLmJsdWUuc2F0IjotNiwiaHNsLnB1cnBsZS5zYXQiOjQsInNoYWRvd0h1ZSI6MjU1LCJzaGFkb3dTYXQiOjE0LCJoaWdobGlnaHRIdWUiOjI4LCJoaWdobGlnaHRTYXQiOjEyLCJiYWxhbmNlIjotOH19",
@@ -319,12 +325,193 @@
       "tags": [
         "파스텔",
         "밝은",
-        "차분한"
+        "차분한",
+        "계절"
       ],
       "accent": "#E9BECE",
       "payload": "eyJ2IjoxLCJuIjoi7Jew7ZWcIOu0hOu5myIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTEyLCJjb250cmFzdCI6LTIwLCJicmlnaHRuZXNzIjoxMiwic2F0dXJhdGlvbiI6LTEyLCJ0aW50Ijo0LCJoc2wub3JhbmdlLnNhdCI6LTQsImhzbC5vcmFuZ2UubHVtIjo4LCJoc2wuZ3JlZW4uaHVlIjoxMiwiaHNsLmdyZWVuLnNhdCI6LTMyLCJoc2wuZ3JlZW4ubHVtIjoxNiwiaHNsLmJsdWUuc2F0IjotMjQsImhzbC5ibHVlLmx1bSI6MTQsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTIsInNoYWRvd0h1ZSI6MjIwLCJzaGFkb3dTYXQiOjgsImhpZ2hsaWdodEh1ZSI6MzM1LCJoaWdobGlnaHRTYXQiOjEwLCJmYWRlIjo0fX0",
       "image": "assets/photos/r/soft-pastel.jpg",
       "imageBefore": "assets/photos/r/soft-pastel-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "film-400",
+      "name": "은은한 필름 400",
+      "author": "해담",
+      "summary": "부드러운 피부색과 작은 입자, 밝은 곳은 차분하게",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7J2A7J2A7ZWcIO2VhOumhCA0MDAiLCJrIjowLjU1LCJwIjp7ImhpZ2hsaWdodHMiOi0yMCwic2hhZG93cyI6MTIsImNvbnRyYXN0IjotNSwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2UubHVtIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJoc2wuYmx1ZS5zYXQiOi04LCJzaGFkb3dIdWUiOjIxMCwic2hhZG93U2F0IjoxMCwiaGlnaGxpZ2h0SHVlIjo0MiwiaGlnaGxpZ2h0U2F0IjoxMiwiZ3JhaW4iOjI2LCJncmFpblNpemUiOjI0LCJmYWRlIjoxMn19",
+      "image": "assets/photos/r/film-400.jpg",
+      "imageBefore": "assets/photos/r/film-400-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "slide-film",
+      "name": "쨍한 슬라이드",
+      "author": "해담",
+      "summary": "깊은 검정과 선명한 원색, 맑은 풍경의 대비",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7KiN7ZWcIOyKrOudvOydtOuTnCIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTE2LCJzaGFkb3dzIjotMTIsImNvbnRyYXN0IjozMiwiYmxhY2tQb2ludCI6MTQsInNhdHVyYXRpb24iOjI0LCJ2aWJyYW5jZSI6MTQsInNoYXJwbmVzcyI6MjAsImhzbC5ncmVlbi5zYXQiOjEyLCJoc2wuYmx1ZS5zYXQiOjIwLCJoc2wuYmx1ZS5sdW0iOi0xMiwiY3VydmUubWFzdGVyLjEiOi02LCJjdXJ2ZS5tYXN0ZXIuMyI6NSwiZ3JhaW4iOjgsImdyYWluU2l6ZSI6MTh9fQ",
+      "image": "assets/photos/r/slide-film.jpg",
+      "imageBefore": "assets/photos/r/slide-film-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "bw-grain",
+      "name": "거친 흑백 필름",
+      "author": "해담",
+      "summary": "깊게 눌린 그림자와 굵은 입자로 빛을 남겨요",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi6rGw7LmcIO2dkeuwsSDtlYTrpoQiLCJrIjowLjUsInAiOnsiaGlnaGxpZ2h0cyI6LTI0LCJzaGFkb3dzIjotMTIsImNvbnRyYXN0Ijo0MiwiYmxhY2tQb2ludCI6MTgsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjoyOCwiaHNsLm9yYW5nZS5sdW0iOjE0LCJoc2wuYmx1ZS5sdW0iOi0yOCwiY3VydmUubWFzdGVyLjEiOi04LCJjdXJ2ZS5tYXN0ZXIuMyI6OCwiZ3JhaW4iOjc1LCJncmFpblNpemUiOjcyLCJmYWRlIjoyfX0",
+      "image": "assets/photos/r/bw-grain.jpg",
+      "imageBefore": "assets/photos/r/bw-grain-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "faded-color",
+      "name": "바랜 컬러 필름",
+      "author": "해담",
+      "summary": "청록으로 바랜 색과 분홍빛 밝은 부분, 낮은 대비",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi67CU656cIOy7rOufrCDtlYTrpoQiLCJrIjowLjUsInAiOnsiY29udHJhc3QiOi0xNiwic2F0dXJhdGlvbiI6LTM4LCJ3YXJtdGgiOi04LCJ0aW50IjoxMCwiaHNsLmdyZWVuLnNhdCI6LTM2LCJoc2wuYmx1ZS5odWUiOi0yMCwiaHNsLmJsdWUuc2F0IjotMjAsImN1cnZlLm1hc3Rlci4wIjoxMiwiY3VydmUubWFzdGVyLjQiOi0xNCwic2hhZG93SHVlIjoxNzUsInNoYWRvd1NhdCI6MzIsImhpZ2hsaWdodEh1ZSI6MzMwLCJoaWdobGlnaHRTYXQiOjE4LCJncmFpbiI6MzIsImdyYWluU2l6ZSI6NDgsImZhZGUiOjI4fX0",
+      "image": "assets/photos/r/faded-color.jpg",
+      "imageBefore": "assets/photos/r/faded-color-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "ccd-flash",
+      "name": "플래시 디카",
+      "author": "해담",
+      "summary": "환한 밝은 부분과 깊은 그림자, 또렷한 디카 색",
+      "tags": [
+        "기본 스타일",
+        "디카"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7ZSM656Y7IucIOuUlOy5tCIsImsiOjAuMjUsInAiOnsiZXhwb3N1cmUiOjE4LCJoaWdobGlnaHRzIjozOCwic2hhZG93cyI6LTE4LCJjb250cmFzdCI6MzAsImJsYWNrUG9pbnQiOjE2LCJzYXR1cmF0aW9uIjoxMiwid2FybXRoIjotMTIsInRpbnQiOjYsInNoYXJwbmVzcyI6NzAsInZpZ25ldHRlIjoyMiwiaHNsLnJlZC5zYXQiOjE4LCJoc2wub3JhbmdlLmx1bSI6MTIsImhzbC5ibHVlLnNhdCI6MTIsImhpZ2hsaWdodEh1ZSI6MjEwLCJoaWdobGlnaHRTYXQiOjE2LCJncmFpbiI6MywiZ3JhaW5TaXplIjoxMn19",
+      "image": "assets/photos/r/ccd-flash.jpg",
+      "imageBefore": "assets/photos/r/ccd-flash-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "instant-print",
+      "name": "즉석 사진",
+      "author": "해담",
+      "summary": "크림색 빛과 자줏빛 그림자, 부드럽게 바랜 즉석 사진",
+      "tags": [
+        "기본 스타일",
+        "디카"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7KaJ7ISdIOyCrOynhCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMzAsImNvbnRyYXN0IjotMjAsInNhdHVyYXRpb24iOi0yOCwid2FybXRoIjoxNiwidGludCI6MTQsInZpZ25ldHRlIjozNCwiaHNsLmdyZWVuLmh1ZSI6LTE2LCJoc2wuZ3JlZW4uc2F0IjotNDAsImhzbC5ibHVlLnNhdCI6LTI4LCJjdXJ2ZS5tYXN0ZXIuNCI6LTEyLCJzaGFkb3dIdWUiOjI4NSwic2hhZG93U2F0IjoyNSwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjozMiwiZ3JhaW4iOjI0LCJncmFpblNpemUiOjM2LCJmYWRlIjo0Mn19",
+      "image": "assets/photos/r/instant-print.jpg",
+      "imageBefore": "assets/photos/r/instant-print-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "summer-green",
+      "name": "초여름 그린",
+      "author": "해담",
+      "summary": "노란 기를 덜어낸 싱그러운 초록과 시원한 그림자",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7LSI7Jes66aEIOq3uOumsCIsImsiOjAuMzUsInAiOnsic2hhZG93cyI6MTIsImNvbnRyYXN0Ijo4LCJ2aWJyYW5jZSI6MjAsIndhcm10aCI6LTgsInRpbnQiOi0zLCJoc2wueWVsbG93Lmh1ZSI6MTgsImhzbC5ncmVlbi5odWUiOi0yMCwiaHNsLmdyZWVuLnNhdCI6MjIsImhzbC5ncmVlbi5sdW0iOjEyLCJoc2wuYXF1YS5zYXQiOi0xMCwiaHNsLmJsdWUuaHVlIjotMTIsInNoYWRvd0h1ZSI6MTgwLCJzaGFkb3dTYXQiOjE2LCJoaWdobGlnaHRIdWUiOjYwLCJoaWdobGlnaHRTYXQiOjgsImZhZGUiOjR9fQ",
+      "image": "assets/photos/r/summer-green.jpg",
+      "imageBefore": "assets/photos/r/summer-green-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "autumn-leaves",
+      "name": "가을 단풍",
+      "author": "해담",
+      "summary": "붉은 잎과 금빛 노랑을 깊게, 선명한 가을빛",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi6rCA7J2EIOuLqO2SjSIsImsiOjAuNiwicCI6eyJoaWdobGlnaHRzIjotMjAsInNoYWRvd3MiOi00LCJjb250cmFzdCI6MTgsInZpYnJhbmNlIjoxMiwid2FybXRoIjoxOCwiaHNsLnJlZC5zYXQiOjIwLCJoc2wub3JhbmdlLnNhdCI6MjIsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTI2LCJoc2wuZ3JlZW4uaHVlIjotMzUsImhzbC5ncmVlbi5zYXQiOi0xNCwiaHNsLmJsdWUuc2F0IjotMjUsInNoYWRvd0h1ZSI6MjUsInNoYWRvd1NhdCI6MTIsImhpZ2hsaWdodEh1ZSI6MzgsImhpZ2hsaWdodFNhdCI6MjAsImZhZGUiOjZ9fQ",
+      "image": "assets/photos/r/autumn-leaves.jpg",
+      "imageBefore": "assets/photos/r/autumn-leaves-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "winter-blue",
+      "name": "겨울 아침",
+      "author": "해담",
+      "summary": "맑고 차가운 흰빛, 은은한 파란 그림자의 겨울",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi6rKo7Jq4IOyVhOy5qCIsImsiOjAuMjUsInAiOnsiaGlnaGxpZ2h0cyI6LTEyLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOi0xMCwiYnJpZ2h0bmVzcyI6MTQsInNhdHVyYXRpb24iOi0xOCwid2FybXRoIjotMjgsInRpbnQiOjUsImhzbC5vcmFuZ2Uuc2F0IjotMTIsImhzbC5hcXVhLnNhdCI6LTE0LCJoc2wuYmx1ZS5sdW0iOjE4LCJzaGFkb3dIdWUiOjIyMCwic2hhZG93U2F0IjoyOCwiaGlnaGxpZ2h0SHVlIjoyMDAsImhpZ2hsaWdodFNhdCI6MTIsImZhZGUiOjZ9fQ",
+      "image": "assets/photos/r/winter-blue.jpg",
+      "imageBefore": "assets/photos/r/winter-blue-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "neon-night",
+      "name": "네온 밤거리",
+      "author": "해담",
+      "summary": "파란 그림자와 분홍빛 불빛, 진한 밤의 색",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi64Sk7JioIOuwpOqxsOumrCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMjgsInNoYWRvd3MiOjgsImNvbnRyYXN0IjoyOCwiYmxhY2tQb2ludCI6MTIsInZpYnJhbmNlIjoyOCwid2FybXRoIjotMTIsInRpbnQiOjgsImhzbC55ZWxsb3cuc2F0IjotMzIsImhzbC5ibHVlLmh1ZSI6MTQsImhzbC5ibHVlLnNhdCI6MTgsImhzbC5wdXJwbGUuc2F0IjoyNiwiaHNsLm1hZ2VudGEuc2F0IjoyNCwic2hhZG93SHVlIjoyNDAsInNoYWRvd1NhdCI6MzYsImhpZ2hsaWdodEh1ZSI6MzE1LCJoaWdobGlnaHRTYXQiOjMyLCJncmFpbiI6MTYsImdyYWluU2l6ZSI6MjV9fQ",
+      "image": "assets/photos/r/neon-night.jpg",
+      "imageBefore": "assets/photos/r/neon-night-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "clear-sea",
+      "name": "청량한 바다",
+      "author": "해담",
+      "summary": "밝은 물빛과 깨끗한 하늘색, 시원하고 선명하게",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7LKt65-J7ZWcIOuwlOuLpCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjE0LCJzYXR1cmF0aW9uIjo4LCJ2aWJyYW5jZSI6MjQsIndhcm10aCI6LTEwLCJzaGFycG5lc3MiOjIwLCJoc2wueWVsbG93LnNhdCI6LTE2LCJoc2wuYXF1YS5odWUiOi04LCJoc2wuYXF1YS5zYXQiOjIyLCJoc2wuYXF1YS5sdW0iOjEyLCJoc2wuYmx1ZS5odWUiOi0xNiwiaHNsLmJsdWUuc2F0IjoyNCwiaHNsLmJsdWUubHVtIjoxMCwic2hhZG93SHVlIjoxOTAsInNoYWRvd1NhdCI6MTR9fQ",
+      "image": "assets/photos/r/clear-sea.jpg",
+      "imageBefore": "assets/photos/r/clear-sea-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "soft-portrait",
+      "name": "화사한 인물",
+      "author": "해담",
+      "summary": "피부색은 부드럽고 밝게, 붉은 기와 강한 대비는 차분하게",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "payload": "eyJ2IjoxLCJuIjoi7ZmU7IKs7ZWcIOyduOusvCIsImsiOjAuNCwicCI6eyJicmlsbGlhbmNlIjoxNCwiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxNiwiY29udHJhc3QiOi0xNiwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6OCwidGludCI6Mywic2hhcnBuZXNzIjotMTIsImhzbC5yZWQuc2F0IjotMTYsImhzbC5vcmFuZ2Uuc2F0IjotMTQsImhzbC5vcmFuZ2UubHVtIjoxOCwiaHNsLnllbGxvdy5zYXQiOi0xNCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJoaWdobGlnaHRIdWUiOjQwLCJoaWdobGlnaHRTYXQiOjh9fQ",
+      "image": "assets/photos/r/soft-portrait.jpg",
+      "imageBefore": "assets/photos/r/soft-portrait-before.jpg",
       "photoCredit": "해담"
     }
   ]

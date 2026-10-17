@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "recipes": [
     {
       "id": "morning",
@@ -10,7 +10,8 @@
       "tags": [
         "기본 스타일",
         "아침",
-        "밝은"
+        "밝은",
+        "일상"
       ],
       "accent": "#F3D29A",
       "keepCast": 0.3,
@@ -45,7 +46,8 @@
         "기본 스타일",
         "실내",
         "따뜻한",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#C89A72",
       "keepCast": 0.4,
@@ -83,7 +85,8 @@
       "tags": [
         "기본 스타일",
         "야외",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#9DB38A",
       "keepCast": 0.3,
@@ -123,7 +126,8 @@
         "기본 스타일",
         "음식",
         "저녁",
-        "따뜻한"
+        "따뜻한",
+        "일상"
       ],
       "accent": "#E39A6E",
       "keepCast": 0.45,
@@ -156,7 +160,8 @@
         "기본 스타일",
         "흐린 날",
         "차분한",
-        "필름"
+        "필름",
+        "일상"
       ],
       "accent": "#8E9EB0",
       "keepCast": 0.6,
@@ -549,7 +554,8 @@
       "tags": [
         "저녁",
         "야외",
-        "따뜻한"
+        "따뜻한",
+        "장면"
       ],
       "accent": "#E8956A",
       "keepCast": 0.95,
@@ -777,7 +783,8 @@
       "tags": [
         "파스텔",
         "밝은",
-        "차분한"
+        "차분한",
+        "계절"
       ],
       "accent": "#E9BECE",
       "keepCast": 0.3,
@@ -806,6 +813,423 @@
       "photo": {
         "image": "assets/photos/r/soft-pastel.jpg",
         "before": "assets/photos/r/soft-pastel-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "film-400",
+      "name": "은은한 필름 400",
+      "author": "해담",
+      "summary": "부드러운 피부색과 작은 입자, 밝은 곳은 차분하게",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.55,
+      "params": {
+        "contrast": -5,
+        "highlights": -20,
+        "shadows": 12,
+        "saturation": -6,
+        "warmth": 10,
+        "fade": 12,
+        "grain": 26,
+        "grainSize": 24,
+        "highlightHue": 42,
+        "highlightSat": 12,
+        "shadowHue": 210,
+        "shadowSat": 10,
+        "hsl.orange.lum": 10,
+        "hsl.green.sat": -18,
+        "hsl.blue.sat": -8
+      },
+      "photo": {
+        "image": "assets/photos/r/film-400.jpg",
+        "before": "assets/photos/r/film-400-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "slide-film",
+      "name": "쨍한 슬라이드",
+      "author": "해담",
+      "summary": "깊은 검정과 선명한 원색, 맑은 풍경의 대비",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.45,
+      "params": {
+        "contrast": 32,
+        "blackPoint": 14,
+        "saturation": 24,
+        "vibrance": 14,
+        "highlights": -16,
+        "shadows": -12,
+        "sharpness": 20,
+        "grain": 8,
+        "grainSize": 18,
+        "hsl.blue.sat": 20,
+        "hsl.blue.lum": -12,
+        "hsl.green.sat": 12,
+        "curve.master.1": -6,
+        "curve.master.3": 5
+      },
+      "photo": {
+        "image": "assets/photos/r/slide-film.jpg",
+        "before": "assets/photos/r/slide-film-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "bw-grain",
+      "name": "거친 흑백 필름",
+      "author": "해담",
+      "summary": "깊게 눌린 그림자와 굵은 입자로 빛을 남겨요",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.5,
+      "params": {
+        "saturation": -100,
+        "contrast": 42,
+        "blackPoint": 18,
+        "highlights": -24,
+        "shadows": -12,
+        "grain": 75,
+        "grainSize": 72,
+        "fade": 2,
+        "vignette": 28,
+        "hsl.blue.lum": -28,
+        "hsl.orange.lum": 14,
+        "curve.master.1": -8,
+        "curve.master.3": 8
+      },
+      "photo": {
+        "image": "assets/photos/r/bw-grain.jpg",
+        "before": "assets/photos/r/bw-grain-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "faded-color",
+      "name": "바랜 컬러 필름",
+      "author": "해담",
+      "summary": "청록으로 바랜 색과 분홍빛 밝은 부분, 낮은 대비",
+      "tags": [
+        "기본 스타일",
+        "필름"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.5,
+      "params": {
+        "saturation": -38,
+        "contrast": -16,
+        "warmth": -8,
+        "tint": 10,
+        "fade": 28,
+        "grain": 32,
+        "grainSize": 48,
+        "shadowHue": 175,
+        "shadowSat": 32,
+        "highlightHue": 330,
+        "highlightSat": 18,
+        "curve.master.0": 12,
+        "curve.master.4": -14,
+        "hsl.blue.hue": -20,
+        "hsl.blue.sat": -20,
+        "hsl.green.sat": -36
+      },
+      "photo": {
+        "image": "assets/photos/r/faded-color.jpg",
+        "before": "assets/photos/r/faded-color-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "ccd-flash",
+      "name": "플래시 디카",
+      "author": "해담",
+      "summary": "환한 밝은 부분과 깊은 그림자, 또렷한 디카 색",
+      "tags": [
+        "기본 스타일",
+        "디카"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.25,
+      "params": {
+        "exposure": 18,
+        "highlights": 38,
+        "contrast": 30,
+        "blackPoint": 16,
+        "shadows": -18,
+        "saturation": 12,
+        "warmth": -12,
+        "tint": 6,
+        "sharpness": 70,
+        "vignette": 22,
+        "grain": 3,
+        "grainSize": 12,
+        "highlightHue": 210,
+        "highlightSat": 16,
+        "hsl.red.sat": 18,
+        "hsl.orange.lum": 12,
+        "hsl.blue.sat": 12
+      },
+      "photo": {
+        "image": "assets/photos/r/ccd-flash.jpg",
+        "before": "assets/photos/r/ccd-flash-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "instant-print",
+      "name": "즉석 사진",
+      "author": "해담",
+      "summary": "크림색 빛과 자줏빛 그림자, 부드럽게 바랜 즉석 사진",
+      "tags": [
+        "기본 스타일",
+        "디카"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.5,
+      "params": {
+        "warmth": 16,
+        "tint": 14,
+        "fade": 42,
+        "contrast": -20,
+        "saturation": -28,
+        "highlights": -30,
+        "grain": 24,
+        "grainSize": 36,
+        "vignette": 34,
+        "shadowHue": 285,
+        "shadowSat": 25,
+        "highlightHue": 48,
+        "highlightSat": 32,
+        "hsl.green.hue": -16,
+        "hsl.green.sat": -40,
+        "hsl.blue.sat": -28,
+        "curve.master.4": -12
+      },
+      "photo": {
+        "image": "assets/photos/r/instant-print.jpg",
+        "before": "assets/photos/r/instant-print-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "summer-green",
+      "name": "초여름 그린",
+      "author": "해담",
+      "summary": "노란 기를 덜어낸 싱그러운 초록과 시원한 그림자",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.35,
+      "params": {
+        "warmth": -8,
+        "tint": -3,
+        "contrast": 8,
+        "vibrance": 20,
+        "shadows": 12,
+        "fade": 4,
+        "shadowHue": 180,
+        "shadowSat": 16,
+        "highlightHue": 60,
+        "highlightSat": 8,
+        "hsl.green.hue": -20,
+        "hsl.green.sat": 22,
+        "hsl.green.lum": 12,
+        "hsl.yellow.hue": 18,
+        "hsl.aqua.sat": -10,
+        "hsl.blue.hue": -12
+      },
+      "photo": {
+        "image": "assets/photos/r/summer-green.jpg",
+        "before": "assets/photos/r/summer-green-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "autumn-leaves",
+      "name": "가을 단풍",
+      "author": "해담",
+      "summary": "붉은 잎과 금빛 노랑을 깊게, 선명한 가을빛",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.6,
+      "params": {
+        "warmth": 18,
+        "contrast": 18,
+        "highlights": -20,
+        "shadows": -4,
+        "vibrance": 12,
+        "fade": 6,
+        "highlightHue": 38,
+        "highlightSat": 20,
+        "shadowHue": 25,
+        "shadowSat": 12,
+        "hsl.red.sat": 20,
+        "hsl.orange.sat": 22,
+        "hsl.orange.lum": 4,
+        "hsl.yellow.hue": -26,
+        "hsl.green.hue": -35,
+        "hsl.green.sat": -14,
+        "hsl.blue.sat": -25
+      },
+      "photo": {
+        "image": "assets/photos/r/autumn-leaves.jpg",
+        "before": "assets/photos/r/autumn-leaves-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "winter-blue",
+      "name": "겨울 아침",
+      "author": "해담",
+      "summary": "맑고 차가운 흰빛, 은은한 파란 그림자의 겨울",
+      "tags": [
+        "기본 스타일",
+        "계절"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.25,
+      "params": {
+        "warmth": -28,
+        "tint": 5,
+        "saturation": -18,
+        "brightness": 14,
+        "contrast": -10,
+        "highlights": -12,
+        "shadows": 10,
+        "fade": 6,
+        "shadowHue": 220,
+        "shadowSat": 28,
+        "highlightHue": 200,
+        "highlightSat": 12,
+        "hsl.blue.lum": 18,
+        "hsl.aqua.sat": -14,
+        "hsl.orange.sat": -12
+      },
+      "photo": {
+        "image": "assets/photos/r/winter-blue.jpg",
+        "before": "assets/photos/r/winter-blue-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "neon-night",
+      "name": "네온 밤거리",
+      "author": "해담",
+      "summary": "파란 그림자와 분홍빛 불빛, 진한 밤의 색",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.4,
+      "params": {
+        "warmth": -12,
+        "tint": 8,
+        "contrast": 28,
+        "blackPoint": 12,
+        "highlights": -28,
+        "shadows": 8,
+        "vibrance": 28,
+        "shadowHue": 240,
+        "shadowSat": 36,
+        "highlightHue": 315,
+        "highlightSat": 32,
+        "grain": 16,
+        "grainSize": 25,
+        "hsl.purple.sat": 26,
+        "hsl.magenta.sat": 24,
+        "hsl.blue.hue": 14,
+        "hsl.blue.sat": 18,
+        "hsl.yellow.sat": -32
+      },
+      "photo": {
+        "image": "assets/photos/r/neon-night.jpg",
+        "before": "assets/photos/r/neon-night-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "clear-sea",
+      "name": "청량한 바다",
+      "author": "해담",
+      "summary": "밝은 물빛과 깨끗한 하늘색, 시원하고 선명하게",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.35,
+      "params": {
+        "warmth": -10,
+        "contrast": 14,
+        "saturation": 8,
+        "vibrance": 24,
+        "highlights": -18,
+        "shadows": 10,
+        "sharpness": 20,
+        "shadowHue": 190,
+        "shadowSat": 14,
+        "hsl.blue.hue": -16,
+        "hsl.blue.sat": 24,
+        "hsl.blue.lum": 10,
+        "hsl.aqua.hue": -8,
+        "hsl.aqua.sat": 22,
+        "hsl.aqua.lum": 12,
+        "hsl.yellow.sat": -16
+      },
+      "photo": {
+        "image": "assets/photos/r/clear-sea.jpg",
+        "before": "assets/photos/r/clear-sea-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "soft-portrait",
+      "name": "화사한 인물",
+      "author": "해담",
+      "summary": "피부색은 부드럽고 밝게, 붉은 기와 강한 대비는 차분하게",
+      "tags": [
+        "기본 스타일",
+        "장면"
+      ],
+      "accent": "#B4C6C8",
+      "keepCast": 0.4,
+      "params": {
+        "warmth": 8,
+        "tint": 3,
+        "contrast": -16,
+        "highlights": -18,
+        "shadows": 16,
+        "brilliance": 14,
+        "saturation": -6,
+        "sharpness": -12,
+        "highlightHue": 40,
+        "highlightSat": 8,
+        "hsl.orange.lum": 18,
+        "hsl.orange.sat": -14,
+        "hsl.red.sat": -16,
+        "hsl.yellow.sat": -14,
+        "hsl.green.sat": -18
+      },
+      "photo": {
+        "image": "assets/photos/r/soft-portrait.jpg",
+        "before": "assets/photos/r/soft-portrait-before.jpg",
         "credit": "해담"
       }
     }
