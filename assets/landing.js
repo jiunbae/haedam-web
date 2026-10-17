@@ -14,8 +14,12 @@
   var cache = {};
   document.querySelectorAll(".chips button").forEach(function (b) {
     var src = "assets/photos/hero-" + b.dataset.look + ".jpg";
+    var webpSet = src.replace(/\.jpg$/, "-640.webp") + " 640w, " + src.replace(/\.jpg$/, ".webp") + " 960w";
     function preload() {
-      if (!cache[b.dataset.look]) { cache[b.dataset.look] = new Image(); cache[b.dataset.look].src = src.replace(/\.jpg$/, ".webp"); }
+      if (cache[b.dataset.look]) return;
+      var img = new Image();  // same candidates as the <source>, so the browser reuses the download
+      img.sizes = "(max-width: 760px) 320px, 480px"; img.srcset = webpSet;
+      cache[b.dataset.look] = img;
     }
     b.addEventListener("pointerenter", preload);
     b.addEventListener("focus", preload);
@@ -23,7 +27,7 @@
       document.querySelectorAll(".chips button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
       after.src = src;
       var webp = after.parentNode.querySelector("source");  // <picture>: the WebP source wins over img.src
-      if (webp) webp.srcset = src.replace(/\.jpg$/, ".webp");
+      if (webp) webp.srcset = webpSet;
       after.alt = b.textContent + " 스타일을 입힌 벚꽃 사진";
       name.textContent = b.textContent;
     });

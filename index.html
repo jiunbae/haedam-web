@@ -52,9 +52,9 @@
       </div>
       <figure class="compare" id="compare">
         <div class="compare-frame">
-          <picture><source type="image/webp" srcset="assets/photos/hero-walk.webp"><img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 스타일을 입힌 벚꽃 사진" width="960" height="1200"></picture>
+          <picture><source type="image/webp" srcset="assets/photos/hero-walk-640.webp 640w, assets/photos/hero-walk.webp 960w" sizes="(max-width: 760px) 320px, 480px"><img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 스타일을 입힌 벚꽃 사진" width="960" height="1200"></picture>
           <div class="compare-before" id="compare-before">
-            <picture><source type="image/webp" srcset="assets/photos/hero-original.webp"><img src="assets/photos/hero-original.jpg" alt="보정 전 원본" width="960" height="1200"></picture>
+            <picture><source type="image/webp" srcset="assets/photos/hero-original-640.webp 640w, assets/photos/hero-original.webp 960w" sizes="(max-width: 760px) 320px, 480px"><img src="assets/photos/hero-original.jpg" alt="보정 전 원본" width="960" height="1200"></picture>
           </div>
           <span class="compare-label left">원본</span>
           <span class="compare-label right" id="compare-name">동네 산책</span>
@@ -77,16 +77,44 @@
     </div>
   </section>
 
-  <section id="looks">
+  <section id="film">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">열세 가지 기본 스타일</span>
-        <h2>하루의 장면마다 어울리는 톤</h2>
-        <p>시간과 빛, 장면을 보고 일상에 맞는 톤을 먼저 골라줘요. 파스텔, 필름, 디카, 흑백은 취향에 따라 골라보세요. 사진을 누르고 있으면 보정 전 원본이 보여요.</p>
+        <span class="eyebrow">새로 나온 필름 스타일</span>
+        <h2>요즘 필름 사진의 느낌을 한 번에</h2>
+        <p>눈에 보이는 필름 입자, 살짝 뜬 블랙, 어두운 모서리까지. 필름 카메라도 디카도 없어도 그 느낌을 그대로 입혀요. 사진을 누르고 있으면 원본이 보여요.</p>
       </div>
       <div class="looks">
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/morning-after.webp"><img src="assets/photos/morning-after.jpg" alt="푸른 하늘과 벚꽃, 아침 햇살 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/morning-before.webp"><img class="before" data-src="assets/photos/morning-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="따뜻한 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-warm-480.webp 480w, assets/photos/r/film-warm.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/film-warm.jpg" alt="새들이 사는 나무 집, 따뜻한 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-warm-before-480.webp 480w, assets/photos/r/film-warm-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/film-warm-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>따뜻한 필름</h3><p>크림 같은 피부톤과 뜬 블랙, 고운 입자. 필름으로 찍은 오후처럼 담아요.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="밤 영화 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-cine-480.webp 480w, assets/photos/r/film-cine.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/film-cine.jpg" alt="밤에 핀 벚꽃, 밤 영화 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-cine-before-480.webp 480w, assets/photos/r/film-cine-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/film-cine-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>밤 영화 필름</h3><p>차가운 흰빛, 청록 그림자, 붉게 번지는 불빛. 밤 장면을 영화처럼 담아요.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="일회용 카메라 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/disposable-480.webp 480w, assets/photos/r/disposable.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/disposable.jpg" alt="꽃이 가득한 정원, 일회용 카메라 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/disposable-before-480.webp 480w, assets/photos/r/disposable-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/disposable-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>일회용 카메라</h3><p>쨍한 대비, 초록빛 그림자, 굵은 입자와 어두운 모서리. 여행길 일회용 카메라처럼.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="디카 감성 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/ccd-480.webp 480w, assets/photos/r/ccd.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/ccd.jpg" alt="구름 낀 하늘 아래 집, 디카 감성 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/ccd-before-480.webp 480w, assets/photos/r/ccd-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/ccd-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">디카</span><h3>디카 감성</h3><p>2000년대 디카처럼 밝고 선명하게. 차가운 흰빛과 진한 하늘색.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="looks">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">아홉 가지 하루의 스타일</span>
+        <h2>하루의 장면마다 어울리는 톤</h2>
+        <p>시간과 빛, 장면을 보고 일상에 맞는 톤을 먼저 골라줘요. 파스텔, 오래된 앨범, 흑백은 취향에 따라 골라보세요. 사진을 누르고 있으면 보정 전 원본이 보여요.</p>
+      </div>
+      <div class="looks">
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/morning-after-480.webp 480w, assets/photos/morning-after-720.webp 720w, assets/photos/morning-after.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/morning-after.jpg" alt="푸른 하늘과 벚꽃, 아침 햇살 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/morning-before-480.webp 480w, assets/photos/morning-before-720.webp 720w, assets/photos/morning-before.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/morning-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">아침</span>
             <h3>아침 햇살</h3>
@@ -94,7 +122,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/cafe-after.webp"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/cafe-before.webp"><img class="before" data-src="assets/photos/cafe-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/cafe-after-480.webp 480w, assets/photos/cafe-after-720.webp 720w, assets/photos/cafe-after.webp 880w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/cafe-before-480.webp 480w, assets/photos/cafe-before-720.webp 720w, assets/photos/cafe-before.webp 880w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/cafe-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">오후</span>
             <h3>오후 카페</h3>
@@ -102,7 +130,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/walk-after.webp"><img src="assets/photos/walk-after.jpg" alt="나무가 늘어선 숲길, 동네 산책 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/walk-before.webp"><img class="before" data-src="assets/photos/walk-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/walk-after-480.webp 480w, assets/photos/walk-after-720.webp 720w, assets/photos/walk-after.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/walk-after.jpg" alt="나무가 늘어선 숲길, 동네 산책 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/walk-before-480.webp 480w, assets/photos/walk-before-720.webp 720w, assets/photos/walk-before.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/walk-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">야외</span>
             <h3>동네 산책</h3>
@@ -110,7 +138,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/dinner-after.webp"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/dinner-before.webp"><img class="before" data-src="assets/photos/dinner-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/dinner-after-480.webp 480w, assets/photos/dinner-after-720.webp 720w, assets/photos/dinner-after.webp 733w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/dinner-before-480.webp 480w, assets/photos/dinner-before-720.webp 720w, assets/photos/dinner-before.webp 733w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/dinner-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">저녁</span>
             <h3>저녁 식탁</h3>
@@ -118,7 +146,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/rainy-after.webp"><img src="assets/photos/rainy-after.jpg" alt="우산과 수국이 있는 정원, 비 오는 날 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/rainy-before.webp"><img class="before" data-src="assets/photos/rainy-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/rainy-after-480.webp 480w, assets/photos/rainy-after-720.webp 720w, assets/photos/rainy-after.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/rainy-after.jpg" alt="우산과 수국이 있는 정원, 비 오는 날 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/rainy-before-480.webp 480w, assets/photos/rainy-before-720.webp 720w, assets/photos/rainy-before.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/rainy-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">흐린 날</span>
             <h3>비 오는 날</h3>
@@ -126,36 +154,20 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="연한 봄빛 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/soft-pastel.webp"><img src="assets/photos/r/soft-pastel.jpg" alt="봄날 벚꽃길, 연한 봄빛 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/soft-pastel-before.webp"><img class="before" data-src="assets/photos/r/soft-pastel-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="연한 봄빛 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/soft-pastel-480.webp 480w, assets/photos/r/soft-pastel.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/soft-pastel.jpg" alt="봄날 벚꽃길, 연한 봄빛 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/soft-pastel-before-480.webp 480w, assets/photos/r/soft-pastel-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/soft-pastel-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">파스텔</span><h3>연한 봄빛</h3><p>가벼운 대비, 연한 초록, 맑은 분홍빛. 봄날의 색을 부드럽게 담아요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="오래된 앨범 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/old-album.webp"><img src="assets/photos/r/old-album.jpg" alt="오래된 건물과 정원, 오래된 앨범 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/old-album-before.webp"><img class="before" data-src="assets/photos/r/old-album-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="오래된 앨범 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/old-album-480.webp 480w, assets/photos/r/old-album.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/old-album.jpg" alt="오래된 건물과 정원, 오래된 앨범 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/old-album-before-480.webp 480w, assets/photos/r/old-album-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/old-album-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">레트로</span><h3>오래된 앨범</h3><p>바랜 색, 초록빛 그림자, 굵은 입자. 오래된 사진첩의 분위기를 남겨요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="흑백 일기 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/bw-diary.webp"><img src="assets/photos/r/bw-diary.jpg" alt="푸른 하늘을 배경으로 한 처마, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/bw-diary-before.webp"><img class="before" data-src="assets/photos/r/bw-diary-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="흑백 일기 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/bw-diary-480.webp 480w, assets/photos/r/bw-diary.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/bw-diary.jpg" alt="푸른 하늘을 배경으로 한 처마, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/bw-diary-before-480.webp 480w, assets/photos/r/bw-diary-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/bw-diary-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">흑백</span><h3>흑백 일기</h3><p>색을 덜어낸 빛과 그림자. 또렷한 대비와 거친 입자로 담아요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="한강 노을 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/river-sunset.webp"><img src="assets/photos/r/river-sunset.jpg" alt="해 질 녘 강변, 한강 노을 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/river-sunset-before.webp"><img class="before" data-src="assets/photos/r/river-sunset-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="한강 노을 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/river-sunset-480.webp 480w, assets/photos/r/river-sunset.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/r/river-sunset.jpg" alt="해 질 녘 강변, 한강 노을 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/river-sunset-before-480.webp 480w, assets/photos/r/river-sunset-before.webp 720w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img class="before" data-src="assets/photos/r/river-sunset-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">해 질 녘</span><h3>한강 노을</h3><p>노을의 온기는 그대로. 밝은 하늘과 그림자를 부드럽게 담아요.</p></div>
-        </article>
-        <article class="card look">
-          <div class="shot" tabindex="0" aria-label="따뜻한 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-warm.webp"><img src="assets/photos/r/film-warm.jpg" alt="새들이 사는 나무 집, 따뜻한 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-warm-before.webp"><img class="before" data-src="assets/photos/r/film-warm-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
-          <div class="body"><span class="time">필름</span><h3>따뜻한 필름</h3><p>크림 같은 피부톤과 뜬 블랙, 고운 입자. 필름으로 찍은 오후처럼 담아요.</p></div>
-        </article>
-        <article class="card look">
-          <div class="shot" tabindex="0" aria-label="밤 영화 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-cine.webp"><img src="assets/photos/r/film-cine.jpg" alt="밤에 핀 벚꽃, 밤 영화 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-cine-before.webp"><img class="before" data-src="assets/photos/r/film-cine-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
-          <div class="body"><span class="time">필름</span><h3>밤 영화 필름</h3><p>차가운 흰빛, 청록 그림자, 붉게 번지는 불빛. 밤 장면을 영화처럼 담아요.</p></div>
-        </article>
-        <article class="card look">
-          <div class="shot" tabindex="0" aria-label="일회용 카메라 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/disposable.webp"><img src="assets/photos/r/disposable.jpg" alt="꽃이 가득한 정원, 일회용 카메라 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/disposable-before.webp"><img class="before" data-src="assets/photos/r/disposable-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
-          <div class="body"><span class="time">필름</span><h3>일회용 카메라</h3><p>쨍한 대비, 초록빛 그림자, 굵은 입자와 어두운 모서리. 여행길 일회용 카메라처럼.</p></div>
-        </article>
-        <article class="card look">
-          <div class="shot" tabindex="0" aria-label="디카 감성 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/ccd.webp"><img src="assets/photos/r/ccd.jpg" alt="구름 낀 하늘 아래 집, 디카 감성 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/ccd-before.webp"><img class="before" data-src="assets/photos/r/ccd-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
-          <div class="body"><span class="time">디카</span><h3>디카 감성</h3><p>2000년대 디카처럼 밝고 선명하게. 차가운 흰빛과 진한 하늘색.</p></div>
         </article>
       </div>
     </div>
@@ -211,9 +223,9 @@
           <p>링크 하나로 스타일을 나눌 수 있어요. 마음에 드는 걸 골라 앱으로 바로 열면 돼요.</p>
         </div>
         <div class="teaser-shots">
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/river-sunset-after.webp"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 스타일" loading="lazy" decoding="async"></picture><span>한강 노을</span></a>
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/night-walk-after.webp"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 스타일" loading="lazy" decoding="async"></picture><span>밤 산책</span></a>
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/bw-diary-after.webp"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><span>흑백 일기</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/river-sunset-after-480.webp 480w, assets/photos/river-sunset-after-720.webp 720w, assets/photos/river-sunset-after.webp 733w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 스타일" loading="lazy" decoding="async"></picture><span>한강 노을</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/night-walk-after-480.webp 480w, assets/photos/night-walk-after-720.webp 720w, assets/photos/night-walk-after.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 스타일" loading="lazy" decoding="async"></picture><span>밤 산책</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/bw-diary-after-480.webp 480w, assets/photos/bw-diary-after-720.webp 720w, assets/photos/bw-diary-after.webp 825w" sizes="(max-width: 760px) 46vw, (max-width: 960px) 31vw, 260px"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><span>흑백 일기</span></a>
         </div>
         <div><a class="btn btn-accent" href="community/">스타일 20개 둘러보기</a></div>
       </div>
