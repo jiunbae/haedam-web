@@ -12,7 +12,7 @@
     $("view").hidden = true;
     $("error").hidden = false;
     if (msg) $("error-msg").textContent = msg + ". 보내준 사람에게 링크를 다시 받아보세요.";
-    document.title = "레시피를 열 수 없어요 — 해담";
+    document.title = "스타일을 열 수 없어요 — 해담";
   }
 
   // --- live preview: the recipe on example photos, drawn by render.js in a worker ---
@@ -132,12 +132,12 @@
     shot.classList.remove("show-before"); shot.setAttribute("aria-pressed", "false");
     if (sample.prerendered) {
       stopWorker();
-      after.src = "../" + sample.prerendered; after.alt = recipe.name + " 레시피를 입힌 사진"; after.hidden = false;
+      after.src = "../" + sample.prerendered; after.alt = recipe.name + " 스타일을 입힌 사진"; after.hidden = false;
       canvas.hidden = true; base.hidden = true; $("pv-busy").hidden = true; shot.classList.remove("loading");
       return;
     }
     after.hidden = true; canvas.hidden = false; base.hidden = false; $("pv-busy").hidden = false;
-    $("pv-busy-text").textContent = "레시피 입히는 중"; $("pv-busy").classList.remove("done");
+    $("pv-busy-text").textContent = "스타일 입히는 중"; $("pv-busy").classList.remove("done");
     if ($("pv-timing")) $("pv-timing").textContent = "";
     shot.classList.add("loading");
     canvas.classList.remove("reveal"); canvas.style.clipPath = "inset(0 100% 0 0)";
@@ -215,8 +215,8 @@
     ++previewGeneration; ++job; stopWorker();
     var payload = location.hash.replace(/^#/, "");
     if (!payload) {
-      $("error-title").textContent = "레시피 링크가 비어 있어요";
-      showError("주소 뒤에 레시피 정보가 없어요");
+      $("error-title").textContent = "스타일 링크가 비어 있어요";
+      showError("주소 뒤에 스타일 정보가 없어요");
       return;
     }
     var recipe;
@@ -225,7 +225,7 @@
     $("error").hidden = true;
     $("view").hidden = false;
     $("name").textContent = recipe.name;
-    document.title = recipe.name + " — 해담 레시피";
+    document.title = recipe.name + " — 해담 스타일";
 
     var count = Object.keys(recipe.params).length;
     $("meta").textContent = "조정한 항목 " + count + "개 · 원래 색 유지 " + Math.round(recipe.keepCast * 100) + "%";

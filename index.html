@@ -27,7 +27,7 @@
   <div class="wrap">
     <a class="brand" href="./"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="hm"><rect x="20" y="18" width="80" height="43"/></clipPath></defs><path d="M14 38V22a8 8 0 0 1 8-8h16M82 14h16a8 8 0 0 1 8 8v16M106 82v16a8 8 0 0 1-8 8H82M38 106H22a8 8 0 0 1-8-8V82" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="57" r="17" fill="var(--accent)" clip-path="url(#hm)"/><defs><mask id="hm-refl" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><image href="assets/reflection-mask.png" x="0" y="0" width="120" height="120"/></mask></defs><rect width="120" height="120" fill="var(--accent)" mask="url(#hm-refl)"/></svg>해담</a>
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="#looks">룩</a>
+      <a href="#looks">스타일</a>
       <a href="#features">기능</a>
       <a href="community/">커뮤니티</a>
     </nav>
@@ -46,13 +46,13 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.7.9-.8 0-2-.9-3.2-.9-1.7 0-3.2 1-4.1 2.4-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-4.1zM14 5.3c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>
             App Store 출시 예정
           </span>
-          <a class="btn" href="#looks">룩 둘러보기</a>
+          <a class="btn" href="#looks">스타일 둘러보기</a>
         </div>
         <p class="hero-note">회원가입도, 업로드도 필요 없어요.</p>
       </div>
       <figure class="compare" id="compare">
         <div class="compare-frame">
-          <picture><source type="image/webp" srcset="assets/photos/hero-walk.webp"><img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 룩을 입힌 벚꽃 사진" width="960" height="1200"></picture>
+          <picture><source type="image/webp" srcset="assets/photos/hero-walk.webp"><img class="compare-after" id="compare-after" fetchpriority="high" decoding="async" src="assets/photos/hero-walk.jpg" alt="동네 산책 스타일을 입힌 벚꽃 사진" width="960" height="1200"></picture>
           <div class="compare-before" id="compare-before">
             <picture><source type="image/webp" srcset="assets/photos/hero-original.webp"><img src="assets/photos/hero-original.jpg" alt="보정 전 원본" width="960" height="1200"></picture>
           </div>
@@ -62,14 +62,16 @@
           <span class="compare-handle" id="compare-handle" aria-hidden="true"></span>
         </div>
         <figcaption>
-          <div class="chips" role="group" aria-label="룩 고르기">
+          <div class="chips" role="group" aria-label="스타일 고르기">
             <button type="button" data-look="morning">아침 햇살</button>
             <button type="button" data-look="cafe">오후 카페</button>
             <button type="button" data-look="walk" aria-pressed="true">동네 산책</button>
             <button type="button" data-look="dinner">저녁 식탁</button>
             <button type="button" data-look="rainy">비 오는 날</button>
+            <button type="button" data-look="film-warm">따뜻한 필름</button>
+            <button type="button" data-look="disposable">일회용 카메라</button>
           </div>
-          <p class="compare-note">같은 사진, 다섯 가지 하루. 손잡이를 끌어 원본과 비교해 보세요.</p>
+          <p class="compare-note">같은 사진, 일곱 가지 톤. 손잡이를 끌어 원본과 비교해 보세요.</p>
         </figcaption>
       </figure>
     </div>
@@ -78,13 +80,13 @@
   <section id="looks">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">아홉 가지 기본 룩</span>
+        <span class="eyebrow">열세 가지 기본 스타일</span>
         <h2>하루의 장면마다 어울리는 톤</h2>
-        <p>시간과 빛, 장면을 보고 일상에 맞는 톤을 먼저 골라줘요. 파스텔, 오래된 앨범, 흑백은 취향에 따라 골라보세요. 사진을 누르고 있으면 보정 전 원본이 보여요.</p>
+        <p>시간과 빛, 장면을 보고 일상에 맞는 톤을 먼저 골라줘요. 파스텔, 필름, 디카, 흑백은 취향에 따라 골라보세요. 사진을 누르고 있으면 보정 전 원본이 보여요.</p>
       </div>
       <div class="looks">
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/morning-after.webp"><img src="assets/photos/morning-after.jpg" alt="푸른 하늘과 벚꽃, 아침 햇살 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/morning-before.webp"><img class="before" data-src="assets/photos/morning-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="아침 햇살 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/morning-after.webp"><img src="assets/photos/morning-after.jpg" alt="푸른 하늘과 벚꽃, 아침 햇살 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/morning-before.webp"><img class="before" data-src="assets/photos/morning-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">아침</span>
             <h3>아침 햇살</h3>
@@ -92,7 +94,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/cafe-after.webp"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/cafe-before.webp"><img class="before" data-src="assets/photos/cafe-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="오후 카페 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/cafe-after.webp"><img src="assets/photos/cafe-after.jpg" alt="햇빛 속 커피잔, 오후 카페 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/cafe-before.webp"><img class="before" data-src="assets/photos/cafe-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">오후</span>
             <h3>오후 카페</h3>
@@ -100,7 +102,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/walk-after.webp"><img src="assets/photos/walk-after.jpg" alt="나무가 늘어선 숲길, 동네 산책 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/walk-before.webp"><img class="before" data-src="assets/photos/walk-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="동네 산책 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/walk-after.webp"><img src="assets/photos/walk-after.jpg" alt="나무가 늘어선 숲길, 동네 산책 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/walk-before.webp"><img class="before" data-src="assets/photos/walk-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">야외</span>
             <h3>동네 산책</h3>
@@ -108,7 +110,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/dinner-after.webp"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/dinner-before.webp"><img class="before" data-src="assets/photos/dinner-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="저녁 식탁 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/dinner-after.webp"><img src="assets/photos/dinner-after.jpg" alt="찌개를 나눠 먹는 저녁 식탁, 저녁 식탁 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/dinner-before.webp"><img class="before" data-src="assets/photos/dinner-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">저녁</span>
             <h3>저녁 식탁</h3>
@@ -116,7 +118,7 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/rainy-after.webp"><img src="assets/photos/rainy-after.jpg" alt="우산과 수국이 있는 정원, 비 오는 날 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/rainy-before.webp"><img class="before" data-src="assets/photos/rainy-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="비 오는 날 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/rainy-after.webp"><img src="assets/photos/rainy-after.jpg" alt="우산과 수국이 있는 정원, 비 오는 날 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/rainy-before.webp"><img class="before" data-src="assets/photos/rainy-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body">
             <span class="time">흐린 날</span>
             <h3>비 오는 날</h3>
@@ -124,20 +126,36 @@
           </div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="연한 봄빛 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/soft-pastel.webp"><img src="assets/photos/r/soft-pastel.jpg" alt="봄날 벚꽃길, 연한 봄빛 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/soft-pastel-before.webp"><img class="before" data-src="assets/photos/r/soft-pastel-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="연한 봄빛 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/soft-pastel.webp"><img src="assets/photos/r/soft-pastel.jpg" alt="봄날 벚꽃길, 연한 봄빛 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/soft-pastel-before.webp"><img class="before" data-src="assets/photos/r/soft-pastel-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">파스텔</span><h3>연한 봄빛</h3><p>가벼운 대비, 연한 초록, 맑은 분홍빛. 봄날의 색을 부드럽게 담아요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="오래된 앨범 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/old-album.webp"><img src="assets/photos/r/old-album.jpg" alt="오래된 건물과 정원, 오래된 앨범 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/old-album-before.webp"><img class="before" data-src="assets/photos/r/old-album-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="오래된 앨범 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/old-album.webp"><img src="assets/photos/r/old-album.jpg" alt="오래된 건물과 정원, 오래된 앨범 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/old-album-before.webp"><img class="before" data-src="assets/photos/r/old-album-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">레트로</span><h3>오래된 앨범</h3><p>바랜 색, 초록빛 그림자, 굵은 입자. 오래된 사진첩의 분위기를 남겨요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="흑백 일기 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/bw-diary.webp"><img src="assets/photos/r/bw-diary.jpg" alt="푸른 하늘을 배경으로 한 처마, 흑백 일기 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/bw-diary-before.webp"><img class="before" data-src="assets/photos/r/bw-diary-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="흑백 일기 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/bw-diary.webp"><img src="assets/photos/r/bw-diary.jpg" alt="푸른 하늘을 배경으로 한 처마, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/bw-diary-before.webp"><img class="before" data-src="assets/photos/r/bw-diary-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">흑백</span><h3>흑백 일기</h3><p>색을 덜어낸 빛과 그림자. 또렷한 대비와 거친 입자로 담아요.</p></div>
         </article>
         <article class="card look">
-          <div class="shot" tabindex="0" aria-label="한강 노을 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/river-sunset.webp"><img src="assets/photos/r/river-sunset.jpg" alt="해 질 녘 강변, 한강 노을 룩" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/river-sunset-before.webp"><img class="before" data-src="assets/photos/r/river-sunset-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="shot" tabindex="0" aria-label="한강 노을 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/river-sunset.webp"><img src="assets/photos/r/river-sunset.jpg" alt="해 질 녘 강변, 한강 노을 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/river-sunset-before.webp"><img class="before" data-src="assets/photos/r/river-sunset-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
           <div class="body"><span class="time">해 질 녘</span><h3>한강 노을</h3><p>노을의 온기는 그대로. 밝은 하늘과 그림자를 부드럽게 담아요.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="따뜻한 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-warm.webp"><img src="assets/photos/r/film-warm.jpg" alt="새들이 사는 나무 집, 따뜻한 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-warm-before.webp"><img class="before" data-src="assets/photos/r/film-warm-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>따뜻한 필름</h3><p>크림 같은 피부톤과 뜬 블랙, 고운 입자. 필름으로 찍은 오후처럼 담아요.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="밤 영화 필름 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/film-cine.webp"><img src="assets/photos/r/film-cine.jpg" alt="밤에 핀 벚꽃, 밤 영화 필름 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/film-cine-before.webp"><img class="before" data-src="assets/photos/r/film-cine-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>밤 영화 필름</h3><p>차가운 흰빛, 청록 그림자, 붉게 번지는 불빛. 밤 장면을 영화처럼 담아요.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="일회용 카메라 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/disposable.webp"><img src="assets/photos/r/disposable.jpg" alt="꽃이 가득한 정원, 일회용 카메라 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/disposable-before.webp"><img class="before" data-src="assets/photos/r/disposable-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">필름</span><h3>일회용 카메라</h3><p>쨍한 대비, 초록빛 그림자, 굵은 입자와 어두운 모서리. 여행길 일회용 카메라처럼.</p></div>
+        </article>
+        <article class="card look">
+          <div class="shot" tabindex="0" aria-label="디카 감성 보정 전후, 누르고 있으면 원본"><picture><source type="image/webp" srcset="assets/photos/r/ccd.webp"><img src="assets/photos/r/ccd.jpg" alt="구름 낀 하늘 아래 집, 디카 감성 스타일" loading="lazy" decoding="async"></picture><picture><source type="image/webp" data-srcset="assets/photos/r/ccd-before.webp"><img class="before" data-src="assets/photos/r/ccd-before.jpg" alt="" decoding="async"></picture><span class="hint">누르고 있으면 원본</span></div>
+          <div class="body"><span class="time">디카</span><h3>디카 감성</h3><p>2000년대 디카처럼 밝고 선명하게. 차가운 흰빛과 진한 하늘색.</p></div>
         </article>
       </div>
     </div>
@@ -152,18 +170,18 @@
       <div class="features">
         <div class="card feature">
           <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
-          <h3>자동 룩 추천</h3>
-          <p>촬영 시각과 장면을 읽고 사진마다 어울리는 룩을 먼저 골라줘요.</p>
+          <h3>자동 스타일 추천</h3>
+          <p>촬영 시각과 장면을 읽고 사진마다 어울리는 스타일을 먼저 골라줘요.</p>
         </div>
         <div class="card feature">
           <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M4 12h16M4 18h7"/><circle cx="17" cy="6" r="2"/><circle cx="14" cy="18" r="2"/></svg></div>
-          <h3>레시피 수치 공개</h3>
-          <p>룩마다 노출, HSL, 커브까지 모든 값을 보여줘요. 숨기는 값이 없어요.</p>
+          <h3>스타일 수치 공개</h3>
+          <p>스타일마다 노출, HSL, 커브까지 모든 값을 보여줘요. 숨기는 값이 없어요.</p>
         </div>
         <div class="card feature">
           <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
           <h3>내 스타일 만들기</h3>
-          <p>마음에 드는 값을 저장해 나만의 레시피로 만들고 링크로 나눠요.</p>
+          <p>마음에 드는 값을 저장해 나만의 스타일로 만들고 링크로 나눠요.</p>
         </div>
         <div class="card feature">
           <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="3"/><path d="M8 4h10a3 3 0 0 1 3 3v10"/></svg></div>
@@ -188,16 +206,16 @@
     <div class="wrap">
       <div class="card teaser">
         <div>
-          <span class="eyebrow">커뮤니티 레시피</span>
+          <span class="eyebrow">커뮤니티 스타일</span>
           <h2>다른 사람의 톤을 그대로 받아보세요</h2>
-          <p>링크 하나로 레시피를 나눌 수 있어요. 마음에 드는 걸 골라 앱으로 바로 열면 돼요.</p>
+          <p>링크 하나로 스타일을 나눌 수 있어요. 마음에 드는 걸 골라 앱으로 바로 열면 돼요.</p>
         </div>
         <div class="teaser-shots">
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/river-sunset-after.webp"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 레시피" loading="lazy" decoding="async"></picture><span>한강 노을</span></a>
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/night-walk-after.webp"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 레시피" loading="lazy" decoding="async"></picture><span>밤 산책</span></a>
-          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/bw-diary-after.webp"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 레시피" loading="lazy" decoding="async"></picture><span>흑백 일기</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/river-sunset-after.webp"><img src="assets/photos/river-sunset-after.jpg" alt="한강 다리 위 노을, 한강 노을 스타일" loading="lazy" decoding="async"></picture><span>한강 노을</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/night-walk-after.webp"><img src="assets/photos/night-walk-after.jpg" alt="비 오는 밤 서울 거리, 밤 산책 스타일" loading="lazy" decoding="async"></picture><span>밤 산책</span></a>
+          <a href="community/" class="tshot"><picture><source type="image/webp" srcset="assets/photos/bw-diary-after.webp"><img src="assets/photos/bw-diary-after.jpg" alt="반찬이 놓인 식탁, 흑백 일기 스타일" loading="lazy" decoding="async"></picture><span>흑백 일기</span></a>
         </div>
-        <div><a class="btn btn-accent" href="community/">레시피 15개 둘러보기</a></div>
+        <div><a class="btn btn-accent" href="community/">스타일 20개 둘러보기</a></div>
       </div>
     </div>
   </section>
@@ -218,7 +236,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 해담</span>
-    <a href="community/">커뮤니티 레시피</a>
+    <a href="community/">커뮤니티 스타일</a>
     <a href="privacy/">개인정보 처리방침</a>
   </div>
   <p class="wrap credits">사진: 해담(직접 촬영), Jei Lee·Markus Winkler·Dylan LEE(Unsplash). 보정은 모두 해담 렌더러로 했어요.</p>

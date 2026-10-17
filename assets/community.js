@@ -57,7 +57,7 @@
       var shot = el("div", "shot");
       shot.tabIndex = -1;
       shot.setAttribute("aria-label", r.name + " 보정 예시" + (validImage(r.imageBefore) ? ", 누르고 있으면 원본" : ""));
-      var img = el("img"); img.src = "../" + r.image; img.alt = r.name + " 레시피를 입힌 사진"; img.loading = "lazy"; img.decoding = "async";
+      var img = el("img"); img.src = "../" + r.image; img.alt = r.name + " 스타일을 입힌 사진"; img.loading = "lazy"; img.decoding = "async";
       img = picture(r.image, img);
       shot.appendChild(img);
       if (validImage(r.imageBefore)) {
@@ -113,7 +113,7 @@
     list.forEach(function (r) { feed.appendChild(card(r)); });
     var st = $("status");
     st.hidden = list.length > 0;
-    st.textContent = "찾는 레시피가 없어요. 다른 단어로 찾아보세요.";
+    st.textContent = "찾는 스타일이 없어요. 다른 단어로 찾아보세요.";
   }
 
   function renderChips() {
@@ -149,6 +149,6 @@
       render();
     })
     .catch(function () {
-      $("status").textContent = "레시피를 불러오지 못했어요. 잠시 후 다시 열어주세요.";
+      $("status").textContent = "스타일을 불러오지 못했어요. 잠시 후 다시 열어주세요.";
     });
 })();

@@ -8,7 +8,7 @@
       "author": "해담",
       "summary": "밝고 포근하게. 하이라이트는 살짝 노랗게, 하늘은 맑게 남겨요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "아침",
         "밝은"
       ],
@@ -24,7 +24,7 @@
       "author": "해담",
       "summary": "따뜻하고 차분하게. 은은한 페이드와 고운 그레인을 더해요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "실내",
         "따뜻한",
         "필름"
@@ -41,7 +41,7 @@
       "author": "해담",
       "summary": "초록은 한 톤 낮추고, 그림자엔 서늘한 청록을 얹어요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "야외",
         "필름"
       ],
@@ -57,7 +57,7 @@
       "author": "해담",
       "summary": "음식은 먹음직스럽게. 붉은 기는 살리고 노란 조명은 덜어내요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "음식",
         "저녁",
         "따뜻한"
@@ -74,7 +74,7 @@
       "author": "해담",
       "summary": "채도를 내리고 푸른 그림자로. 흐린 날의 공기를 그대로 담아요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "흐린 날",
         "차분한",
         "필름"
@@ -83,6 +83,70 @@
       "payload": "eyJ2IjoxLCJuIjoi67mEIOyYpOuKlCDrgqAiLCJrIjowLjYsInAiOnsiY29udHJhc3QiOi00LCJzYXR1cmF0aW9uIjotMjQsIndhcm10aCI6LTEyLCJoc2wuZ3JlZW4uaHVlIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6LTQsInNoYWRvd0h1ZSI6MjE1LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjIwMCwiaGlnaGxpZ2h0U2F0Ijo0LCJncmFpbiI6MTIsImdyYWluU2l6ZSI6MzAsImZhZGUiOjE2fX0",
       "image": "assets/photos/r/rainy.jpg",
       "imageBefore": "assets/photos/r/rainy-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "film-warm",
+      "name": "따뜻한 필름",
+      "author": "해담",
+      "summary": "크림 같은 피부톤과 뜬 블랙, 고운 입자. 필름으로 찍은 오후처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "따뜻한"
+      ],
+      "accent": "#E2B07A",
+      "payload": "eyJ2IjoxLCJuIjoi65Sw65y77ZWcIO2VhOumhCIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTIyLCJzaGFkb3dzIjoxNCwiY29udHJhc3QiOi0xMiwic2F0dXJhdGlvbiI6LTE0LCJ2aWJyYW5jZSI6MTAsIndhcm10aCI6MjAsInRpbnQiOjQsImhzbC5vcmFuZ2UuaHVlIjotMiwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjoxMCwiaHNsLnllbGxvdy5odWUiOi0xMCwiaHNsLnllbGxvdy5zYXQiOi0xNCwiaHNsLmdyZWVuLmh1ZSI6LTE4LCJoc2wuZ3JlZW4uc2F0IjotMzQsImhzbC5ncmVlbi5sdW0iOi02LCJoc2wuYXF1YS5zYXQiOi0yMCwiaHNsLmJsdWUuaHVlIjotOCwiaHNsLmJsdWUuc2F0IjotMjIsImhzbC5ibHVlLmx1bSI6LTYsImN1cnZlLm1hc3Rlci4wIjoxMCwiY3VydmUubWFzdGVyLjQiOi04LCJjdXJ2ZS5yZWQuMiI6NCwiY3VydmUuYmx1ZS4xIjo2LCJzaGFkb3dIdWUiOjE4MCwic2hhZG93U2F0IjoyMiwiaGlnaGxpZ2h0SHVlIjozOCwiaGlnaGxpZ2h0U2F0IjozNCwiZ3JhaW4iOjQwLCJncmFpblNpemUiOjQwLCJmYWRlIjozMH19",
+      "image": "assets/photos/r/film-warm.jpg",
+      "imageBefore": "assets/photos/r/film-warm-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "film-cine",
+      "name": "밤 영화 필름",
+      "author": "해담",
+      "summary": "차가운 흰빛과 청록 그림자, 붉게 번지는 불빛. 밤 장면을 영화처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "밤"
+      ],
+      "accent": "#4F8A8B",
+      "payload": "eyJ2IjoxLCJuIjoi67CkIOyYge2ZlCDtlYTrpoQiLCJrIjowLjIsInAiOnsiaGlnaGxpZ2h0cyI6LTIwLCJzaGFkb3dzIjo4LCJjb250cmFzdCI6MTYsInNhdHVyYXRpb24iOi00LCJ2aWJyYW5jZSI6MTIsIndhcm10aCI6LTQwLCJ0aW50IjotOCwiaHNsLnJlZC5odWUiOjYsImhzbC5yZWQuc2F0IjoxOCwiaHNsLm9yYW5nZS5odWUiOi04LCJoc2wub3JhbmdlLnNhdCI6MTIsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTE0LCJoc2wueWVsbG93LnNhdCI6LTI2LCJoc2wuZ3JlZW4uaHVlIjoyNCwiaHNsLmdyZWVuLnNhdCI6LTM2LCJoc2wuZ3JlZW4ubHVtIjotMTAsImhzbC5ibHVlLmh1ZSI6LTgsImhzbC5ibHVlLnNhdCI6NiwiaHNsLmJsdWUubHVtIjotMTAsImN1cnZlLm1hc3Rlci4wIjo4LCJjdXJ2ZS5ibHVlLjEiOjYsInNoYWRvd0h1ZSI6MTg4LCJzaGFkb3dTYXQiOjUwLCJoaWdobGlnaHRIdWUiOjE1LCJoaWdobGlnaHRTYXQiOjM4LCJiYWxhbmNlIjoxOCwiZ3JhaW4iOjQ0LCJncmFpblNpemUiOjQ1LCJmYWRlIjoxNn19",
+      "image": "assets/photos/r/film-cine.jpg",
+      "imageBefore": "assets/photos/r/film-cine-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "disposable",
+      "name": "일회용 카메라",
+      "author": "해담",
+      "summary": "쨍한 대비, 초록빛 그림자, 굵은 입자와 어두운 모서리. 여행 가방 속 일회용 카메라처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "레트로"
+      ],
+      "accent": "#C7B24A",
+      "payload": "eyJ2IjoxLCJuIjoi7J287ZqM7JqpIOy5tOuplOudvCIsImsiOjAuNSwicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTQsImNvbnRyYXN0IjoyNiwic2F0dXJhdGlvbiI6MTYsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjIyLCJ0aW50IjotNiwic2hhcnBuZXNzIjotMTIsInZpZ25ldHRlIjo1MCwiaHNsLnJlZC5zYXQiOjE0LCJoc2wueWVsbG93Lmh1ZSI6LTgsImhzbC55ZWxsb3cuc2F0IjoxNCwiaHNsLmdyZWVuLmh1ZSI6LTEyLCJoc2wuZ3JlZW4uc2F0Ijo0LCJoc2wuZ3JlZW4ubHVtIjotOCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjoxMCwiaHNsLmJsdWUubHVtIjotMTIsImN1cnZlLm1hc3Rlci4xIjotNiwiY3VydmUubWFzdGVyLjMiOjYsInNoYWRvd0h1ZSI6MTAwLCJzaGFkb3dTYXQiOjQwLCJoaWdobGlnaHRIdWUiOjUyLCJoaWdobGlnaHRTYXQiOjM0LCJncmFpbiI6NTUsImdyYWluU2l6ZSI6NTUsImZhZGUiOjE0fX0",
+      "image": "assets/photos/r/disposable.jpg",
+      "imageBefore": "assets/photos/r/disposable-before.jpg",
+      "photoCredit": "해담"
+    },
+    {
+      "id": "ccd",
+      "name": "디카 감성",
+      "author": "해담",
+      "summary": "2000년대 디카처럼 밝고 선명하게. 차가운 흰빛과 진한 하늘색.",
+      "tags": [
+        "기본 스타일",
+        "디카",
+        "선명한"
+      ],
+      "accent": "#7FB2E5",
+      "payload": "eyJ2IjoxLCJuIjoi65SU7Lm0IOqwkOyEsSIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6MTQsImhpZ2hsaWdodHMiOjI4LCJjb250cmFzdCI6MTgsImJyaWdodG5lc3MiOjgsImJsYWNrUG9pbnQiOi02LCJzYXR1cmF0aW9uIjoxOCwidmlicmFuY2UiOjEyLCJ3YXJtdGgiOi0yNiwidGludCI6OCwic2hhcnBuZXNzIjo1MCwiaHNsLnJlZC5zYXQiOjEyLCJoc2wub3JhbmdlLnNhdCI6OCwiaHNsLm9yYW5nZS5sdW0iOjgsImhzbC5hcXVhLnNhdCI6MTYsImhzbC5ibHVlLmh1ZSI6LTYsImhzbC5ibHVlLnNhdCI6MjAsImhzbC5ibHVlLmx1bSI6LTgsInNoYWRvd0h1ZSI6MjI1LCJzaGFkb3dTYXQiOjI0LCJoaWdobGlnaHRIdWUiOjE5NSwiaGlnaGxpZ2h0U2F0IjozMCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjIwfX0",
+      "image": "assets/photos/r/ccd.jpg",
+      "imageBefore": "assets/photos/r/ccd-before.jpg",
       "photoCredit": "해담"
     },
     {

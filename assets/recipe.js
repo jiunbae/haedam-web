@@ -112,7 +112,7 @@
     if (typeof payload !== "string") throw new Error("링크가 비어 있어요");
     payload = payload.trim().replace(/^#/, "");
     if (!payload) throw new Error("링크가 비어 있어요");
-    if (payload.length > 16384) throw new Error("레시피 링크가 너무 길어요");
+    if (payload.length > 16384) throw new Error("스타일 링크가 너무 길어요");
     var text;
     try {
       text = new TextDecoder("utf-8", { fatal: true }).decode(b64urlToBytes(payload));
@@ -120,13 +120,13 @@
       throw new Error("링크를 읽을 수 없어요");
     }
     var obj;
-    try { obj = JSON.parse(text); } catch (e) { throw new Error("레시피 내용이 올바르지 않아요"); }
-    if (!obj || typeof obj !== "object" || Array.isArray(obj)) throw new Error("레시피 내용이 올바르지 않아요");
-    if (obj.v !== VERSION) throw new Error("지원하지 않는 레시피 버전이에요");
-    if (obj.p != null && (typeof obj.p !== "object" || Array.isArray(obj.p))) throw new Error("레시피 내용이 올바르지 않아요");
+    try { obj = JSON.parse(text); } catch (e) { throw new Error("스타일 내용이 올바르지 않아요"); }
+    if (!obj || typeof obj !== "object" || Array.isArray(obj)) throw new Error("스타일 내용이 올바르지 않아요");
+    if (obj.v !== VERSION) throw new Error("지원하지 않는 스타일 버전이에요");
+    if (obj.p != null && (typeof obj.p !== "object" || Array.isArray(obj.p))) throw new Error("스타일 내용이 올바르지 않아요");
     var name = typeof obj.n === "string" ? Array.from(obj.n.trim()).slice(0, NAME_MAX).join("") : "";
     return {
-      name: name || "이름 없는 레시피",
+      name: name || "이름 없는 스타일",
       keepCast: normalizeKeepCast(obj.k),
       params: normalizeParams(obj.p || {})
     };

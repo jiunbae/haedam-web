@@ -8,7 +8,7 @@
       "author": "해담",
       "summary": "밝고 포근하게. 하이라이트는 살짝 노랗게, 하늘은 맑게 남겨요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "아침",
         "밝은"
       ],
@@ -42,7 +42,7 @@
       "author": "해담",
       "summary": "따뜻하고 차분하게. 은은한 페이드와 고운 그레인을 더해요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "실내",
         "따뜻한",
         "필름"
@@ -81,7 +81,7 @@
       "author": "해담",
       "summary": "초록은 한 톤 낮추고, 그림자엔 서늘한 청록을 얹어요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "야외",
         "필름"
       ],
@@ -120,7 +120,7 @@
       "author": "해담",
       "summary": "음식은 먹음직스럽게. 붉은 기는 살리고 노란 조명은 덜어내요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "음식",
         "저녁",
         "따뜻한"
@@ -153,7 +153,7 @@
       "author": "해담",
       "summary": "채도를 내리고 푸른 그림자로. 흐린 날의 공기를 그대로 담아요.",
       "tags": [
-        "기본 룩",
+        "기본 스타일",
         "흐린 날",
         "차분한",
         "필름"
@@ -181,6 +181,209 @@
       "photo": {
         "image": "assets/photos/r/rainy.jpg",
         "before": "assets/photos/r/rainy-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "film-warm",
+      "name": "따뜻한 필름",
+      "author": "해담",
+      "summary": "크림 같은 피부톤과 뜬 블랙, 고운 입자. 필름으로 찍은 오후처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "따뜻한"
+      ],
+      "accent": "#E2B07A",
+      "keepCast": 0.45,
+      "params": {
+        "warmth": 20,
+        "tint": 4,
+        "contrast": -12,
+        "highlights": -22,
+        "shadows": 14,
+        "saturation": -14,
+        "vibrance": 10,
+        "fade": 30,
+        "shadowHue": 180,
+        "shadowSat": 22,
+        "highlightHue": 38,
+        "highlightSat": 34,
+        "grain": 40,
+        "grainSize": 40,
+        "curve.master.0": 10,
+        "curve.master.4": -8,
+        "curve.red.2": 4,
+        "curve.blue.1": 6,
+        "hsl.orange.hue": -2,
+        "hsl.orange.sat": 6,
+        "hsl.orange.lum": 10,
+        "hsl.yellow.hue": -10,
+        "hsl.yellow.sat": -14,
+        "hsl.yellow.lum": 0,
+        "hsl.green.hue": -18,
+        "hsl.green.sat": -34,
+        "hsl.green.lum": -6,
+        "hsl.aqua.hue": 0,
+        "hsl.aqua.sat": -20,
+        "hsl.aqua.lum": 0,
+        "hsl.blue.hue": -8,
+        "hsl.blue.sat": -22,
+        "hsl.blue.lum": -6
+      },
+      "photo": {
+        "image": "assets/photos/r/film-warm.jpg",
+        "before": "assets/photos/r/film-warm-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "film-cine",
+      "name": "밤 영화 필름",
+      "author": "해담",
+      "summary": "차가운 흰빛과 청록 그림자, 붉게 번지는 불빛. 밤 장면을 영화처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "밤"
+      ],
+      "accent": "#4F8A8B",
+      "keepCast": 0.2,
+      "params": {
+        "warmth": -40,
+        "tint": -8,
+        "contrast": 16,
+        "highlights": -20,
+        "shadows": 8,
+        "saturation": -4,
+        "vibrance": 12,
+        "fade": 16,
+        "shadowHue": 188,
+        "shadowSat": 50,
+        "highlightHue": 15,
+        "highlightSat": 38,
+        "balance": 18,
+        "grain": 44,
+        "grainSize": 45,
+        "curve.master.0": 8,
+        "curve.blue.1": 6,
+        "hsl.red.hue": 6,
+        "hsl.red.sat": 18,
+        "hsl.red.lum": 0,
+        "hsl.orange.hue": -8,
+        "hsl.orange.sat": 12,
+        "hsl.orange.lum": 4,
+        "hsl.yellow.hue": -14,
+        "hsl.yellow.sat": -26,
+        "hsl.yellow.lum": 0,
+        "hsl.green.hue": 24,
+        "hsl.green.sat": -36,
+        "hsl.green.lum": -10,
+        "hsl.blue.hue": -8,
+        "hsl.blue.sat": 6,
+        "hsl.blue.lum": -10
+      },
+      "photo": {
+        "image": "assets/photos/r/film-cine.jpg",
+        "before": "assets/photos/r/film-cine-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "disposable",
+      "name": "일회용 카메라",
+      "author": "해담",
+      "summary": "쨍한 대비, 초록빛 그림자, 굵은 입자와 어두운 모서리. 여행 가방 속 일회용 카메라처럼.",
+      "tags": [
+        "기본 스타일",
+        "필름",
+        "레트로"
+      ],
+      "accent": "#C7B24A",
+      "keepCast": 0.5,
+      "params": {
+        "exposure": 6,
+        "contrast": 26,
+        "highlights": -4,
+        "saturation": 16,
+        "vibrance": 8,
+        "warmth": 22,
+        "tint": -6,
+        "fade": 14,
+        "shadowHue": 100,
+        "shadowSat": 40,
+        "highlightHue": 52,
+        "highlightSat": 34,
+        "grain": 55,
+        "grainSize": 55,
+        "vignette": 50,
+        "sharpness": -12,
+        "curve.master.1": -6,
+        "curve.master.3": 6,
+        "hsl.red.hue": 0,
+        "hsl.red.sat": 14,
+        "hsl.red.lum": 0,
+        "hsl.yellow.hue": -8,
+        "hsl.yellow.sat": 14,
+        "hsl.yellow.lum": 0,
+        "hsl.green.hue": -12,
+        "hsl.green.sat": 4,
+        "hsl.green.lum": -8,
+        "hsl.blue.hue": -6,
+        "hsl.blue.sat": 10,
+        "hsl.blue.lum": -12
+      },
+      "photo": {
+        "image": "assets/photos/r/disposable.jpg",
+        "before": "assets/photos/r/disposable-before.jpg",
+        "credit": "해담"
+      }
+    },
+    {
+      "id": "ccd",
+      "name": "디카 감성",
+      "author": "해담",
+      "summary": "2000년대 디카처럼 밝고 선명하게. 차가운 흰빛과 진한 하늘색.",
+      "tags": [
+        "기본 스타일",
+        "디카",
+        "선명한"
+      ],
+      "accent": "#7FB2E5",
+      "keepCast": 0.3,
+      "params": {
+        "exposure": 14,
+        "brightness": 8,
+        "highlights": 28,
+        "contrast": 18,
+        "saturation": 18,
+        "vibrance": 12,
+        "warmth": -26,
+        "tint": 8,
+        "sharpness": 50,
+        "blackPoint": -6,
+        "highlightHue": 195,
+        "highlightSat": 30,
+        "shadowHue": 225,
+        "shadowSat": 24,
+        "grain": 10,
+        "grainSize": 20,
+        "hsl.red.hue": 0,
+        "hsl.red.sat": 12,
+        "hsl.red.lum": 0,
+        "hsl.orange.hue": 0,
+        "hsl.orange.sat": 8,
+        "hsl.orange.lum": 8,
+        "hsl.blue.hue": -6,
+        "hsl.blue.sat": 20,
+        "hsl.blue.lum": -8,
+        "hsl.aqua.hue": 0,
+        "hsl.aqua.sat": 16,
+        "hsl.aqua.lum": 0
+      },
+      "photo": {
+        "image": "assets/photos/r/ccd.jpg",
+        "before": "assets/photos/r/ccd-before.jpg",
         "credit": "해담"
       }
     },
