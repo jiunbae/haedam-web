@@ -69,5 +69,5 @@ iOS 앱과 똑같아야 해요.
 ## 아직 정해지지 않은 것
 
 - 도메인: 링크 복사는 현재 페이지 주소를 그대로 써요. 도메인이 정해지면 따로 고칠 곳은 없어요.
-- App Store 링크: "App Store 출시 예정" 버튼은 지금 비활성 상태예요 (`index.html` 두 곳).
+- App Store 링크: `https://apps.apple.com/kr/app/id6823169776` (`index.html` 두 곳, `r/` 앱 받기). 세 페이지에 Smart App Banner(`apple-itunes-app`) 메타가 있어요.
 - 커뮤니티 피드는 직접 고른 16개예요. 사용자 제출 기능은 아직 없어요.
