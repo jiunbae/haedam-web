@@ -109,6 +109,29 @@ test("그룹 라벨", () => {
   assert.deepEqual(plain(g.map((x) => x.label)), ["기본", "HSL", "커브", "그레이딩", "필름"]);
   assert.deepEqual(plain(g.map((x) => x.rows[0].label)), ["노출", "청록 채도", "RGB 점1", "균형", "입자 크기"]);
 });
+test("영어 라벨 (영어 페이지)", () => {
+  const g = R.grouped({ exposure: 8, "hsl.aqua.sat": -15, "curve.master.0": 8, balance: -10, grainSize: 30 }, "en");
+  assert.deepEqual(plain(g.map((x) => x.label)), ["Basics", "HSL", "Curves", "Grading", "Film"]);
+  assert.deepEqual(plain(g.map((x) => x.rows[0].label)), ["Exposure", "Aqua saturation", "RGB point 1", "Balance", "Grain size"]);
+  assert.ok(R.PARAMS.every((p) => typeof p.labelEn === "string" && /^[\x20-\x7e]+$/.test(p.labelEn)), "모든 항목에 영어 라벨");
+});
+test("이름만 바꾸기 (영어 커뮤니티 링크)", () => {
+  const feed = JSON.parse(read("community/feed.json"));
+  for (const r of feed.recipes) {
+    const p = R.rename(r.payload, r.en.name);
+    const a = R.decode(r.payload), b = R.decode(p);
+    assert.equal(b.name, r.en.name);
+    assert.deepEqual(plain(b.params), plain(a.params));
+    assert.equal(b.keepCast, a.keepCast);
+  }
+  assert.throws(() => R.rename("!!", "x"));
+});
+test("오류 code", () => {
+  assert.throws(() => R.decode(""), (e) => e.code === "empty");
+  assert.throws(() => R.decode(b64url({ v: 2, n: "x", k: 0, p: {} })), (e) => e.code === "version");
+  assert.throws(() => R.decode(b64url([1])), (e) => e.code === "invalid");
+  assert.throws(() => R.decode("a"), (e) => e.code === "unreadable");
+});
 
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);

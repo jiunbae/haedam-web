@@ -12,8 +12,11 @@
   range.addEventListener("input", setPos);
   setPos();
   var cache = {};
+  // Photo folder relative to this page (assets/photos/ or ../assets/photos/), taken from the hero image itself.
+  var photoDir = after.getAttribute("src").replace(/[^\/]*$/, "");
+  var en = /^en\b/.test(document.documentElement.lang);
   document.querySelectorAll(".chips button").forEach(function (b) {
-    var src = "assets/photos/hero-" + b.dataset.look + ".jpg";
+    var src = photoDir + "hero-" + b.dataset.look + ".jpg";
     var webpSet = src.replace(/\.jpg$/, "-640.webp") + " 640w, " + src.replace(/\.jpg$/, ".webp") + " 960w";
     function preload() {
       if (cache[b.dataset.look]) return;
@@ -28,7 +31,7 @@
       after.src = src;
       var webp = after.parentNode.querySelector("source");  // <picture>: the WebP source wins over img.src
       if (webp) webp.srcset = webpSet;
-      after.alt = b.textContent + " 스타일을 입힌 벚꽃 사진";
+      after.alt = en ? "Cherry blossom photo in the " + b.textContent + " style" : b.textContent + " 스타일을 입힌 벚꽃 사진";
       name.textContent = b.textContent;
     });
   });

@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "community" / "recipes.src.json"
+EN = ROOT / "community" / "recipes.en.json"  # English name/summary/tags per id
 OUT = ROOT / "community" / "feed.json"
 
 BASIC = ["exposure", "brilliance", "highlights", "shadows", "contrast", "brightness", "blackPoint",
@@ -61,6 +62,7 @@ def encode(name, keep_cast, params):
 
 def build():
     src = json.loads(SRC.read_text(encoding="utf-8"))
+    en = json.loads(EN.read_text(encoding="utf-8"))
     ids = set()
     recipes = []
     for r in src["recipes"]:
@@ -76,6 +78,11 @@ def build():
             "accent": r["accent"],
             "payload": encode(r["name"], r["keepCast"], r["params"]),
         })
+        if r["id"] not in en["recipes"]:
+            raise ValueError(f"{r['id']}: recipes.en.json 에 영어가 없어요")
+        name_en, summary_en = en["recipes"][r["id"]]
+        recipes[-1]["en"] = {"name": name_en, "author": en["authors"][r["author"]], "summary": summary_en,
+                             "tags": [en["tags"][t] for t in r["tags"]]}
         # Example photo (paths relative to the site root; the app prefixes its web base).
         if "photo" in r:
             recipes[-1].update({"image": r["photo"]["image"], "imageBefore": r["photo"]["before"],

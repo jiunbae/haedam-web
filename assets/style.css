@@ -362,7 +362,17 @@ section { padding-block: 72px 0; }
 @media (max-width: 520px) {
   .features { grid-template-columns: 1fr; }
   .nav { gap: 14px; font-size: 14px; }
+  .brand { gap: 8px; }
   .hero { padding-block: 48px 0; }
+}
+
+/* Narrow phones: the header carries a language link too, so tighten it to stay on one line. */
+@media (max-width: 420px) {
+  .nav { gap: 11px; font-size: 13px; }
+}
+/* English labels are longer; drop the in-page Features link on the narrowest phones. */
+@media (max-width: 400px) {
+  .nav .nav-opt { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

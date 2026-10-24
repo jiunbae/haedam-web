@@ -22,6 +22,11 @@ const pages = [
   ["community-mobile", "/community/", { width: 390, height: 844 }],
   ["recipe", "/r/?timing=1#" + recipe, { width: 390, height: 844 }],
   ["privacy", "/privacy/", { width: 390, height: 844 }],
+  ["landing-en", "/en/", { width: 390, height: 844 }],
+  ["privacy-en", "/en/privacy/", { width: 390, height: 844 }],
+  ["community-en", "/en/community/", { width: 1280, height: 900 }],
+  ["community-en-mobile", "/en/community/", { width: 390, height: 844 }],
+  ["recipe-en", "/en/r/?timing=1#" + recipe, { width: 390, height: 844 }],
 ];
 const browser = await chromium.launch();
 let failed = 0;
@@ -34,8 +39,8 @@ try {
     bytes = 0;
     await page.goto(base + url, { waitUntil: "networkidle" });
     let extra = "";
-    if (name === "recipe") {
-      await page.waitForFunction(() => /완료/.test(document.getElementById("pv-busy-text").textContent), null, { timeout: 20000 });
+    if (name.startsWith("recipe")) {
+      await page.waitForFunction(() => /완료|Done/.test(document.getElementById("pv-busy-text").textContent), null, { timeout: 20000 });
       extra = await page.textContent("#pv-busy-text");
     }
     const deferred = await page.evaluate(() => document.querySelectorAll(".shot img.before[data-src]").length);

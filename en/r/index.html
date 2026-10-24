@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; connect-src 'self'; img-src 'self' data: blob:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<title>Style — Haedam</title>
+<meta name="description" content="See this Haedam style and open it in the app.">
+<meta name="apple-itunes-app" content="app-id=6823169776">
+<meta name="theme-color" content="#0E0E0F">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../../assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Haedam">
+<meta property="og:title" content="Haedam style">
+<meta property="og:description" content="Open it to see before and after photos and every setting. Try it right away in the Haedam app.">
+<meta property="og:url" content="https://haedam.jiun.dev/en/r/">
+<meta property="og:image" content="https://haedam.jiun.dev/assets/og-recipe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://haedam.jiun.dev/assets/og-recipe.jpg">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="hm"><rect x="20" y="18" width="80" height="43"/></clipPath></defs><path d="M14 38V22a8 8 0 0 1 8-8h16M82 14h16a8 8 0 0 1 8 8v16M106 82v16a8 8 0 0 1-8 8H82M38 106H22a8 8 0 0 1-8-8V82" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="57" r="17" fill="var(--accent)" clip-path="url(#hm)"/><defs><mask id="hm-refl" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><image href="../../assets/reflection-mask.png" x="0" y="0" width="120" height="120"/></mask></defs><rect width="120" height="120" fill="var(--accent)" mask="url(#hm-refl)"/></svg>Haedam</a>
+    <nav class="nav" aria-label="Main menu">
+      <a href="../#looks">Styles</a>
+      <a href="../community/">Community</a>
+      <a class="lang" id="lang" href="../../r/" hreflang="ko" lang="ko">한국어</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <span class="eyebrow">Style</span>
+  </div>
+
+  <div id="view" hidden>
+    <div class="card recipe-hero">
+      <div class="preview">
+        <div class="shot" id="shot" role="button" aria-pressed="false" tabindex="0" aria-label="Style preview, press and hold for the original">
+          <img id="pv-base" alt="">
+          <canvas id="pv-canvas" width="540" height="675" aria-hidden="true"></canvas>
+          <span class="sweep" aria-hidden="true"></span>
+          <img class="after" id="pv-after" alt="" hidden>
+          <img class="before" id="pv-before" alt="">
+          <span class="hint">Hold for original</span>
+          <span class="busy" id="pv-busy" role="status" aria-live="polite" hidden><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="pv-busy-text">Applying style</span></span>
+        </div>
+        <div class="chips samples" id="samples" role="group" aria-label="Choose an example photo"></div>
+      </div>
+      <div>
+        <h1 id="name"></h1>
+        <p class="meta" id="meta"></p>
+        <div class="btn-row">
+          <a class="btn btn-accent" id="open-app" href="#">Open in app</a>
+          <a class="btn" href="https://apps.apple.com/us/app/id6823169776">Get the app</a>
+          <button class="btn" type="button" id="copy">Copy link</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="groups" id="groups"></div>
+
+    <div class="card note">
+      <strong>Close to Apple Photos, not identical</strong> — These values are for the Haedam renderer. Even where Apple Photos has a setting with the same name, it calculates it differently, so results can look a little different. If you copy them by hand, use them as a rough guide.
+    </div>
+  </div>
+
+  <div id="error" class="card empty" hidden>
+    <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg></div>
+    <h2 id="error-title">Can't open this style</h2>
+    <p id="error-msg">The link seems to be cut off or wrong. Ask the person who sent it for the link again.</p>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="../community/">See community styles</a>
+      <a class="btn" href="../">Home</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Haedam</span>
+    <a href="../community/">Community styles</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../../assets/recipe.js"></script>
+<script src="../../assets/recipe-page.js" data-root="../../" data-feed="../../community/feed.json"></script>
+</body>
+</html>

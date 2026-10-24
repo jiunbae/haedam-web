@@ -15,6 +15,17 @@
       ],
       "accent": "#F3D29A",
       "payload": "eyJ2IjoxLCJuIjoi7JWE7LmoIO2Wh-yCtCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6OCwiaGlnaGxpZ2h0cyI6LTYsImNvbnRyYXN0IjotNiwiYnJpZ2h0bmVzcyI6MTQsInZpYnJhbmNlIjoxNCwid2FybXRoIjo4LCJoc2wub3JhbmdlLmx1bSI6OCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6Niwic2hhZG93SHVlIjoyMTUsInNoYWRvd1NhdCI6OCwiaGlnaGxpZ2h0SHVlIjo0NSwiaGlnaGxpZ2h0U2F0IjoxOH19",
+      "en": {
+        "name": "Morning Light",
+        "author": "Haedam",
+        "summary": "Bright and cozy. Highlights lean a little yellow and the sky stays clear.",
+        "tags": [
+          "built-in",
+          "morning",
+          "bright",
+          "everyday"
+        ]
+      },
       "image": "assets/photos/r/morning.jpg",
       "imageBefore": "assets/photos/r/morning-before.jpg",
       "photoCredit": "해담"
@@ -33,6 +44,18 @@
       ],
       "accent": "#C89A72",
       "payload": "eyJ2IjoxLCJuIjoi7Jik7ZuEIOy5tO2OmCIsImsiOjAuNCwicCI6eyJzaGFkb3dzIjo4LCJjb250cmFzdCI6LTgsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6Niwid2FybXRoIjoxNCwiaHNsLm9yYW5nZS5zYXQiOi02LCJoc2wub3JhbmdlLmx1bSI6MTAsImhzbC55ZWxsb3cuaHVlIjotNiwiaHNsLnllbGxvdy5zYXQiOi0xMCwiaHNsLmdyZWVuLmh1ZSI6MTAsImhzbC5ncmVlbi5zYXQiOi0yNSwic2hhZG93SHVlIjoyOCwic2hhZG93U2F0IjoyMCwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjMwLCJmYWRlIjoxNH19",
+      "en": {
+        "name": "Afternoon Café",
+        "author": "Haedam",
+        "summary": "Warm and calm, with a soft fade and fine grain.",
+        "tags": [
+          "built-in",
+          "indoor",
+          "warm",
+          "film",
+          "everyday"
+        ]
+      },
       "image": "assets/photos/r/cafe.jpg",
       "imageBefore": "assets/photos/r/cafe-before.jpg",
       "photoCredit": "Jei Lee"
@@ -50,6 +73,17 @@
       ],
       "accent": "#9DB38A",
       "payload": "eyJ2IjoxLCJuIjoi64-Z64SkIOyCsOyxhSIsImsiOjAuMywicCI6eyJjb250cmFzdCI6OCwic2F0dXJhdGlvbiI6LTQsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjQsImhzbC5vcmFuZ2Uuc2F0IjotNCwiaHNsLm9yYW5nZS5sdW0iOjYsImhzbC5ncmVlbi5odWUiOjIyLCJoc2wuZ3JlZW4uc2F0IjotMzAsImhzbC5ncmVlbi5sdW0iOi00LCJoc2wuYXF1YS5zYXQiOi0xNSwiaHNsLmJsdWUuaHVlIjotMTAsImhzbC5ibHVlLnNhdCI6LTE4LCJzaGFkb3dIdWUiOjE5MCwic2hhZG93U2F0IjoxNiwiaGlnaGxpZ2h0SHVlIjo0MCwiaGlnaGxpZ2h0U2F0IjoxNCwiZ3JhaW4iOjE2LCJncmFpblNpemUiOjQwLCJmYWRlIjoxMH19",
+      "en": {
+        "name": "Neighborhood Walk",
+        "author": "Haedam",
+        "summary": "Greens a shade lower, with a cool teal in the shadows.",
+        "tags": [
+          "built-in",
+          "outdoor",
+          "film",
+          "everyday"
+        ]
+      },
       "image": "assets/photos/r/walk.jpg",
       "imageBefore": "assets/photos/r/walk-before.jpg",
       "photoCredit": "해담"
@@ -68,6 +102,18 @@
       ],
       "accent": "#E39A6E",
       "payload": "eyJ2IjoxLCJuIjoi7KCA64WBIOyLne2DgSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjgsInZpYnJhbmNlIjoxNiwiaHNsLnJlZC5zYXQiOjgsImhzbC5vcmFuZ2UuaHVlIjotNCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC55ZWxsb3cuc2F0IjotNiwic2hhZG93SHVlIjoxNSwic2hhZG93U2F0Ijo4fX0",
+      "en": {
+        "name": "Dinner Table",
+        "author": "Haedam",
+        "summary": "Makes food look delicious. Keeps the reds and takes out the yellow lamp cast.",
+        "tags": [
+          "built-in",
+          "food",
+          "evening",
+          "warm",
+          "everyday"
+        ]
+      },
       "image": "assets/photos/r/dinner.jpg",
       "imageBefore": "assets/photos/r/dinner-before.jpg",
       "photoCredit": "Markus Winkler"
@@ -86,6 +132,18 @@
       ],
       "accent": "#8E9EB0",
       "payload": "eyJ2IjoxLCJuIjoi67mEIOyYpOuKlCDrgqAiLCJrIjowLjYsInAiOnsiY29udHJhc3QiOi00LCJzYXR1cmF0aW9uIjotMjQsIndhcm10aCI6LTEyLCJoc2wuZ3JlZW4uaHVlIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTIwLCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjotMTAsImhzbC5ibHVlLmx1bSI6LTQsInNoYWRvd0h1ZSI6MjE1LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjIwMCwiaGlnaGxpZ2h0U2F0Ijo0LCJncmFpbiI6MTIsImdyYWluU2l6ZSI6MzAsImZhZGUiOjE2fX0",
+      "en": {
+        "name": "Rainy Day",
+        "author": "Haedam",
+        "summary": "Lower saturation and blue shadows, keeping the air of a gray day.",
+        "tags": [
+          "built-in",
+          "cloudy",
+          "calm",
+          "film",
+          "everyday"
+        ]
+      },
       "image": "assets/photos/r/rainy.jpg",
       "imageBefore": "assets/photos/r/rainy-before.jpg",
       "photoCredit": "해담"
@@ -102,6 +160,16 @@
       ],
       "accent": "#E2B07A",
       "payload": "eyJ2IjoxLCJuIjoi65Sw65y77ZWcIO2VhOumhCIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTIyLCJzaGFkb3dzIjoxNCwiY29udHJhc3QiOi0xMiwic2F0dXJhdGlvbiI6LTE0LCJ2aWJyYW5jZSI6MTAsIndhcm10aCI6MjAsInRpbnQiOjQsImhzbC5vcmFuZ2UuaHVlIjotMiwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjoxMCwiaHNsLnllbGxvdy5odWUiOi0xMCwiaHNsLnllbGxvdy5zYXQiOi0xNCwiaHNsLmdyZWVuLmh1ZSI6LTE4LCJoc2wuZ3JlZW4uc2F0IjotMzQsImhzbC5ncmVlbi5sdW0iOi02LCJoc2wuYXF1YS5zYXQiOi0yMCwiaHNsLmJsdWUuaHVlIjotOCwiaHNsLmJsdWUuc2F0IjotMjIsImhzbC5ibHVlLmx1bSI6LTYsImN1cnZlLm1hc3Rlci4wIjoxMCwiY3VydmUubWFzdGVyLjQiOi04LCJjdXJ2ZS5yZWQuMiI6NCwiY3VydmUuYmx1ZS4xIjo2LCJzaGFkb3dIdWUiOjE4MCwic2hhZG93U2F0IjoyMiwiaGlnaGxpZ2h0SHVlIjozOCwiaGlnaGxpZ2h0U2F0IjozNCwiZ3JhaW4iOjQwLCJncmFpblNpemUiOjQwLCJmYWRlIjozMH19",
+      "en": {
+        "name": "Warm Film",
+        "author": "Haedam",
+        "summary": "Creamy skin, lifted blacks and fine grain, like an afternoon shot on film.",
+        "tags": [
+          "built-in",
+          "film",
+          "warm"
+        ]
+      },
       "image": "assets/photos/r/film-warm.jpg",
       "imageBefore": "assets/photos/r/film-warm-before.jpg",
       "photoCredit": "해담"
@@ -118,6 +186,16 @@
       ],
       "accent": "#4F8A8B",
       "payload": "eyJ2IjoxLCJuIjoi67CkIOyYge2ZlCDtlYTrpoQiLCJrIjowLjIsInAiOnsiaGlnaGxpZ2h0cyI6LTIwLCJzaGFkb3dzIjo4LCJjb250cmFzdCI6MTYsInNhdHVyYXRpb24iOi00LCJ2aWJyYW5jZSI6MTIsIndhcm10aCI6LTQwLCJ0aW50IjotOCwiaHNsLnJlZC5odWUiOjYsImhzbC5yZWQuc2F0IjoxOCwiaHNsLm9yYW5nZS5odWUiOi04LCJoc2wub3JhbmdlLnNhdCI6MTIsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTE0LCJoc2wueWVsbG93LnNhdCI6LTI2LCJoc2wuZ3JlZW4uaHVlIjoyNCwiaHNsLmdyZWVuLnNhdCI6LTM2LCJoc2wuZ3JlZW4ubHVtIjotMTAsImhzbC5ibHVlLmh1ZSI6LTgsImhzbC5ibHVlLnNhdCI6NiwiaHNsLmJsdWUubHVtIjotMTAsImN1cnZlLm1hc3Rlci4wIjo4LCJjdXJ2ZS5ibHVlLjEiOjYsInNoYWRvd0h1ZSI6MTg4LCJzaGFkb3dTYXQiOjUwLCJoaWdobGlnaHRIdWUiOjE1LCJoaWdobGlnaHRTYXQiOjM4LCJiYWxhbmNlIjoxOCwiZ3JhaW4iOjQ0LCJncmFpblNpemUiOjQ1LCJmYWRlIjoxNn19",
+      "en": {
+        "name": "Night Cinema",
+        "author": "Haedam",
+        "summary": "Cool whites, teal shadows and red glowing lights. Night scenes like a movie.",
+        "tags": [
+          "built-in",
+          "film",
+          "night"
+        ]
+      },
       "image": "assets/photos/r/film-cine.jpg",
       "imageBefore": "assets/photos/r/film-cine-before.jpg",
       "photoCredit": "해담"
@@ -134,6 +212,16 @@
       ],
       "accent": "#C7B24A",
       "payload": "eyJ2IjoxLCJuIjoi7J287ZqM7JqpIOy5tOuplOudvCIsImsiOjAuNSwicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTQsImNvbnRyYXN0IjoyNiwic2F0dXJhdGlvbiI6MTYsInZpYnJhbmNlIjo4LCJ3YXJtdGgiOjIyLCJ0aW50IjotNiwic2hhcnBuZXNzIjotMTIsInZpZ25ldHRlIjo1MCwiaHNsLnJlZC5zYXQiOjE0LCJoc2wueWVsbG93Lmh1ZSI6LTgsImhzbC55ZWxsb3cuc2F0IjoxNCwiaHNsLmdyZWVuLmh1ZSI6LTEyLCJoc2wuZ3JlZW4uc2F0Ijo0LCJoc2wuZ3JlZW4ubHVtIjotOCwiaHNsLmJsdWUuaHVlIjotNiwiaHNsLmJsdWUuc2F0IjoxMCwiaHNsLmJsdWUubHVtIjotMTIsImN1cnZlLm1hc3Rlci4xIjotNiwiY3VydmUubWFzdGVyLjMiOjYsInNoYWRvd0h1ZSI6MTAwLCJzaGFkb3dTYXQiOjQwLCJoaWdobGlnaHRIdWUiOjUyLCJoaWdobGlnaHRTYXQiOjM0LCJncmFpbiI6NTUsImdyYWluU2l6ZSI6NTUsImZhZGUiOjE0fX0",
+      "en": {
+        "name": "Disposable",
+        "author": "Haedam",
+        "summary": "Punchy contrast, green shadows, heavy grain and dark corners, like the disposable camera in your travel bag.",
+        "tags": [
+          "built-in",
+          "film",
+          "retro"
+        ]
+      },
       "image": "assets/photos/r/disposable.jpg",
       "imageBefore": "assets/photos/r/disposable-before.jpg",
       "photoCredit": "해담"
@@ -150,6 +238,16 @@
       ],
       "accent": "#7FB2E5",
       "payload": "eyJ2IjoxLCJuIjoi65SU7Lm0IOqwkOyEsSIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6MTQsImhpZ2hsaWdodHMiOjI4LCJjb250cmFzdCI6MTgsImJyaWdodG5lc3MiOjgsImJsYWNrUG9pbnQiOi02LCJzYXR1cmF0aW9uIjoxOCwidmlicmFuY2UiOjEyLCJ3YXJtdGgiOi0yNiwidGludCI6OCwic2hhcnBuZXNzIjo1MCwiaHNsLnJlZC5zYXQiOjEyLCJoc2wub3JhbmdlLnNhdCI6OCwiaHNsLm9yYW5nZS5sdW0iOjgsImhzbC5hcXVhLnNhdCI6MTYsImhzbC5ibHVlLmh1ZSI6LTYsImhzbC5ibHVlLnNhdCI6MjAsImhzbC5ibHVlLmx1bSI6LTgsInNoYWRvd0h1ZSI6MjI1LCJzaGFkb3dTYXQiOjI0LCJoaWdobGlnaHRIdWUiOjE5NSwiaGlnaGxpZ2h0U2F0IjozMCwiZ3JhaW4iOjEwLCJncmFpblNpemUiOjIwfX0",
+      "en": {
+        "name": "Digicam",
+        "author": "Haedam",
+        "summary": "Bright and crisp like a 2000s digicam, with cool whites and deep sky blue.",
+        "tags": [
+          "built-in",
+          "digicam",
+          "vivid"
+        ]
+      },
       "image": "assets/photos/r/ccd.jpg",
       "imageBefore": "assets/photos/r/ccd-before.jpg",
       "photoCredit": "해담"
@@ -166,6 +264,16 @@
       ],
       "accent": "#D9A86C",
       "payload": "eyJ2IjoxLCJuIjoi7ZWE66aEIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTEyLCJzaGFkb3dzIjo2LCJjb250cmFzdCI6Niwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2UubHVtIjo2LCJoc2wuZ3JlZW4uaHVlIjoxNCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJjdXJ2ZS5tYXN0ZXIuMCI6OCwiY3VydmUubWFzdGVyLjQiOi02LCJzaGFkb3dIdWUiOjE2NSwic2hhZG93U2F0IjoxNCwiaGlnaGxpZ2h0SHVlIjo0MiwiaGlnaGxpZ2h0U2F0IjoyMCwiZ3JhaW4iOjIyLCJncmFpblNpemUiOjQ1LCJmYWRlIjoxOH19",
+      "en": {
+        "name": "Film Afternoon",
+        "author": "Haedam editors",
+        "summary": "A faded afternoon like old film. Blacks lifted slightly, grain left coarse.",
+        "tags": [
+          "film",
+          "afternoon",
+          "warm"
+        ]
+      },
       "image": "assets/photos/r/film-afternoon.jpg",
       "imageBefore": "assets/photos/r/film-afternoon-before.jpg",
       "photoCredit": "해담"
@@ -182,6 +290,16 @@
       ],
       "accent": "#8CC4E8",
       "payload": "eyJ2IjoxLCJuIjoi7LKt65-J7ZWcIO2VmOuKmCIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NCwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6MTAsInZpYnJhbmNlIjoxOCwid2FybXRoIjotNiwidGludCI6LTIsInNoYXJwbmVzcyI6OCwiaHNsLmdyZWVuLnNhdCI6LTYsImhzbC5hcXVhLmh1ZSI6LTYsImhzbC5hcXVhLnNhdCI6MTIsImhzbC5ibHVlLnNhdCI6MTYsImhzbC5ibHVlLmx1bSI6LTgsImN1cnZlLmJsdWUuMyI6NCwiaGlnaGxpZ2h0SHVlIjoxOTUsImhpZ2hsaWdodFNhdCI6OH19",
+      "en": {
+        "name": "Clear Sky",
+        "author": "Haedam editors",
+        "summary": "Deep blue skies and clean highlights. Great for summer sea and travel photos.",
+        "tags": [
+          "outdoor",
+          "travel",
+          "bright"
+        ]
+      },
       "image": "assets/photos/r/clear-sky.jpg",
       "imageBefore": "assets/photos/r/clear-sky-before.jpg",
       "photoCredit": "해담"
@@ -199,6 +317,17 @@
       ],
       "accent": "#7A86C8",
       "payload": "eyJ2IjoxLCJuIjoi67CkIOyCsOyxhSIsImsiOjAuNSwicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxNCwiY29udHJhc3QiOjEwLCJibGFja1BvaW50Ijo2LCJzYXR1cmF0aW9uIjotMTAsIndhcm10aCI6LTQsInZpZ25ldHRlIjotMTQsImhzbC5vcmFuZ2Uuc2F0IjoxMCwiaHNsLnllbGxvdy5zYXQiOi04LCJoc2wuYmx1ZS5sdW0iOi0xMCwic2hhZG93SHVlIjoyMjUsInNoYWRvd1NhdCI6MjQsImhpZ2hsaWdodEh1ZSI6MzUsImhpZ2hsaWdodFNhdCI6MjIsImJhbGFuY2UiOi0xMCwiZ3JhaW4iOjE4LCJncmFpblNpemUiOjM1fX0",
+      "en": {
+        "name": "Night Walk",
+        "author": "Haedam editors",
+        "summary": "Warm streetlights and blue night air. Dark areas stay open, not murky.",
+        "tags": [
+          "night",
+          "outdoor",
+          "calm",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/night-walk.jpg",
       "imageBefore": "assets/photos/r/night-walk-before.jpg",
       "photoCredit": "해담"
@@ -215,6 +344,16 @@
       ],
       "accent": "#F2B8C6",
       "payload": "eyJ2IjoxLCJuIjoi67Ka6r2D6ri4IiwiayI6MC4zLCJwIjp7ImV4cG9zdXJlIjoxMiwiaGlnaGxpZ2h0cyI6LTE0LCJjb250cmFzdCI6LTE0LCJicmlnaHRuZXNzIjoxNCwidmlicmFuY2UiOjgsInRpbnQiOjYsImhzbC5yZWQuaHVlIjoxNCwiaHNsLnJlZC5zYXQiOi0xMCwiaHNsLnJlZC5sdW0iOjE2LCJoc2wuZ3JlZW4uaHVlIjoxNiwiaHNsLmdyZWVuLnNhdCI6LTM4LCJoc2wuZ3JlZW4ubHVtIjoxNCwiaHNsLmJsdWUuc2F0IjotMTYsImhzbC5ibHVlLmx1bSI6MTAsImhzbC5wdXJwbGUuaHVlIjoxMCwiaHNsLm1hZ2VudGEuaHVlIjotMTYsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTgsInNoYWRvd0h1ZSI6MjI1LCJzaGFkb3dTYXQiOjEyLCJoaWdobGlnaHRIdWUiOjM0MCwiaGlnaGxpZ2h0U2F0IjoxOCwiZmFkZSI6Nn19",
+      "en": {
+        "name": "Cherry Blossom Road",
+        "author": "Haedam editors",
+        "summary": "Clear pinks and soft greens. Spring flower paths, light and bright.",
+        "tags": [
+          "spring",
+          "outdoor",
+          "bright"
+        ]
+      },
       "image": "assets/photos/r/cherry-blossom.jpg",
       "imageBefore": "assets/photos/r/cherry-blossom-before.jpg",
       "photoCredit": "해담"
@@ -232,6 +371,17 @@
       ],
       "accent": "#E8956A",
       "payload": "eyJ2IjoxLCJuIjoi7ZWc6rCVIOuFuOydhCIsImsiOjAuOTUsInAiOnsiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6NiwidmlicmFuY2UiOjgsIndhcm10aCI6NCwiaHNsLm9yYW5nZS5zYXQiOjYsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTYsImhzbC5ibHVlLmh1ZSI6NiwiaHNsLmJsdWUuc2F0IjotNiwiaHNsLnB1cnBsZS5zYXQiOjQsInNoYWRvd0h1ZSI6MjU1LCJzaGFkb3dTYXQiOjE0LCJoaWdobGlnaHRIdWUiOjI4LCJoaWdobGlnaHRTYXQiOjEyLCJiYWxhbmNlIjotOH19",
+      "en": {
+        "name": "Han River Sunset",
+        "author": "Haedam editors",
+        "summary": "Keeps the sunset's warmth while softening bright skies and shadows. Suits riversides and cities at dusk.",
+        "tags": [
+          "evening",
+          "outdoor",
+          "warm",
+          "scene"
+        ]
+      },
       "image": "assets/photos/r/river-sunset.jpg",
       "imageBefore": "assets/photos/r/river-sunset-before.jpg",
       "photoCredit": "Dylan LEE"
@@ -249,6 +399,17 @@
       ],
       "accent": "#C9D6E3",
       "payload": "eyJ2IjoxLCJuIjoi7LKr64iIIOyVhOy5qCIsImsiOjAuMTUsInAiOnsiZXhwb3N1cmUiOjE2LCJoaWdobGlnaHRzIjotMjAsImNvbnRyYXN0IjotMTAsImJyaWdodG5lc3MiOjEwLCJibGFja1BvaW50IjotNiwic2F0dXJhdGlvbiI6LTI0LCJ3YXJtdGgiOi02LCJoc2wub3JhbmdlLnNhdCI6NiwiaHNsLm9yYW5nZS5sdW0iOjgsImhzbC5ncmVlbi5zYXQiOi0zMCwiaHNsLmJsdWUuc2F0IjotMTgsInNoYWRvd0h1ZSI6MjEwLCJzaGFkb3dTYXQiOjE4LCJoaWdobGlnaHRIdWUiOjUwLCJoaWdobGlnaHRTYXQiOjYsImZhZGUiOjE0fX0",
+      "en": {
+        "name": "First Snow Morning",
+        "author": "Haedam editors",
+        "summary": "Clean whites without a cold feel. Suits winter mornings and white interiors.",
+        "tags": [
+          "winter",
+          "morning",
+          "bright",
+          "calm"
+        ]
+      },
       "image": "assets/photos/r/first-snow.jpg",
       "imageBefore": "assets/photos/r/first-snow-before.jpg",
       "photoCredit": "해담"
@@ -265,6 +426,16 @@
       ],
       "accent": "#9A9A9A",
       "payload": "eyJ2IjoxLCJuIjoi7Z2R67CxIOydvOq4sCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMTIsInNoYWRvd3MiOjEwLCJjb250cmFzdCI6MjIsImJsYWNrUG9pbnQiOjQsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjoxMiwiaHNsLnJlZC5sdW0iOjQsImhzbC5vcmFuZ2UubHVtIjo4LCJoc2wuZ3JlZW4ubHVtIjotNiwiaHNsLmJsdWUubHVtIjotMTQsImN1cnZlLm1hc3Rlci4xIjotNCwiY3VydmUubWFzdGVyLjMiOjQsImdyYWluIjozMiwiZ3JhaW5TaXplIjo0NSwiZmFkZSI6OH19",
+      "en": {
+        "name": "B&W Diary",
+        "author": "Haedam editors",
+        "summary": "Light and shadow without color, with crisp contrast and rough grain like a black-and-white diary.",
+        "tags": [
+          "black & white",
+          "film",
+          "calm"
+        ]
+      },
       "image": "assets/photos/r/bw-diary.jpg",
       "imageBefore": "assets/photos/r/bw-diary-before.jpg",
       "photoCredit": "해담"
@@ -282,6 +453,17 @@
       ],
       "accent": "#C8803E",
       "payload": "eyJ2IjoxLCJuIjoi6rCA7J2EIOqzqOuqqSIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTEwLCJjb250cmFzdCI6MTAsInNhdHVyYXRpb24iOi00LCJ2aWJyYW5jZSI6MTQsIndhcm10aCI6MjAsImhzbC5yZWQuc2F0IjoxNiwiaHNsLm9yYW5nZS5zYXQiOjI2LCJoc2wub3JhbmdlLmx1bSI6LTYsImhzbC55ZWxsb3cuaHVlIjotMTgsImhzbC55ZWxsb3cuc2F0IjoxNiwiaHNsLmdyZWVuLmh1ZSI6LTI0LCJoc2wuZ3JlZW4uc2F0IjotNDgsImhzbC5ncmVlbi5sdW0iOi0xMCwiaHNsLmFxdWEuc2F0IjotMjAsImhzbC5ibHVlLnNhdCI6LTIyLCJzaGFkb3dIdWUiOjI4LCJzaGFkb3dTYXQiOjIyLCJoaWdobGlnaHRIdWUiOjQwLCJoaWdobGlnaHRTYXQiOjI2LCJncmFpbiI6MTQsImdyYWluU2l6ZSI6MzUsImZhZGUiOjh9fQ",
+      "en": {
+        "name": "Autumn Alley",
+        "author": "Haedam editors",
+        "summary": "Deep fall leaves and olive greens. A warm alley in the late afternoon sun.",
+        "tags": [
+          "autumn",
+          "outdoor",
+          "warm",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/autumn-alley.jpg",
       "imageBefore": "assets/photos/r/autumn-alley-before.jpg",
       "photoCredit": "해담"
@@ -297,6 +479,15 @@
       ],
       "accent": "#C9A27A",
       "payload": "eyJ2IjoxLCJuIjoi7Jik656Y65CcIOyVqOuylCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMTQsImNvbnRyYXN0IjotNiwic2F0dXJhdGlvbiI6LTIwLCJ3YXJtdGgiOjE0LCJ0aW50Ijo4LCJ2aWduZXR0ZSI6MTIsImhzbC5yZWQuc2F0IjotMTAsImhzbC5ncmVlbi5odWUiOi04LCJoc2wuZ3JlZW4uc2F0IjotMjAsImhzbC5ibHVlLmh1ZSI6LTE0LCJoc2wuYmx1ZS5zYXQiOi0zMCwiY3VydmUubWFzdGVyLjAiOjE0LCJjdXJ2ZS5tYXN0ZXIuNCI6LTEwLCJzaGFkb3dIdWUiOjE1MCwic2hhZG93U2F0IjoyOCwiaGlnaGxpZ2h0SHVlIjozNSwiaGlnaGxpZ2h0U2F0IjozMCwiZ3JhaW4iOjM2LCJncmFpblNpemUiOjYwLCJmYWRlIjozNn19",
+      "en": {
+        "name": "Old Album",
+        "author": "Haedam editors",
+        "summary": "Like flipping through a 90s photo album: faded color, green shadows, heavy grain.",
+        "tags": [
+          "film",
+          "warm"
+        ]
+      },
       "image": "assets/photos/r/old-album.jpg",
       "imageBefore": "assets/photos/r/old-album-before.jpg",
       "photoCredit": "해담"
@@ -313,6 +504,16 @@
       ],
       "accent": "#6F9A6A",
       "payload": "eyJ2IjoxLCJuIjoi7Iiy7IaNIOyYpO2bhCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTE0LCJzaGFkb3dzIjo4LCJjb250cmFzdCI6MTIsInNhdHVyYXRpb24iOi04LCJ2aWJyYW5jZSI6OCwid2FybXRoIjo2LCJoc2wueWVsbG93Lmh1ZSI6LTgsImhzbC55ZWxsb3cuc2F0IjotOCwiaHNsLmdyZWVuLmh1ZSI6OCwiaHNsLmdyZWVuLnNhdCI6LTE2LCJoc2wuZ3JlZW4ubHVtIjotMTgsImhzbC5hcXVhLnNhdCI6LTIwLCJoc2wuYmx1ZS5zYXQiOi0xNCwiaHNsLmJsdWUubHVtIjotNiwic2hhZG93SHVlIjoxNzUsInNoYWRvd1NhdCI6MjIsImhpZ2hsaWdodEh1ZSI6NDgsImhpZ2hsaWdodFNhdCI6MjJ9fQ",
+      "en": {
+        "name": "Forest Afternoon",
+        "author": "Haedam editors",
+        "summary": "Deep, calm greens and yellow sunlight. Suits photos from parks and forest trails.",
+        "tags": [
+          "outdoor",
+          "summer",
+          "calm"
+        ]
+      },
       "image": "assets/photos/r/green-forest.jpg",
       "imageBefore": "assets/photos/r/green-forest-before.jpg",
       "photoCredit": "해담"
@@ -330,6 +531,17 @@
       ],
       "accent": "#E9BECE",
       "payload": "eyJ2IjoxLCJuIjoi7Jew7ZWcIOu0hOu5myIsImsiOjAuMywicCI6eyJleHBvc3VyZSI6NiwiaGlnaGxpZ2h0cyI6LTEyLCJjb250cmFzdCI6LTIwLCJicmlnaHRuZXNzIjoxMiwic2F0dXJhdGlvbiI6LTEyLCJ0aW50Ijo0LCJoc2wub3JhbmdlLnNhdCI6LTQsImhzbC5vcmFuZ2UubHVtIjo4LCJoc2wuZ3JlZW4uaHVlIjoxMiwiaHNsLmdyZWVuLnNhdCI6LTMyLCJoc2wuZ3JlZW4ubHVtIjoxNiwiaHNsLmJsdWUuc2F0IjotMjQsImhzbC5ibHVlLmx1bSI6MTQsImhzbC5tYWdlbnRhLnNhdCI6LTgsImhzbC5tYWdlbnRhLmx1bSI6MTIsInNoYWRvd0h1ZSI6MjIwLCJzaGFkb3dTYXQiOjgsImhpZ2hsaWdodEh1ZSI6MzM1LCJoaWdobGlnaHRTYXQiOjEwLCJmYWRlIjo0fX0",
+      "en": {
+        "name": "Soft Spring",
+        "author": "Haedam editors",
+        "summary": "Light contrast, pale greens and clear pinks. Gentle on bright days and spring portraits.",
+        "tags": [
+          "pastel",
+          "bright",
+          "calm",
+          "season"
+        ]
+      },
       "image": "assets/photos/r/soft-pastel.jpg",
       "imageBefore": "assets/photos/r/soft-pastel-before.jpg",
       "photoCredit": "해담"
@@ -345,6 +557,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7J2A7J2A7ZWcIO2VhOumhCA0MDAiLCJrIjowLjU1LCJwIjp7ImhpZ2hsaWdodHMiOi0yMCwic2hhZG93cyI6MTIsImNvbnRyYXN0IjotNSwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6MTAsImhzbC5vcmFuZ2UubHVtIjoxMCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJoc2wuYmx1ZS5zYXQiOi04LCJzaGFkb3dIdWUiOjIxMCwic2hhZG93U2F0IjoxMCwiaGlnaGxpZ2h0SHVlIjo0MiwiaGlnaGxpZ2h0U2F0IjoxMiwiZ3JhaW4iOjI2LCJncmFpblNpemUiOjI0LCJmYWRlIjoxMn19",
+      "en": {
+        "name": "Soft Film 400",
+        "author": "Haedam",
+        "summary": "Soft skin tones, fine grain and calm highlights.",
+        "tags": [
+          "built-in",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/film-400.jpg",
       "imageBefore": "assets/photos/r/film-400-before.jpg",
       "photoCredit": "해담"
@@ -360,6 +581,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7KiN7ZWcIOyKrOudvOydtOuTnCIsImsiOjAuNDUsInAiOnsiaGlnaGxpZ2h0cyI6LTE2LCJzaGFkb3dzIjotMTIsImNvbnRyYXN0IjozMiwiYmxhY2tQb2ludCI6MTQsInNhdHVyYXRpb24iOjI0LCJ2aWJyYW5jZSI6MTQsInNoYXJwbmVzcyI6MjAsImhzbC5ncmVlbi5zYXQiOjEyLCJoc2wuYmx1ZS5zYXQiOjIwLCJoc2wuYmx1ZS5sdW0iOi0xMiwiY3VydmUubWFzdGVyLjEiOi02LCJjdXJ2ZS5tYXN0ZXIuMyI6NSwiZ3JhaW4iOjgsImdyYWluU2l6ZSI6MTh9fQ",
+      "en": {
+        "name": "Vivid Slide",
+        "author": "Haedam",
+        "summary": "Deep blacks, bold primaries and contrast for clear landscapes.",
+        "tags": [
+          "built-in",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/slide-film.jpg",
       "imageBefore": "assets/photos/r/slide-film-before.jpg",
       "photoCredit": "해담"
@@ -375,6 +605,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi6rGw7LmcIO2dkeuwsSDtlYTrpoQiLCJrIjowLjUsInAiOnsiaGlnaGxpZ2h0cyI6LTI0LCJzaGFkb3dzIjotMTIsImNvbnRyYXN0Ijo0MiwiYmxhY2tQb2ludCI6MTgsInNhdHVyYXRpb24iOi0xMDAsInZpZ25ldHRlIjoyOCwiaHNsLm9yYW5nZS5sdW0iOjE0LCJoc2wuYmx1ZS5sdW0iOi0yOCwiY3VydmUubWFzdGVyLjEiOi04LCJjdXJ2ZS5tYXN0ZXIuMyI6OCwiZ3JhaW4iOjc1LCJncmFpblNpemUiOjcyLCJmYWRlIjoyfX0",
+      "en": {
+        "name": "Grainy B&W",
+        "author": "Haedam",
+        "summary": "Deep pressed shadows and heavy grain that keep the light.",
+        "tags": [
+          "built-in",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/bw-grain.jpg",
       "imageBefore": "assets/photos/r/bw-grain-before.jpg",
       "photoCredit": "해담"
@@ -390,6 +629,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi67CU656cIOy7rOufrCDtlYTrpoQiLCJrIjowLjUsInAiOnsiY29udHJhc3QiOi0xNiwic2F0dXJhdGlvbiI6LTM4LCJ3YXJtdGgiOi04LCJ0aW50IjoxMCwiaHNsLmdyZWVuLnNhdCI6LTM2LCJoc2wuYmx1ZS5odWUiOi0yMCwiaHNsLmJsdWUuc2F0IjotMjAsImN1cnZlLm1hc3Rlci4wIjoxMiwiY3VydmUubWFzdGVyLjQiOi0xNCwic2hhZG93SHVlIjoxNzUsInNoYWRvd1NhdCI6MzIsImhpZ2hsaWdodEh1ZSI6MzMwLCJoaWdobGlnaHRTYXQiOjE4LCJncmFpbiI6MzIsImdyYWluU2l6ZSI6NDgsImZhZGUiOjI4fX0",
+      "en": {
+        "name": "Faded Color",
+        "author": "Haedam",
+        "summary": "Colors faded to teal, pinkish highlights and low contrast.",
+        "tags": [
+          "built-in",
+          "film"
+        ]
+      },
       "image": "assets/photos/r/faded-color.jpg",
       "imageBefore": "assets/photos/r/faded-color-before.jpg",
       "photoCredit": "해담"
@@ -405,6 +653,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7ZSM656Y7IucIOuUlOy5tCIsImsiOjAuMjUsInAiOnsiZXhwb3N1cmUiOjE4LCJoaWdobGlnaHRzIjozOCwic2hhZG93cyI6LTE4LCJjb250cmFzdCI6MzAsImJsYWNrUG9pbnQiOjE2LCJzYXR1cmF0aW9uIjoxMiwid2FybXRoIjotMTIsInRpbnQiOjYsInNoYXJwbmVzcyI6NzAsInZpZ25ldHRlIjoyMiwiaHNsLnJlZC5zYXQiOjE4LCJoc2wub3JhbmdlLmx1bSI6MTIsImhzbC5ibHVlLnNhdCI6MTIsImhpZ2hsaWdodEh1ZSI6MjEwLCJoaWdobGlnaHRTYXQiOjE2LCJncmFpbiI6MywiZ3JhaW5TaXplIjoxMn19",
+      "en": {
+        "name": "Flash Digicam",
+        "author": "Haedam",
+        "summary": "Bright highlights, deep shadows and crisp digicam color.",
+        "tags": [
+          "built-in",
+          "digicam"
+        ]
+      },
       "image": "assets/photos/r/ccd-flash.jpg",
       "imageBefore": "assets/photos/r/ccd-flash-before.jpg",
       "photoCredit": "해담"
@@ -420,6 +677,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7KaJ7ISdIOyCrOynhCIsImsiOjAuNSwicCI6eyJoaWdobGlnaHRzIjotMzAsImNvbnRyYXN0IjotMjAsInNhdHVyYXRpb24iOi0yOCwid2FybXRoIjoxNiwidGludCI6MTQsInZpZ25ldHRlIjozNCwiaHNsLmdyZWVuLmh1ZSI6LTE2LCJoc2wuZ3JlZW4uc2F0IjotNDAsImhzbC5ibHVlLnNhdCI6LTI4LCJjdXJ2ZS5tYXN0ZXIuNCI6LTEyLCJzaGFkb3dIdWUiOjI4NSwic2hhZG93U2F0IjoyNSwiaGlnaGxpZ2h0SHVlIjo0OCwiaGlnaGxpZ2h0U2F0IjozMiwiZ3JhaW4iOjI0LCJncmFpblNpemUiOjM2LCJmYWRlIjo0Mn19",
+      "en": {
+        "name": "Instant Print",
+        "author": "Haedam",
+        "summary": "Creamy light and purple shadows, a softly faded instant photo.",
+        "tags": [
+          "built-in",
+          "digicam"
+        ]
+      },
       "image": "assets/photos/r/instant-print.jpg",
       "imageBefore": "assets/photos/r/instant-print-before.jpg",
       "photoCredit": "해담"
@@ -435,6 +701,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7LSI7Jes66aEIOq3uOumsCIsImsiOjAuMzUsInAiOnsic2hhZG93cyI6MTIsImNvbnRyYXN0Ijo4LCJ2aWJyYW5jZSI6MjAsIndhcm10aCI6LTgsInRpbnQiOi0zLCJoc2wueWVsbG93Lmh1ZSI6MTgsImhzbC5ncmVlbi5odWUiOi0yMCwiaHNsLmdyZWVuLnNhdCI6MjIsImhzbC5ncmVlbi5sdW0iOjEyLCJoc2wuYXF1YS5zYXQiOi0xMCwiaHNsLmJsdWUuaHVlIjotMTIsInNoYWRvd0h1ZSI6MTgwLCJzaGFkb3dTYXQiOjE2LCJoaWdobGlnaHRIdWUiOjYwLCJoaWdobGlnaHRTYXQiOjgsImZhZGUiOjR9fQ",
+      "en": {
+        "name": "Summer Green",
+        "author": "Haedam",
+        "summary": "Fresh greens without the yellow, and cool shadows.",
+        "tags": [
+          "built-in",
+          "season"
+        ]
+      },
       "image": "assets/photos/r/summer-green.jpg",
       "imageBefore": "assets/photos/r/summer-green-before.jpg",
       "photoCredit": "해담"
@@ -450,6 +725,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi6rCA7J2EIOuLqO2SjSIsImsiOjAuNiwicCI6eyJoaWdobGlnaHRzIjotMjAsInNoYWRvd3MiOi00LCJjb250cmFzdCI6MTgsInZpYnJhbmNlIjoxMiwid2FybXRoIjoxOCwiaHNsLnJlZC5zYXQiOjIwLCJoc2wub3JhbmdlLnNhdCI6MjIsImhzbC5vcmFuZ2UubHVtIjo0LCJoc2wueWVsbG93Lmh1ZSI6LTI2LCJoc2wuZ3JlZW4uaHVlIjotMzUsImhzbC5ncmVlbi5zYXQiOi0xNCwiaHNsLmJsdWUuc2F0IjotMjUsInNoYWRvd0h1ZSI6MjUsInNoYWRvd1NhdCI6MTIsImhpZ2hsaWdodEh1ZSI6MzgsImhpZ2hsaWdodFNhdCI6MjAsImZhZGUiOjZ9fQ",
+      "en": {
+        "name": "Autumn Leaves",
+        "author": "Haedam",
+        "summary": "Deep red leaves and golden yellows, vivid autumn light.",
+        "tags": [
+          "built-in",
+          "season"
+        ]
+      },
       "image": "assets/photos/r/autumn-leaves.jpg",
       "imageBefore": "assets/photos/r/autumn-leaves-before.jpg",
       "photoCredit": "해담"
@@ -465,6 +749,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi6rKo7Jq4IOyVhOy5qCIsImsiOjAuMjUsInAiOnsiaGlnaGxpZ2h0cyI6LTEyLCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOi0xMCwiYnJpZ2h0bmVzcyI6MTQsInNhdHVyYXRpb24iOi0xOCwid2FybXRoIjotMjgsInRpbnQiOjUsImhzbC5vcmFuZ2Uuc2F0IjotMTIsImhzbC5hcXVhLnNhdCI6LTE0LCJoc2wuYmx1ZS5sdW0iOjE4LCJzaGFkb3dIdWUiOjIyMCwic2hhZG93U2F0IjoyOCwiaGlnaGxpZ2h0SHVlIjoyMDAsImhpZ2hsaWdodFNhdCI6MTIsImZhZGUiOjZ9fQ",
+      "en": {
+        "name": "Winter Morning",
+        "author": "Haedam",
+        "summary": "Clear, cold whites with soft blue shadows.",
+        "tags": [
+          "built-in",
+          "season"
+        ]
+      },
       "image": "assets/photos/r/winter-blue.jpg",
       "imageBefore": "assets/photos/r/winter-blue-before.jpg",
       "photoCredit": "해담"
@@ -480,6 +773,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi64Sk7JioIOuwpOqxsOumrCIsImsiOjAuNCwicCI6eyJoaWdobGlnaHRzIjotMjgsInNoYWRvd3MiOjgsImNvbnRyYXN0IjoyOCwiYmxhY2tQb2ludCI6MTIsInZpYnJhbmNlIjoyOCwid2FybXRoIjotMTIsInRpbnQiOjgsImhzbC55ZWxsb3cuc2F0IjotMzIsImhzbC5ibHVlLmh1ZSI6MTQsImhzbC5ibHVlLnNhdCI6MTgsImhzbC5wdXJwbGUuc2F0IjoyNiwiaHNsLm1hZ2VudGEuc2F0IjoyNCwic2hhZG93SHVlIjoyNDAsInNoYWRvd1NhdCI6MzYsImhpZ2hsaWdodEh1ZSI6MzE1LCJoaWdobGlnaHRTYXQiOjMyLCJncmFpbiI6MTYsImdyYWluU2l6ZSI6MjV9fQ",
+      "en": {
+        "name": "Neon Nights",
+        "author": "Haedam",
+        "summary": "Blue shadows, pink lights and rich night colors.",
+        "tags": [
+          "built-in",
+          "scene"
+        ]
+      },
       "image": "assets/photos/r/neon-night.jpg",
       "imageBefore": "assets/photos/r/neon-night-before.jpg",
       "photoCredit": "해담"
@@ -495,6 +797,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7LKt65-J7ZWcIOuwlOuLpCIsImsiOjAuMzUsInAiOnsiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxMCwiY29udHJhc3QiOjE0LCJzYXR1cmF0aW9uIjo4LCJ2aWJyYW5jZSI6MjQsIndhcm10aCI6LTEwLCJzaGFycG5lc3MiOjIwLCJoc2wueWVsbG93LnNhdCI6LTE2LCJoc2wuYXF1YS5odWUiOi04LCJoc2wuYXF1YS5zYXQiOjIyLCJoc2wuYXF1YS5sdW0iOjEyLCJoc2wuYmx1ZS5odWUiOi0xNiwiaHNsLmJsdWUuc2F0IjoyNCwiaHNsLmJsdWUubHVtIjoxMCwic2hhZG93SHVlIjoxOTAsInNoYWRvd1NhdCI6MTR9fQ",
+      "en": {
+        "name": "Clear Sea",
+        "author": "Haedam",
+        "summary": "Bright water and clean sky blue, cool and crisp.",
+        "tags": [
+          "built-in",
+          "scene"
+        ]
+      },
       "image": "assets/photos/r/clear-sea.jpg",
       "imageBefore": "assets/photos/r/clear-sea-before.jpg",
       "photoCredit": "해담"
@@ -510,6 +821,15 @@
       ],
       "accent": "#B4C6C8",
       "payload": "eyJ2IjoxLCJuIjoi7ZmU7IKs7ZWcIOyduOusvCIsImsiOjAuNCwicCI6eyJicmlsbGlhbmNlIjoxNCwiaGlnaGxpZ2h0cyI6LTE4LCJzaGFkb3dzIjoxNiwiY29udHJhc3QiOi0xNiwic2F0dXJhdGlvbiI6LTYsIndhcm10aCI6OCwidGludCI6Mywic2hhcnBuZXNzIjotMTIsImhzbC5yZWQuc2F0IjotMTYsImhzbC5vcmFuZ2Uuc2F0IjotMTQsImhzbC5vcmFuZ2UubHVtIjoxOCwiaHNsLnllbGxvdy5zYXQiOi0xNCwiaHNsLmdyZWVuLnNhdCI6LTE4LCJoaWdobGlnaHRIdWUiOjQwLCJoaWdobGlnaHRTYXQiOjh9fQ",
+      "en": {
+        "name": "Soft Portrait",
+        "author": "Haedam",
+        "summary": "Soft, bright skin with calmer reds and gentle contrast.",
+        "tags": [
+          "built-in",
+          "scene"
+        ]
+      },
       "image": "assets/photos/r/soft-portrait.jpg",
       "imageBefore": "assets/photos/r/soft-portrait-before.jpg",
       "photoCredit": "해담"
